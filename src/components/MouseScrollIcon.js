@@ -71,7 +71,7 @@ class MouseScrollIcon extends React.Component {
           onMouseLeave={this.handleMouseLeave} />
         <TooltipWrapper>
           <Tooltip className={this.state.alt_visible}>
-            Keep scrolling :)
+            Skrolujte ďalej :)
           </Tooltip>
         </TooltipWrapper>
       </MouseIcon>

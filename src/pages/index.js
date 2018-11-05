@@ -9,11 +9,6 @@ import bg_branch_3 from '../assets/bg_branch_3.svg'
 import olive_branch from '../assets/olive_branch.png'
 import foto_1 from '../assets/mg_foto_1.jpg'
 import foto_2 from '../assets/illustration_foto_1.jpg'
-import ref_1 from '../assets/ref_1.jpg'
-import ref_2 from '../assets/ref_2.jpg'
-import ref_3 from '../assets/ref_3.jpg'
-import ref_4 from '../assets/ref_4.jpg'
-import ref_5 from '../assets/ref_5.jpg'
 import SliderWelcome from '../components/SliderWelcome'
 import MouseScrollIcon from '../components/MouseScrollIcon'
 import Carousel from '../components/Carousel'
@@ -188,48 +183,6 @@ const ContentWrapper = styled.div`
     100% {background-position: 615px 0px;}
     }
   } 
-  .reference_bubble {
-    width: 90%;
-    margin-left: 10%;
-    background: var(--white);
-    border-radius: 10px;
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 50px;
-    &.reference_bubble_opening {
-      margin-top: 100px;
-    }
-    .reference_text {
-      flex-basis: 100%;
-      box-sizing: border-box;
-      margin-left: 100px;
-      padding: 10px 50px 30px 30px;
-    }
-    .reference_image {
-      position: absolute;
-      left: -70px;
-      top: 30px;
-      box-sizing: border-box;
-      img {
-        width: 140px;
-        border-radius: 70px;
-      }
-    }
-    .reference_person {
-      flex-basis: 100%;
-      margin-left: 100px;
-      box-sizing: border-box;
-      padding-left: 30px;
-      padding-top: 30px;
-      p {
-        font-size: 15px;
-        font-weight: bold;
-        line-height: 20px;
-        margin: 0;
-      }
-    }
-  }
   .floating_branch_1 {
     position: absolute;
     top: 100px;
@@ -267,12 +220,6 @@ const ContentWrapper = styled.div`
     height: 600px;
     width: 300px;
     }
-  }
-  .blue {
-    color: var(--blue);
-  }
-  .bright_blue {
-    color: var(--brightBlue);
   }
 `
 
@@ -364,85 +311,6 @@ autentickosť, spoľahlivosť, ústretovosť a empatia.
                     <div className="qoute_wrapper">
                       <h4 className="sub_quote">si myslím, že Vám viem pomôcť
                       </h4>
-                    </div>
-                    <div className="reference_bubble reference_bubble_opening">
-                      <div className="reference_person">
-                        <p className="bright_blue">Martina (40) <span className="blue">Nechtová dizajnérka</span></p>
-                      </div>
-                      <div className="reference_text">
-                        <p>
-                        Mária mi pomohla zbaviť sa strachu, rozhodnúť sa zmeniť zabehnuté veci. Začala
-som sa viac zaoberať sama sebou a meniť svoje postoje k situáciám, ktoré mi
-prichádzali do cesty. Zmenila som pracovné prostredie, získala nových klientov.
-Zmenil sa mi život, posunula som sa ďalej. Ďakujem :)
-                        </p>
-                      </div>
-                      <div className="reference_image">
-                        <img alt="Martina" src={ref_1} />
-                      </div>
-                    </div>
-                    <div className="reference_bubble">
-                      <div className="reference_person">
-                        <p className="bright_blue">Ela (36) <span className="blue">Floristka</span></p>
-                      </div>
-                      <div className="reference_text">
-                        <p>
-                        Mária chcela by som poďakovať za Tvoj individuálny prístup. Pomohla si mi zmeniť
-môj postoj k životu. Naučila si ma žiť v prítomnosti, prijať aj nepríjemné skúsenosti
-a spracovať ich tak, aby sa mi už nevracali späť do života.
-                        </p>
-                      </div>
-                      <div className="reference_image">
-                        <img alt="Ela" src={ref_2} />
-                      </div>
-                    </div>
-                    <div className="reference_bubble">
-                      <div className="reference_person">
-                        <p className="bright_blue">Nina (36) <span className="blue">Referent back office</span></p>
-                      </div>
-                      <div className="reference_text">
-                        <p>
-                        Ďakujem za inšpiráciu, že keď sa chce, môže človek spraviť obrovský rozdiel.
-Stanoviť si ciele a predstavu, akým smerom sa bude náš život uberať. Moje okolie si
-už teraz uvedomuje, ako sa mením, nielen správaním, ale aj vizuálne :)
-                        </p>
-                      </div>
-                      <div className="reference_image">
-                        <img alt="Nina" src={ref_3} />
-                      </div>
-                    </div>
-                    <div className="reference_bubble">
-                      <div className="reference_person">
-                        <p className="bright_blue">Nela (45) <span className="blue">Podnikateľka</span></p>
-                      </div>
-                      <div className="reference_text">
-                        <p>
-                        V spoločnosti sa pohybujem od mladosti, a myslím, že etiketu ovládam. Ale musím
-povedať, že školením spoločenskej etikety som opäť oživila svoje znalosti a veľa
-novým sa aj naučila. Odporúčam ženám absolvovať tento koučing s Máriou. Ďakujem
-Ti za príjemnú skúsenosť.
-                        </p>
-                      </div>
-                      <div className="reference_image">
-                        <img alt="Nela" src={ref_4} />
-                      </div>
-                    </div>
-                    <div className="reference_bubble">
-                      <div className="reference_person">
-                        <p className="bright_blue">Tvoje dcéry :)</p>
-                      </div>
-                      <div className="reference_text">
-                        <p>
-                        Mária ďakujeme Ti za Tvoju skvelú prácu, ktorú robíš pre ženy, za to že zdieľaš
-svoje skúsenosti a pohľady na život. Ženská energia je veľmi silná, a je iná než
-mužská. Preto treba, aby si ženy uvedomovali svoju hodnotu a svoju silu. Naša
-spoločnosť ju v tejto dobe veľmi potrebuje. Aj vďaka Tebe, žijeme šťastný, prítomný
-život.
-                        </p>
-                      </div>
-                      <div className="reference_image">
-                        <img alt="dcery" src={ref_5} />
-                      </div>
                     </div>
                   </div>
                 </div>

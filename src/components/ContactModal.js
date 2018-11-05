@@ -99,7 +99,7 @@ class ContactModal extends React.Component {
       <ModalWrapper props={this.props.visible}>
         <ModalBackground onClick={this.props.handleClick} />
         <Modal>
-          <ModalText top={60} bottom={0}>Hlavačikova  35,</ModalText>
+          <ModalText top={60} bottom={0}>Hlaváčikova  35,</ModalText>
           <ModalText top={0} bottom={60}>841 05 Bratislava</ModalText>
           <ModalText top={0} bottom={60}>0911 544 533</ModalText>
           <ModalText top={0} bottom={0}><span data-hover="ahoj@mariagalikova.sk"><a href="mailto:ahoj@mariagalikova.sk">ahoj@mariagalikova.sk</a></span></ModalText>

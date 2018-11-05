@@ -241,8 +241,8 @@ export default class Services extends React.Component {
           </div>
           <div className="home_content">
             <div className="content_left" id="trigger_foto1">
-              <h2 className="title first_title">Vitajte</h2>
-              <h3 className="sub_title">Myslím pozitívne a žijem vedome</h3>
+              <h2 className="title first_title">Viem ako Vám pomôcť</h2>
+              <h3 className="sub_title">Myslím pozitívne a žijem vedome.</h3>
               <p className="block_padded">Svoju víziu sa snažím dosiahnuť práve prostredníctvom žien, ktoré si začnú viac
 uvedomovať svoju hodnotu a pri rozhodnutiach sa riadia viac srdcom ako len
 rozumom. Svojim klientkam poskytujem nasledovné služby:
@@ -337,7 +337,7 @@ vizáže, budovaní štýlu či výbere kozmetiky a salónu.
 sa novej roli, rozvinúť Vaše prirodzené "soft skills" a osvojiť si bontón pre rôzne
 príležitosti.
               </p>
-              <p className="block_padded">Zbavíte sa pocitu menejcennosti v spoločnosti, lebo Vám chýbajú znalosti etikety.
+              <p className="block_padded">Zbavíte sa pocitu menejcennosti v spoločnosti, lebo Vám nebudú chýbať znalosti etikety. 
               </p>
               <Controller>
                 <Scene classToggle="reveal_animation" triggerElement="#trigger_foto5">

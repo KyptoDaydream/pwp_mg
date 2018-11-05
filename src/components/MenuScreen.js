@@ -87,13 +87,13 @@ const MenuLinkAlt = styled.p`
     color: var(--blue);
   }
 `
-const GLOBAL_WINDOW = (typeof self === 'object' && self.self === self && self) || (typeof global === 'object' && global.global === global && global) || this;
+// const GLOBAL_WINDOW = (typeof self === 'object' && self.self === self && self) || (typeof global === 'object' && global.global === global && global) || this;
 class MenuScreen extends React.Component {
   constructor (props) {
     super()
  
     this.state = {
-      screen_width: GLOBAL_WINDOW.innerWidth,
+      screen_width: typeof window !== 'undefined' ? window.innerWidth : 0,
     }
   }
 

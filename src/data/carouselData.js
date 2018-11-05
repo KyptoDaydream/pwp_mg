@@ -13,7 +13,7 @@ const data = {
     {
       index: 1,
       title: 'Zmena Správania',
-      text: 'Zbavíte sa pocitu menejcennosti v spoločnosti, lebo Vám chýbajú znalosti etikety.',
+      text: 'Zbavíte sa pocitu menejcennosti v spoločnosti, lebo Vám nebudú chýbať znalosti etikety.',
       url: mg_illustracia_5,
     },
     {

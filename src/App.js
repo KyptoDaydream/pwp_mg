@@ -1,5 +1,5 @@
 import React from 'react'
-import { Router, Link } from 'react-static'
+import { Router, Link, Head } from 'react-static'
 import styled, { injectGlobal } from 'styled-components'
 import Routes from 'react-static-routes'
 import Logo from 'components/Logo'
@@ -29,7 +29,6 @@ const AppStyles = styled.div`
 --lightBlue: #EBF1F9;
 --blueTransparent: rgba(33,45,80,0.7);
 --titleFontFamily: 'Poppins', sans-serif;
---altFontFamily: 'Source Code Pro', monospace;
 --welcomeFontFamily: 'Pacifico', cursive;
 --menuWidth: 800px;
   a {
@@ -93,7 +92,7 @@ const AppStyles = styled.div`
   h4.quote {
     font-family: var(--titleFontFamily);
     font-weight: 900;
-    font-size: 190px;
+    font-size: 185px;
     line-height: 200px;
     margin: 0;
     text-transform: uppercase;
@@ -138,6 +137,12 @@ const AppStyles = styled.div`
 const App = () => (
   <Router>
     <AppStyles>
+      <Head>
+        <meta charSet="UTF-8" />
+        <title>Mária Gáliková</title>
+        <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+        <link href="https://fonts.googleapis.com/css?family=Pacifico|Poppins:400,700,900&amp;subset=latin-ext" rel="stylesheet" />
+      </Head>
       <Logo />
       <HamburgerMenu />
       <Linkedin />
