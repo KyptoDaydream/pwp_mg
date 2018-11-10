@@ -4,6 +4,7 @@ import { Link } from 'react-static'
 import { Controller, Scene } from 'react-scrollmagic'
 import logoImg from '../assets/mg_welcome_photo.png'
 import bg_branch from '../assets/bg_branch.svg'
+import bg_branches from '../assets/bg_branches.svg'
 import bg_branch_2 from '../assets/bg_branch_2.svg'
 import bg_branch_3 from '../assets/bg_branch_3.svg'
 import olive_branch from '../assets/olive_branch.png'
@@ -12,6 +13,7 @@ import foto_2 from '../assets/illustration_foto_1.jpg'
 import SliderWelcome from '../components/SliderWelcome'
 import MouseScrollIcon from '../components/MouseScrollIcon'
 import Carousel from '../components/Carousel'
+import Testimonials from '../components/Testimonials'
 
 const Home = styled.div`
 overflow: hidden;
@@ -101,7 +103,7 @@ const ContentWrapper = styled.div`
   .altered_bg {
     background-color: var(--sliderBackground);
     margin-top: 100px;
-    background-image: url(${bg_branch});
+    background-image: url(${bg_branches});
     background-position: center center;
     background-size: cover;
     h4.quote {
@@ -109,6 +111,7 @@ const ContentWrapper = styled.div`
     }
     .content_full_width {
       padding-top: 50px;
+      padding-bottom: 50px;
     }
   }
   .first_title {
@@ -221,6 +224,9 @@ const ContentWrapper = styled.div`
     width: 300px;
     }
   }
+  .hide {
+    display: none;
+  }
 `
 
 export default class Index extends React.Component {
@@ -271,14 +277,14 @@ export default class Index extends React.Component {
                   <h4 className="quote">Želám si</h4>
                   <div className="qoute_wrapper">
                     <h4 className="sub_quote">aby ľudia začali viac rozpoznávať skutočné hodnoty a dostali medziľudské
-  vzťahy na vyššiu úroveň
+                      vzťahy na vyššiu úroveň
                     </h4>
                   </div>
                 </div>
                 <div className="content_left padded" id="trigger_foto2">
                   <p>Veľkú časť mojich služieb tvoria konzultácie s klientkami naživo.</p>
                   <p>Zdieľam so ženami svoje skúsenosti, svoje pohľady, a svoje princípy, ktoré som
-vyselektovala pri svojej ceste životom, a ktoré budú fungovať aj Vám.
+                    vyselektovala pri svojej ceste životom, a ktoré budú fungovať aj Vám.
                   </p>
                   <Controller>
                     <Scene classToggle="reveal_animation" triggerElement="#trigger_foto2">
@@ -288,15 +294,15 @@ vyselektovala pri svojej ceste životom, a ktoré budú fungovať aj Vám.
                     </Scene>
                   </Controller>
                   <p>Podstatou je zmeniť svoju energiu a svoje vibrácie, ktoré vysielate navonok. Zmeniť svoj
-postoj k jednotlivým situáciám. Ak zmeníte svoj postoj, otvoria sa Vám nové možnosti a
-príležitosti žiť šťastnejší život.
+                    postoj k jednotlivým situáciám. Ak zmeníte svoj postoj, otvoria sa Vám nové možnosti a
+                    príležitosti žiť šťastnejší život.
                   </p>
                   <p>Chcem pomôcť všetkým ženám nájsť odvahu a čeliť neznámemu. Ak chcete mať
-sebavedomie, musíte predovšetkým spoznať samú seba. Potom viete veriť vo svoje
-schopnosti, a teda konať, prejavovať sa a rozprávať ako zdravo sebavedomý človek.
+                    sebavedomie, musíte predovšetkým spoznať samú seba. Potom viete veriť vo svoje
+                    schopnosti, a teda konať, prejavovať sa a rozprávať ako zdravo sebavedomý človek.
                   </p>
                   <p>Medzi moje základné hodnoty, na ktorých staviam svoje služby sú: úprimnosť,
-autentickosť, spoľahlivosť, ústretovosť a empatia.
+                    autentickosť, spoľahlivosť, ústretovosť a empatia.
                   </p>
                   <Link className="button_text" to="/o_mne">viac o mne</Link>
                 </div>
@@ -313,6 +319,7 @@ autentickosť, spoľahlivosť, ústretovosť a empatia.
                       </h4>
                     </div>
                   </div>
+                  <Testimonials />
                 </div>
               </div>
             </ContentWrapper>
