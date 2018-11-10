@@ -236,17 +236,17 @@ export default class AbouteMe extends React.Component {
               <h2 className="title first_title">Každá žena je iná</h2>
               <h3 className="sub_title">V živote som však zažívala strach tak ako aj Vy.</h3>
               <p className="block_padded">Mária Gáliková začala svoj príbeh premeny na Ministerstve zahraničných vecí v
-Prahe, kde absolvovala kurz diplomatickej praxe. Ďalších 5 rokov prežila v
-Západnom Berlíne, ako manželka diplomata. Absolvovala tu štúdium nemeckého
-jazyka na Herbert Universität Berlín. Po návrate do Prahy založila cestovnú
-agentúru ITIS Reisen s.r.o. kde riadila tím 10 zamestnancov.
+                Prahe, kde absolvovala kurz diplomatickej praxe. Ďalších 5 rokov prežila v
+                Západnom Berlíne, ako manželka diplomata. Absolvovala tu štúdium nemeckého
+                jazyka na Herbert Universität Berlín. Po návrate do Prahy založila cestovnú
+                agentúru ITIS Reisen s.r.o. kde riadila tím 10 zamestnancov.
               </p>
               <p className="block_padded" id="trigger_foto2">Nie dlho po tom ako sa usadila nasledovalo sťahovanie na Veľvyslanectvo SR
-v Bonne, ako manželka vojenského pridelenca. Bolo to práve tu, kde vycibrila svoje
-diplomatické schopnosti.
+                v Bonne, ako manželka vojenského pridelenca. Bolo to práve tu, kde vycibrila svoje
+                diplomatické schopnosti.
               </p>
               <p className="block_padded">Po získaní titulu profesionálneho manažéra na The Open University London jej
-ďalšie kroky smerovali do Bratislavy.
+                ďalšie kroky smerovali do Bratislavy.
               </p>
             </div>
             <div className="content_right">
@@ -269,15 +269,14 @@ diplomatické schopnosti.
             </div>
             <div className="content_left">
               <p className="block_padded">Vyštudovala tu medzinárodné vzťahy a následne získala doktorát na Paneurópskej
-vysokej škole, Fakulta masmédií.
+                vysokej škole, Fakulta masmédií.
               </p>
               <p className="block_padded">Nasledovala premena v súkromnom živote - rozvod a nový začiatok v Bratislave.
-Popri svojom pracovnom nasadení vychovávala dve dcéry a stretla nového partnera.
+                Popri svojom pracovnom nasadení vychovávala dve dcéry a stretla nového partnera.
               </p>
               <p className="block_padded" id="trigger_foto3">Postupne sa kariéra Márie Gálikovej začala špecializovať na oblasť marketingu.
-Zastávala pozíciu Account manažér v globálnej agentúre EURO RSCG
-ARTMEDIA a.s.. Riadila tu prípravu a realizáciu projektov pre TOP klientov
-spoločnosti.
+                Zastávala pozíciu Account manažér v globálnej agentúre EURO RSCG
+                ARTMEDIA a.s.. Riadila tu prípravu a realizáciu projektov pre TOP klientov spoločnosti.
               </p>
               <Controller>
                 <Scene classToggle="reveal_animation" triggerElement="#trigger_foto3">
@@ -287,12 +286,12 @@ spoločnosti.
                 </Scene>
               </Controller>
               <p className="block_padded">Do širšieho povedomia sa dostala v pozícii marketingový riaditeľ a mediálny
-reprezentant v TV JOJ. Neskôr riadila tím 20 ľudí z pozície Výkonný riaditeľ Prvej
-Univerzitnej a.s. a tiež Marketingový a obchodný riaditeľ spoločnosti Media
-Vision s.r.o.
+                reprezentant v TV JOJ. Neskôr riadila tím 20 ľudí z pozície Výkonný riaditeľ Prvej
+                Univerzitnej a.s. a tiež Marketingový a obchodný riaditeľ spoločnosti Media
+                Vision s.r.o.
               </p>
               <p className="block_padded">Mária vie čo je to zodpovednosť. Strach zo zmeny. Tlak vysokej pozície. Tlak
-spoločnosti a tlak vlastných ambícií.
+                spoločnosti a tlak vlastných ambícií.
               </p>
             </div>
             <div className="content_right" />
@@ -300,20 +299,20 @@ spoločnosti a tlak vlastných ambícií.
               <h4 className="quote">Myslím,</h4>
               <div className="qoute_wrapper sub_qoute_wide">
                 <h4 className="sub_quote_wide">že osud človeka sa odvíja na základe volieb, ktoré človek učiní a ja som si bola
-istá, že moja voľba je tá správna. Vedela som, že môj život už nebude tým čím bol, a že
-ma stretne niečo krásne, možno dokonca zázračné. Bolo to úžasné precitnutie.
+                  istá, že moja voľba je tá správna. Vedela som, že môj život už nebude tým čím bol, a že
+                  ma stretne niečo krásne, možno dokonca zázračné. Bolo to úžasné precitnutie.
                 </h4>
               </div>
             </div>
             <div className="content_left padded last_block">
               <p className="block_padded">Práve preto sa rozhodla založiť si firmu a vziať svoj osud do vlastných rúk.
-Prostredníctvom MG Prime, s.r.o. sa dnes venuje marketingovému poradenstvu,
-organizuje eventy, módne prehliadky či prestížne podujatie Beckovské slnko.
+                Prostredníctvom MG Prime, s.r.o. sa dnes venuje marketingovému poradenstvu,
+                organizuje eventy, módne prehliadky či prestížne podujatie Beckovské slnko.
               </p>
               <p className="block_padded">Mária Gáliková však nie je len manažérka a podnikateľka. Je vydatá, má dve dospelé
-dcéry a vnučku. Žije šťastný život a váži si to. Svoje schopnosti, skúsenosti a
-vedomosti sa preto rozhodla predať ďalej ľuďom, ktorým rozumie najlepšie. Ženám
-ako ste Vy.
+                dcéry a vnučku. Žije šťastný život a váži si to. Svoje schopnosti, skúsenosti a
+                vedomosti sa preto rozhodla predať ďalej ľuďom, ktorým rozumie najlepšie. Ženám
+                ako ste Vy.
               </p>
             </div>
           </div>
