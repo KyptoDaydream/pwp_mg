@@ -16,7 +16,7 @@ class News extends React.Component {
 
   componentWillMount () {
     axios
-      .get('http://codepen.io/jobs.json')
+      .get('https://www.mariagalikova.sk/posts')
       .then(result => {
         this.setState({ posts: result })
       })
