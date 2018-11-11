@@ -48,7 +48,7 @@ const Slide = styled.div`
       display: inline-block;
       h2.title {
         font-size: 18px;
-        margin-bottom: 0;
+        margin-bottom: 5px;
         margin-top: 20px;
         line-height: 18px;
       }
