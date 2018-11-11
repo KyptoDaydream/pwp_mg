@@ -7,11 +7,13 @@ const Status = styled.div`
   display: block;
   background-color: var(--lightBlue);
   border-radius: 10px;
-  width: 60%;
+  width: 70%;
   margin: 0 auto;
   padding: 30px;
   display: flex;
+  box-sizing: border-box;
   text-align: left;
+  margin-bottom: 40px;
   .image_wrapper {
     width: 80px;
     img {
@@ -28,33 +30,45 @@ const Status = styled.div`
   }
 `
 const Post = styled.a`
-  div {
+  .post_wrapper {
     position: relative;
     display: block;
     background-color: var(--white);
     border-radius: 10px;
-    width: 60%;
+    width: 70%;
     margin: 0 auto;
-    padding: 30px;
+    box-sizing: border-box;
+    padding: 0px;
     display: flex;
     text-align: left;
     transition: 0.3s;
+    margin-bottom: 40px;
     .image_wrapper {
-      width: 80px;
-      img {
-        width: 150px;
-      }
+      flex-basis: 200px;
+      min-width: 200px;
+      height: 150px;
+      background-size: cover;
     }
     .text_wrapper {
       padding-left: 50px;
+      height: 120px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      box-sizing: border-box;
+      position: relative;
+      text-align: justify;
+      
       h2.title {
         font-size: 24px;
         line-height: 24px;
       }
+      p {
+        font-weight: normal;
+      }
     }
   }
-  &:hover div {
-    background-color: var(--sliderBackground);
+  &:hover h2 {
+    text-decoration: underline;
   }
 `
 class NewsItem extends React.Component {
@@ -85,18 +99,22 @@ class NewsItem extends React.Component {
           </div>
         </Status>)
     } else {
+      const imageBg = {
+        backgroundImage: 'url(' + this.state.data.thumbnail + ')'
+      }
+      const text = this.state.data.vycuc.slice(0, 120) + ' ...'
       item = (
-        <Post href={this.state.data.url}>
-          <div className="image_wrapper">
-            <img src={this.state.data.thumbnail} alt="" />
-          </div>
-          <div className="text_wrapper">
-            <h2 className="title">
-              {this.state.data.title}
-            </h2>
-            <p>
-              {this.state.data.vycuc}
-            </p>
+        <Post href={this.state.data.url} target="_blank">
+          <div className="post_wrapper">
+            <div className="image_wrapper" style={imageBg} />
+            <div className="text_wrapper">
+              <h2 className="title">
+                {this.state.data.title}
+              </h2>
+              <p>
+                {text}
+              </p>
+            </div>
           </div>
         </Post>)
     }
