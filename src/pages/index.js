@@ -3,7 +3,6 @@ import styled from 'styled-components'
 import { Link } from 'react-static'
 import { Controller, Scene } from 'react-scrollmagic'
 import logoImg from '../assets/mg_welcome_photo.png'
-import bg_branch from '../assets/bg_branch.svg'
 import bg_branches from '../assets/bg_branches.svg'
 import bg_branch_2 from '../assets/bg_branch_2.svg'
 import bg_branch_3 from '../assets/bg_branch_3.svg'
@@ -14,6 +13,7 @@ import SliderWelcome from '../components/SliderWelcome'
 import MouseScrollIcon from '../components/MouseScrollIcon'
 import Carousel from '../components/Carousel'
 import Testimonials from '../components/Testimonials'
+import News from '../components/News'
 
 const Home = styled.div`
 overflow: hidden;
@@ -320,6 +320,9 @@ export default class Index extends React.Component {
                     </div>
                   </div>
                   <Testimonials />
+                </div>
+                <div className="home_content">
+                  <News />
                 </div>
               </div>
             </ContentWrapper>
