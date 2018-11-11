@@ -122,29 +122,7 @@ const ContentWrapper = styled.div`
     50% {background-position: 0px 0px;}
     100% {background-position: 615px 0px;}
     }
-  } 
-  div.illustration_foto_2 {
-    margin: 0;
-    height: 210px;
-    width: 860px;
-    &:after {
-      background-position: 860px 0;
-      animation: hide_img_2 0.8s;
-    }
-    &.reveal_animation:after {
-      animation: reveal_2 1.5s;
-    }
-    @keyframes reveal_2 {
-    0% {background-position: 860px 0px;}
-    50% {background-position: 0px 0px;}
-    100% {background-position: 860px 0px;}
-    }
-    @keyframes hide_img_2 {
-    0% {background-position: -860px 0px;}
-    50% {background-position: 0px 0px;}
-    100% {background-position: 860px 0px;}
-    }
-  } 
+  }
   .floating_branch_1 {
     position: absolute;
     top: 100px;
@@ -220,6 +198,76 @@ const ContentWrapper = styled.div`
   .service_illustration {
     width: 70%;
     margin: 200px 0 0 30%;
+  }
+  @media (max-width: 1175px) {
+    .home_content {
+      .content_left, .content_right, .content_full_width {
+      flex-basis: 70%;
+      width: 70%;
+      padding: 0;
+      margin-left: 15%;
+      &.padding_bottom_mquery {
+        padding-bottom: 40px;
+      }
+      &.padding_top_mquery {
+        padding-top: 40px;
+      }
+      h4.quote {
+        font-size: 72px;
+        line-height: 72px;
+      }
+      h4.sub_quote_wide {
+        font-size: 18px;
+        font-weight: normal;
+        position: relative;
+        top: 0;
+      }
+      &.padded {
+        padding-top: 40px;
+      }
+      }
+    }
+    .floating_branch_3 {
+      right: -150px;
+    }
+    .hide_mquery {
+      display: none;
+    }
+    .mg_foto_1 {
+      margin: 0 auto !important;
+    }
+    .illustration_foto_1 {
+      display: none;
+    }
+    .service_illustration {
+      width: 70%;
+      margin: 0 15% 40px 15%;
+    }
+    #trigger_foto1 {
+      padding-bottom: 40px;
+    }
+  }
+  @media (max-width: 940px) {
+    .floating_branch_1 {
+      left: -230px;
+    }
+    .floating_branch_2 {
+      right: -200px;
+    }
+    .floating_branch_3 {
+      right: -150px;
+    }
+    .floating_branch_4 {
+      right: -260px;
+    }
+    .first_title {
+      margin-top: 50px;
+    }
+  }
+  @media (max-width: 600px) {
+    .floating_branch_3 {
+      display: none;
+    }
   }
 `
 export default class Services extends React.Component {

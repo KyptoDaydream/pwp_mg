@@ -1,6 +1,7 @@
 import * as React from 'react'
 import styled from 'styled-components'
 import mg_avatar from '../assets/mg_avatar.jpg'
+import { Link } from 'react-static';
 
 const Status = styled.div`
   position: relative;
@@ -27,6 +28,9 @@ const Status = styled.div`
     h3.sub_title {
       margin-bottom: 0;
     }
+  }
+  @media (max-width: 1175px) {
+    width: 100%;
   }
 `
 const Post = styled.a`
@@ -65,6 +69,9 @@ const Post = styled.a`
       p {
         font-weight: normal;
       }
+    }
+    @media (max-width: 1175px) {
+      width: 100%;
     }
   }
   &:hover h2 {

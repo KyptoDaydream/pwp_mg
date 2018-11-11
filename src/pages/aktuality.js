@@ -74,6 +74,60 @@ const ContentWrapper = styled.div`
     margin-bottom: 100px;
     margin-right: 20%;
   }
+  @media (max-width: 1175px) {
+    .home_content {
+      padding-top: 0;
+      .content_left, .content_right, .content_full_width {
+      flex-basis: 70%;
+      width: 70%;
+      padding: 0;
+      margin-left: 15%;
+      &.padding_bottom_mquery {
+        padding-bottom: 40px;
+      }
+      &.padding_top_mquery {
+        padding-top: 40px;
+      }
+      h4.quote {
+        font-size: 72px;
+        line-height: 72px;
+      }
+      h4.sub_quote_wide {
+        font-size: 18px;
+        font-weight: normal;
+        position: relative;
+        top: 0;
+      }
+      &.padded {
+        padding-top: 40px;
+      }
+      }
+    }
+    .first_title {
+      margin-top: 0;
+    }
+    .floating_branch_3 {
+      right: -150px;
+    }
+    .hide_mquery {
+      display: none;
+    }
+    .mg_foto_1 {
+      margin: 0 auto !important;
+    }
+    .news_button {
+      margin-bottom: 20px;
+      margin-right: 0;
+    }
+  }
+  @media (max-width: 940px) {
+    .floating_branch_1 {
+      left: -230px;
+    }
+    .floating_branch_2 {
+      right: -200px;
+    }
+  }
 `
 class Ahoj extends React.Component {
   render () {

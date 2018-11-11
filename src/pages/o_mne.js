@@ -41,6 +41,8 @@ const ContentWrapper = styled.div`
     .content_full_width {
       flex-basis: 100%;
       padding: 120px 185px 120px 185px;
+      width: 100%;
+      box-sizing: border-box;
       .qoute_wrapper {
         position: relative;
         text-align: center;
@@ -213,6 +215,63 @@ const ContentWrapper = styled.div`
   .last_block {
     padding-bottom: 100px;
   }
+  @media (max-width: 1175px) {
+    .home_content {
+      .content_left, .content_right, .content_full_width {
+      flex-basis: 70%;
+      width: 70%;
+      padding: 0;
+      margin-left: 15%;
+      &.padding_bottom_mquery {
+        padding-bottom: 40px;
+      }
+      &.padding_top_mquery {
+        padding-top: 40px;
+      }
+      h4.quote {
+        font-size: 72px;
+        line-height: 72px;
+      }
+      h4.sub_quote_wide {
+        font-size: 18px;
+        font-weight: normal;
+        position: relative;
+        top: 0;
+      }
+      &.padded {
+        padding-top: 40px;
+      }
+      }
+    }
+    .first_title {
+      margin-top: 0;
+    }
+    .floating_branch_3 {
+      right: -150px;
+    }
+    .hide_mquery {
+      display: none;
+    }
+    .mg_foto_1 {
+      margin: 0 auto !important;
+    }
+  }
+  @media (max-width: 940px) {
+    .floating_branch_1 {
+      left: -230px;
+    }
+    .floating_branch_2 {
+      right: -200px;
+    }
+    .floating_branch_3 {
+      right: -150px;
+    }
+  }
+  @media (max-width: 600px) {
+    .floating_branch_3 {
+      display: none;
+    }
+  }
 `
 export default class AbouteMe extends React.Component {
   render () {
@@ -232,7 +291,7 @@ export default class AbouteMe extends React.Component {
             <img alt="branch_bg_2" src={bg_branch_3} />
           </div>
           <div className="home_content">
-            <div className="content_left" id="trigger_foto1">
+            <div className="content_left padding_bottom_mquery" id="trigger_foto1">
               <h2 className="title first_title">Každá žena je iná</h2>
               <h3 className="sub_title">V živote som však zažívala strach tak ako aj Vy.</h3>
               <p className="block_padded">Mária Gáliková začala svoj príbeh premeny na Ministerstve zahraničných vecí v
@@ -258,7 +317,7 @@ export default class AbouteMe extends React.Component {
                 </Scene>
               </Controller>
             </div>
-            <div className="content_full_width">
+            <div className="content_full_width hide_mquery">
               <Controller>
                 <Scene classToggle="reveal_animation" triggerElement="#trigger_foto2">
                   <div className="illustration_foto_2 photo_wrapper">
@@ -267,7 +326,7 @@ export default class AbouteMe extends React.Component {
                 </Scene>
               </Controller>
             </div>
-            <div className="content_left">
+            <div className="content_left padding_top_mquery">
               <p className="block_padded">Vyštudovala tu medzinárodné vzťahy a následne získala doktorát na Paneurópskej
                 vysokej škole, Fakulta masmédií.
               </p>
