@@ -27,4 +27,5 @@ collections:
       - {label: "Type", name: "type", widget: "hidden", default: "clanok"}
       - {label: "Titulok", name: "title", widget: "string"}
       - {label: "Obrázok", name: "thumbnail", widget: "image"}  
-      - {label: "Link", name: "url", widget: "string"}    
+      - {label: "Link", name: "url", widget: "string"}
+      - {label: "Výcuc", name: "vycuc", widget: "string"}     
