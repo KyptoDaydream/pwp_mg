@@ -1,12 +1,12 @@
 import * as React from 'react'
 import styled from 'styled-components'
-import $ from 'jquery'
+import axios from 'axios'
 
 const NewsWrapper = styled.div`
   position: relative;
 `
 
-class ContactButton extends React.Component {
+class News extends React.Component {
   constructor () {
     super()
     this.state = {
@@ -15,12 +15,11 @@ class ContactButton extends React.Component {
   }
 
   componentWillMount () {
-    $.ajax({
-      method: 'GET',
-      url: 'https://www.mariagalikova.sk/posts',
-    }).then(function (response) {
-      this.setState({ posts: JSON.parse(response) })
-    })
+    axios
+      .get('http://codepen.io/jobs.json')
+      .then(result => {
+        this.setState({ posts: result })
+      })
   }
 
   render () {
@@ -33,4 +32,4 @@ class ContactButton extends React.Component {
   }
 }
 
-export default ContactButton
+export default News
