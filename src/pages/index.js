@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Link } from 'react-static'
+import { withRouteData, Link } from 'react-static'
 import { Controller, Scene } from 'react-scrollmagic'
 import logoImg from '../assets/mg_welcome_photo.png'
 import bg_branches from '../assets/bg_branches.svg'
@@ -70,6 +70,7 @@ const ContentWrapper = styled.div`
   background-color: var(--white);
   position: relative !important;
   .home_content {
+    position: relative;
     max-width: 1230px;
     width: 100%;
     margin-right: auto;
@@ -224,13 +225,41 @@ const ContentWrapper = styled.div`
     width: 300px;
     }
   }
-  .hide {
-    display: none;
+  .floating_branch_4 {
+    position: absolute;
+    top: 100px;
+    left: -130px;
+    height: 300px;
+    width: 300px;
+    animation: move_branch_1 15s infinite linear;
+    @keyframes move_branch_1 {
+    0% {transform: rotate(0deg);}
+    25% {transform: rotate(6deg);}
+    50% {transform: rotate(0deg);}
+    75% {transform: rotate(-6deg);}
+    100% {transform: rotate(0deg);}
+    }
+  }
+  .floating_branch_5 {
+    position: absolute;
+    top: 300px;
+    right: -120px;
+    height: 300px;
+    width: 300px;
+    animation: move_branch_2 10s infinite linear;
+    @keyframes move_branch_2 {
+    0% {transform: rotate(0deg);}
+    25% {transform: rotate(-6deg);}
+    50% {transform: rotate(0deg);}
+    75% {transform: rotate(6deg);}
+    100% {transform: rotate(0deg);}
+    }
   }
 `
 
-export default class Index extends React.Component {
+class Index extends React.Component {
   render () {
+    const items = this.props.posts
     return (
       <Home>
         <Controller globalSceneOptions={{ triggerHook: 'onLeave' }}>
@@ -321,8 +350,16 @@ export default class Index extends React.Component {
                   </div>
                   <Testimonials />
                 </div>
-                <div className="home_content">
-                  <News />
+              </div>
+              <div className="home_content">
+                <div className="floating_branch_4">
+                  <img alt="branch_bg_1" src={bg_branch_2} />
+                </div>
+                <div className="floating_branch_5">
+                  <img alt="branch_bg_2" src={bg_branch_3} />
+                </div>
+                <div className="content_full_width">
+                  <News posts={items} location="home" />
                 </div>
               </div>
             </ContentWrapper>
@@ -332,3 +369,5 @@ export default class Index extends React.Component {
     )
   }
 }
+
+export default withRouteData(Index)
