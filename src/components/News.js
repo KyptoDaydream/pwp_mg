@@ -1,5 +1,6 @@
 import * as React from 'react'
 import styled from 'styled-components'
+import $ from 'jquery'
 
 const NewsWrapper = styled.div`
   position: relative;
@@ -14,8 +15,12 @@ class ContactButton extends React.Component {
   }
 
   componentWillMount () {
-    const items = 'asd'
-    this.setState({ posts: items })
+    $.ajax({
+      method: 'GET',
+      url: 'https://www.mariagalikova.sk/posts',
+    }).then(function (response) {
+      this.setState({ posts: JSON.parse(response) })
+    })
   }
 
   render () {
