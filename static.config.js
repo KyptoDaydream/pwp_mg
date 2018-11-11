@@ -24,7 +24,7 @@ function getPosts () {
                 .replace(/ /g, '-')
                 .replace(/[^\w-]+/g, '')
               // Remove unused key //
-              delete dataObj.orig
+              // delete dataObj.orig
               // Push object into items array //
               items.push(dataObj)
             }
@@ -48,13 +48,19 @@ function getPosts () {
 export default {
   plugins: ['react-static-plugin-styled-components'],
   getSiteData: () => ({
-    title: 'React Static with Netlify CMS',
+    title: 'Mária Gáliková',
   }),
   getRoutes: async () => {
     const posts = await getPosts()
     return [
       {
         path: '/',
+        getData: () => ({
+          posts,
+        }),
+      },
+      {
+        path: '/aktuality',
         getData: () => ({
           posts,
         }),

@@ -11,6 +11,7 @@ const Status = styled.div`
   margin: 0 auto;
   padding: 30px;
   display: flex;
+  text-align: left;
   .image_wrapper {
     width: 80px;
     img {
@@ -26,13 +27,42 @@ const Status = styled.div`
     }
   }
 `
-
+const Post = styled.a`
+  div {
+    position: relative;
+    display: block;
+    background-color: var(--white);
+    border-radius: 10px;
+    width: 60%;
+    margin: 0 auto;
+    padding: 30px;
+    display: flex;
+    text-align: left;
+    transition: 0.3s;
+    .image_wrapper {
+      width: 80px;
+      img {
+        width: 150px;
+      }
+    }
+    .text_wrapper {
+      padding-left: 50px;
+      h2.title {
+        font-size: 24px;
+        line-height: 24px;
+      }
+    }
+  }
+  &:hover div {
+    background-color: var(--sliderBackground);
+  }
+`
 class NewsItem extends React.Component {
   constructor (data) {
     super()
     this.state = {
       type: data.post.data.type,
-      title: data.post.data.title
+      data: data.post.data
     }
   }
 
@@ -50,12 +80,25 @@ class NewsItem extends React.Component {
               Statusík
             </h3>
             <p>
-              {this.state.title}
+              {this.state.data.title}
             </p>
           </div>
         </Status>)
     } else {
-      item = ''
+      item = (
+        <Post href={this.state.data.url}>
+          <div className="image_wrapper">
+            <img src={this.state.data.thumbnail} alt="" />
+          </div>
+          <div className="text_wrapper">
+            <h2 className="title">
+              {this.state.data.title}
+            </h2>
+            <p>
+              {this.state.data.vycuc}
+            </p>
+          </div>
+        </Post>)
     }
 
     return (

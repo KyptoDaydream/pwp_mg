@@ -255,6 +255,9 @@ const ContentWrapper = styled.div`
     100% {transform: rotate(0deg);}
     }
   }
+  .news_link {
+    margin-left: 20% !important;
+  }
 `
 
 class Index extends React.Component {
@@ -360,6 +363,7 @@ class Index extends React.Component {
                 </div>
                 <div className="content_full_width">
                   <News posts={items} location="home" />
+                  <Link className="button_text news_link" to="/aktuality">všetky posty</Link>
                 </div>
               </div>
             </ContentWrapper>

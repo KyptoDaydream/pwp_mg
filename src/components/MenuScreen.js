@@ -129,7 +129,9 @@ class MenuScreen extends React.Component {
                   <MenuLink><span data-hover="služby">služby</span></MenuLink>
                 </Link>
                 <MenuLinkAlt className="blue">Želám si aby ľudia začali viac rozpoznávať skutočné hodnoty.</MenuLinkAlt>
-                <MenuLink><span data-hover="aktuality">aktuality</span></MenuLink>
+                <Link to="/aktuality" onClick={this.props.handleClick}>
+                  <MenuLink><span data-hover="aktuality">aktuality</span></MenuLink>
+                </Link>
                 <MenuLinkAlt className="blue">To najnovšie z môjho profesného života.</MenuLinkAlt>
                 <MenuBranch />
               </MenuScreenContent>
