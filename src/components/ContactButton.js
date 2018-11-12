@@ -17,7 +17,6 @@ const TextWrapper = styled.div`
   position: fixed;
   text-align: center;
   line-height: 1;
-  z-index: 5;
   font-size: 1rem;
   font-weight: 500;
   opacity: 1;

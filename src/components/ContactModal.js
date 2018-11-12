@@ -33,6 +33,9 @@ const Modal = styled.div`
   position: relative;
   overflow: hidden;
   background-size: 2000px;
+  @media (max-width: 950px) {
+    width: 90%;
+  }
 `
 const ModalBranch = styled.div`
   position: absolute;
@@ -42,6 +45,9 @@ const ModalBranch = styled.div`
   width: 200px;
   background-image: url(${menu_branch});
   background-size: cover;
+  @media (max-width: 950px) {
+    display: none;
+  }
 `
 const Close = styled.svg`
   cursor: pointer;
@@ -92,6 +98,15 @@ const ModalText = styled.h4`
       background-position: 0 88%;
     }
   }
+  @media (max-width: 950px) {
+    font-size: 18px;
+    &.padding_mquery {
+      margin-top: 120px; 
+    }
+    span::before {
+      line-height: 26px;
+    }
+  }
 `
 class ContactModal extends React.Component {
   render () {
@@ -99,7 +114,7 @@ class ContactModal extends React.Component {
       <ModalWrapper props={this.props.visible}>
         <ModalBackground onClick={this.props.handleClick} />
         <Modal>
-          <ModalText top={60} bottom={0}>Hlaváčikova  35,</ModalText>
+          <ModalText top={60} bottom={0} className="padding_mquery">Hlaváčikova  35,</ModalText>
           <ModalText top={0} bottom={60}>841 05 Bratislava</ModalText>
           <ModalText top={0} bottom={60}>0911 544 533</ModalText>
           <ModalText top={0} bottom={0}><span data-hover="ahoj@mariagalikova.sk"><a href="mailto:ahoj@mariagalikova.sk">ahoj@mariagalikova.sk</a></span></ModalText>
