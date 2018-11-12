@@ -64,7 +64,7 @@ const ContentWrapper = styled.div`
   }
   .floating_branch_3 {
     position: absolute;
-    top: 800px;
+    top: 1200px;
     right: 0px;
     height: 600px;
     width: 300px;
@@ -131,7 +131,7 @@ const ContentWrapper = styled.div`
 `
 class Ahoj extends React.Component {
   render () {
-    const items = this.props.posts
+    const items = this.props.posts.reverse()
     console.log(items)
     return (
       <NewsWrapper>

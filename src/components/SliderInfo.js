@@ -6,6 +6,15 @@ const InfoWrapper = styled.div`
   position: absolute;
   top: 120px;
   left: -246px;
+  @media (max-width: 930px) {
+    left: 200px; 
+  }
+  @media (max-width: 730px) {
+    left: 150px;
+  }
+  @media (max-width: 500px) {  
+    left: 90px;
+  }
 `
 const TimeIndicator = styled.div`
   display: block;

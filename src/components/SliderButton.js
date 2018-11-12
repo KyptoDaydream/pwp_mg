@@ -14,6 +14,12 @@ const Button = styled.svg`
   rect {
     fill: transparent;
   }
+  @media (max-width: 930px) {
+    left: ${props => props.left === 40 ? 500 : 540}px;
+  }
+  @media (max-width: 730px) {
+    display: none;
+  }
 `
 class SliderButton extends React.Component {
   constructor (props) {
@@ -53,7 +59,7 @@ class SliderButton extends React.Component {
   }
 
   render () {
-    const left = this.props.type === 'prev' ? 40 : 80
+    let left = this.props.type === 'prev' ? 40 : 80
     const path = this.props.type === 'prev' ? 'M0,11.2c0-0.4,0.2-0.8,0.5-1.1l9.6-9.6c0.6-0.6,1.6-0.6,2.2,0c0.6,0.6,0.6,1.6,0,2.2l-8.5,8.5l8.5,8.5c0.6,0.6,0.6,1.6,0,2.2c-0.6,0.6-1.6,0.6-2.2,0l-9.6-9.6C0.2,12,0,11.6,0,11.2z' : 'M12.3,12.3l-9.6,9.6c-0.6,0.6-1.6,0.6-2.2,0c-0.6-0.6-0.6-1.6,0-2.2L9,11.2L0.5,2.7c-0.6-0.6-0.6-1.6,0-2.2c0.6-0.6,1.6-0.6,2.2,0l9.6,9.6c0.3,0.3,0.5,0.7,0.5,1.1C12.8,11.6,12.6,12,12.3,12.3z'
     const fill = this.state.move.x === 0 ? "#212D50" : '#FFFFFF'
     return (

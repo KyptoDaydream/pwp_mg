@@ -4,6 +4,7 @@ import { withRouteData, Link } from 'react-static'
 import { Controller, Scene } from 'react-scrollmagic'
 import logoImg from '../assets/mg_welcome_photo.png'
 import bg_branches from '../assets/bg_branches.svg'
+import bg_branches_2 from '../assets/bg_branches_2.svg'
 import bg_branch_2 from '../assets/bg_branch_2.svg'
 import bg_branch_3 from '../assets/bg_branch_3.svg'
 import olive_branch from '../assets/olive_branch.png'
@@ -25,8 +26,19 @@ const WelcomeScreen = styled.div`
   .welcomePhoto {
     position: absolute;
     bottom: 0;
-    left: 340px;
+    left: calc(37.5% - 136px);
     z-index: 9990;
+  }
+  @media (max-width: 930px) {
+    background: var(--sliderBackground);  
+    .welcomePhoto {
+      left: 310px;
+    }
+  }
+  @media (max-width: 730px) {  
+    .welcomePhoto {
+      left: 10px;
+    }
   }
 `
 const WelcomeTitle = styled.h1`
@@ -34,7 +46,7 @@ const WelcomeTitle = styled.h1`
   font-family: var(--titleFontFamily);
   font-size: 80px;
   line-height: 1.1em;
-  left: 230px;
+  left: calc(37.5% - 246px);
   bottom: 120px;
   color: var(--red);
   z-index: 9991;
@@ -44,7 +56,17 @@ const WelcomeTitle = styled.h1`
     0% {opacity:0;}
     50% {opacity:0;}
     100% {opacity:1;}
-}
+  }
+  @media (max-width: 930px) {
+    left: 200px; 
+  }
+  @media (max-width: 730px) {  
+    left: 150px;
+    bottom: 70px; 
+  }
+  @media (max-width: 500px) {  
+    left: 90px;
+  }
 `
 const WelcomeSubTitle = styled.h2`
   position: absolute;
@@ -52,19 +74,36 @@ const WelcomeSubTitle = styled.h2`
   font-size: 24px;
   text-transform: uppercase;
   line-height: 1.1em;
-  left: 230px;
+  left: calc(37.5% - 246px);
   bottom: 110px;
   color: var(--blue);
   z-index: 9991;
   font-weight: 400;
   max-width: 400px;
+  @media (max-width: 930px) {
+    left: 200px; 
+  }
+  @media (max-width: 730px) {  
+    left: 150px;
+    bottom: 60px; 
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  @media (max-width: 500px) {  
+    left: 90px;
+  }
 `
 const SliderSpace = styled.div`
-  width: var(--menuWidth);
+  width: 62.5%;
   height: 100vh;
   float: right;
   background-color: var(--white);
   position: relative;
+  @media (max-width: 930px) {
+    width: 100%;
+    background: var(--sliderBackground);  
+  }
 `
 const ContentWrapper = styled.div`
   background-color: var(--white);
@@ -227,7 +266,7 @@ const ContentWrapper = styled.div`
   }
   .floating_branch_4 {
     position: absolute;
-    top: 100px;
+    top: 3000px;
     left: -130px;
     height: 300px;
     width: 300px;
@@ -242,7 +281,7 @@ const ContentWrapper = styled.div`
   }
   .floating_branch_5 {
     position: absolute;
-    top: 300px;
+    top: 3200px;
     right: -120px;
     height: 300px;
     width: 300px;
@@ -258,11 +297,119 @@ const ContentWrapper = styled.div`
   .news_link {
     margin-left: 20% !important;
   }
+  .hide_normal {
+    display: none !important;
+  }
+  @media (max-width: 1175px) {
+    .home_content {
+      .content_left, .content_right, .content_full_width {
+      flex-basis: 70%;
+      width: 70%;
+      padding: 0;
+      margin-left: 15%;
+      &.padding_bottom_mquery {
+        padding-bottom: 40px;
+      }
+      &.padding_top_mquery {
+        padding-top: 40px;
+      }
+      h4.quote {
+        font-size: 72px;
+        line-height: 72px;
+        &.margin_top {
+          margin-top: 40px;
+        }
+      }
+      h4.sub_quote {
+        font-size: 18px;
+        font-weight: normal;
+        position: relative;
+        top: 0;
+      }
+      &.padded {
+        padding-top: 40px;
+      }
+      }
+      .button_text {
+        margin-bottom: 40px;
+      }
+      .hide_normal {
+        display: inline-block;
+      }
+      .hide_mquery {
+        display: none;
+      }
+      .news_link {
+        margin-left: 0 !important;
+      }
+      .content_full_width {
+        padding-top: 40px;
+        padding-bottom: 40px;
+      }
+    }
+    .first_title {
+      margin-top: 100;
+    }
+    .floating_branch_3 {
+      right: -150px;
+    }
+    .hide_mquery {
+      display: none;
+    }
+    .mg_foto_1 {
+      margin: 0 auto !important;
+    }
+    .margin_top_mquery {
+      margin-top: 50px;
+    }
+  }
+  @media (max-width: 940px) {
+    .floating_branch_1, .floating_branch_4 {
+      left: -230px;
+    }
+    .floating_branch_2, .floating_branch_5 {
+      right: -200px;
+    }
+    .floating_branch_3 {
+      right: -150px;
+    }
+    .altered_bg {
+    background-image: url(${bg_branches_2});
+    }
+  }
+  @media (max-width: 600px) {
+    .floating_branch_3 {
+      display: none;
+    }
+    .floating_branch_4 { 
+      top: 3500px;
+    }
+    .floating_branch_5 { 
+      top: 3700px;
+    }
+  }
 `
 
 class Index extends React.Component {
+  constructor () {
+    super()
+ 
+    this.state = {
+      screen_width: typeof window !== 'undefined' ? window.innerWidth : 3000,
+    }
+    this.updateDimensions = this.updateDimensions.bind(this)
+  }
+
+  componentDidMount () {
+    window.addEventListener('resize', this.updateDimensions)
+  }
+
+  updateDimensions () {
+    this.setState({ screen_width: window.innerWidth })
+  }
+
   render () {
-    const items = this.props.posts
+    const items = this.props.posts.length > 3 ? this.props.posts.reverse().slice(0, 3) : this.props.posts.reverse()
     return (
       <Home>
         <Controller globalSceneOptions={{ triggerHook: 'onLeave' }}>
@@ -288,6 +435,12 @@ class Index extends React.Component {
               <div className="floating_branch_3">
                 <img alt="olive_branch" src={olive_branch} />
               </div>
+              <div className="floating_branch_4">
+                <img alt="branch_bg_1" src={bg_branch_2} />
+              </div>
+              <div className="floating_branch_5">
+                <img alt="branch_bg_2" src={bg_branch_3} />
+              </div>
               <div className="home_content" id="trigger_foto1">
                 <div className="content_left">
                   <h2 className="title first_title">Vitajte</h2>
@@ -306,7 +459,7 @@ class Index extends React.Component {
                   </Controller>
                 </div>
                 <div className="content_full_width">
-                  <h4 className="quote">Želám si</h4>
+                  <h4 className="quote margin_top">Želám si</h4>
                   <div className="qoute_wrapper">
                     <h4 className="sub_quote">aby ľudia začali viac rozpoznávať skutočné hodnoty a dostali medziľudské
                       vzťahy na vyššiu úroveň
@@ -336,9 +489,10 @@ class Index extends React.Component {
                   <p>Medzi moje základné hodnoty, na ktorých staviam svoje služby sú: úprimnosť,
                     autentickosť, spoľahlivosť, ústretovosť a empatia.
                   </p>
-                  <Link className="button_text" to="/o_mne">viac o mne</Link>
+                  <Link className="button_text hide_normal" to="/sluzby">moje sluzby</Link>
+                  <Link className="button_text hide_mquery" to="/o_mne">viac o mne</Link>
                 </div>
-                <div className="content_right">
+                <div className="content_right hide_mquery">
                   <Carousel />
                 </div>
               </div>
@@ -355,13 +509,7 @@ class Index extends React.Component {
                 </div>
               </div>
               <div className="home_content">
-                <div className="floating_branch_4">
-                  <img alt="branch_bg_1" src={bg_branch_2} />
-                </div>
-                <div className="floating_branch_5">
-                  <img alt="branch_bg_2" src={bg_branch_3} />
-                </div>
-                <div className="content_full_width">
+                <div className="content_full_width margin_top_mquery">
                   <News posts={items} location="home" />
                   <Link className="button_text news_link" to="/aktuality">všetky posty</Link>
                 </div>

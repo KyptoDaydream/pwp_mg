@@ -1,7 +1,6 @@
 import * as React from 'react'
 import styled from 'styled-components'
 import mg_avatar from '../assets/mg_avatar.jpg'
-import { Link } from 'react-static';
 
 const Status = styled.div`
   position: relative;
@@ -17,6 +16,8 @@ const Status = styled.div`
   margin-bottom: 40px;
   .image_wrapper {
     width: 80px;
+    flex-basis: 80px;
+    min-width: 80px;
     img {
       width: 70px;
       border: 5px solid var(--white);
@@ -37,7 +38,6 @@ const Post = styled.a`
   .post_wrapper {
     position: relative;
     display: block;
-    background-color: var(--white);
     border-radius: 10px;
     width: 70%;
     margin: 0 auto;

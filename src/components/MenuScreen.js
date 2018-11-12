@@ -16,6 +16,9 @@ const MenuScreenBackgroud = styled.div`
   height: 100vh;
   background-color: var(--blueTransparent);
   cursor: url(${close}), auto;
+  @media (max-width: 800px) {
+    display: none;
+  }
 `
 const MenuScreenContent = styled.div`
   position: absolute;
@@ -25,6 +28,9 @@ const MenuScreenContent = styled.div`
   background-color: var(--pink);
   background-image: url(${menu_bg});
   background-size: cover;
+  @media (max-width: 800px) {
+    width: 100vw;
+  }
 `
 const MenuBranch = styled.div`
   position: absolute;
@@ -34,6 +40,11 @@ const MenuBranch = styled.div`
   width: 200px;
   background-image: url(${menu_branch});
   background-size: cover;
+  @media (max-width: 500px) {
+    background-position: 100px 0;
+    background-repeat: no-repeat;
+    background-image: none;
+  }
 `
 const WelcomeTitle = styled.h4`
   font-family: var(--welcomeFontFamily);
@@ -86,19 +97,31 @@ const MenuLinkAlt = styled.p`
   &.blue {
     color: var(--blue);
   }
+  @media (max-width: 500px) {
+    max-width: 260px;
+  }
 `
 class MenuScreen extends React.Component {
   constructor (props) {
     super()
  
     this.state = {
-      screen_width: typeof window !== 'undefined' ? window.innerWidth : 2000,
+      screen_width: typeof window !== 'undefined' ? window.innerWidth : 3000,
     }
+    this.updateDimensions = this.updateDimensions.bind(this)
+  }
+
+  componentDidMount() {
+    window.addEventListener('resize', this.updateDimensions)
+  }
+
+  updateDimensions() {
+    this.setState({ screen_width: window.innerWidth })
   }
 
   render () {
     const x_background = this.props.display ? 0 : this.state.screen_width
-    const x_content = this.props.display ? 550 : this.state.screen_width
+    const x_content = this.props.display ? (this.state.screen_width < 800 ? 0 : this.state.screen_width - 800) : this.state.screen_width
     return (
         <Motion 
           defaultStyle={{

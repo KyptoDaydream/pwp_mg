@@ -23,6 +23,9 @@ const SlideCard = styled.div`
     width: 600px;
     height: 600px;
   }
+  @media (max-width: 930px) {
+    display: none;
+  }
 `
 
 class Slide extends React.Component {
