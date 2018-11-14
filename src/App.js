@@ -219,6 +219,11 @@ const PreloaderWindow = styled.div`
 	.st2{fill:#05444E;}
 	.st3{fill:#FAA61A;}
 	.st4{fill:#393D3F;}
+  @media (max-width: 600px) {  
+    .loader_wrapper {
+      margin-top: 0;
+    }
+  }
 `
 const loading_style = {
   zIndex: 100000000,

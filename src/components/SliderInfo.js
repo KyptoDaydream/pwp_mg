@@ -14,6 +14,17 @@ const InfoWrapper = styled.div`
   }
   @media (max-width: 500px) {  
     left: 90px;
+    top: 180px;
+  }
+  @media (min-width: 1500px) {
+    bottom: 30%;
+    left: -346px;
+  }
+  @media (max-height: 700px) {  
+    top: 120px;
+  }
+  @media (max-height: 600px) {  
+    display: none;
   }
 `
 const TimeIndicator = styled.div`
@@ -28,6 +39,12 @@ const TimeIndicator = styled.div`
   @keyframes slide {
     0% {width: 0px;}
     100% {width: 290px;}
+  }
+  @media (max-width: 500px) {  
+    @keyframes slide {
+      0% {width: 0px;}
+      100% {width: 220px;}
+    }
   }
 `
 const SliderCounter = styled.div`
@@ -62,6 +79,9 @@ const SliderText = styled.p`
     0% {opacity: 0;}
     10% {opacity: 1;}
     100% {opacity: 1;}
+  }
+  @media (max-width: 500px) {  
+    max-width: 200px;
   }
 `
 class SliderInfo extends React.Component {

@@ -42,6 +42,18 @@ const WelcomeScreen = styled.div`
       left: 10px;
     }
   }
+  @media (max-width: 500px) {  
+    .welcomePhoto {
+      left: 0;
+      width: 450px;
+    }
+  }
+  @media (min-width: 1500px) {
+    .welcomePhoto {
+      left: calc(37.5% - 250px);
+      width: 600px;
+    }
+  }
 `
 const WelcomeTitle = styled.h1`
   position: absolute;
@@ -68,6 +80,15 @@ const WelcomeTitle = styled.h1`
   }
   @media (max-width: 500px) {  
     left: 90px;
+    font-size: 62px;
+  }
+  @media (max-width: 320px) {  
+    left: 80px;
+    font-size: 48px;
+  }
+  @media (min-width: 1500px) {
+    bottom: 30%;
+    left: calc(37.5% - 346px);
   }
 `
 const WelcomeSubTitle = styled.h2`
@@ -94,6 +115,16 @@ const WelcomeSubTitle = styled.h2`
   }
   @media (max-width: 500px) {  
     left: 90px;
+    font-size: 18px;
+  }
+  @media (max-width: 320px) {  
+    bottom: 50px;
+    left: 80px;
+    font-size: 14px;
+  }
+  @media (min-width: 1500px) {
+    bottom: 30%;
+    left: calc(37.5% - 346px);
   }
 `
 const SliderSpace = styled.div`

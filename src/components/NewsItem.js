@@ -33,6 +33,14 @@ const Status = styled.div`
   @media (max-width: 1175px) {
     width: 100%;
   }
+  @media (max-width: 500px) {
+    .image_wrapper {
+      display: none;
+    }
+    .text_wrapper {
+    padding-left: 0px;
+    }
+  }
 `
 const Post = styled.a`
   .post_wrapper {
@@ -61,7 +69,6 @@ const Post = styled.a`
       box-sizing: border-box;
       position: relative;
       text-align: justify;
-      
       h2.title {
         font-size: 24px;
         line-height: 24px;
@@ -72,6 +79,19 @@ const Post = styled.a`
     }
     @media (max-width: 1175px) {
       width: 100%;
+    }
+    @media (max-width: 500px) {
+      flex-wrap: wrap;
+    .image_wrapper {
+      flex-basis: 100%;
+      min-width: 100%;
+      height: 150px;
+      }
+      .text_wrapper {
+        padding-left: 0;
+        flex-basis: 100%;
+        min-width: 100%;
+      }
     }
   }
   &:hover h2 {

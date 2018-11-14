@@ -21,6 +21,9 @@ const MouseIcon = styled.div`
   from {transform: translateY(0px);}
   to {transform: translateY(-15px);}
   }
+  @media (max-width: 320px) {  
+    display: none;
+  }
 `
 const TooltipWrapper = styled.div`
   position: relative;

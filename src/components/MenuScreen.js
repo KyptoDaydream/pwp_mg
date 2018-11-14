@@ -100,6 +100,9 @@ const MenuLinkAlt = styled.p`
   @media (max-width: 500px) {
     max-width: 260px;
   }
+  @media (max-height: 630px) {
+    display: none;
+  }
 `
 class MenuScreen extends React.Component {
   constructor (props) {

@@ -20,6 +20,9 @@ const Button = styled.svg`
   @media (max-width: 730px) {
     display: none;
   }
+  @media (min-width: 1500px) {
+    left: ${props => props.left === 40 ? 0 : 40}px;
+  }
 `
 class SliderButton extends React.Component {
   constructor (props) {

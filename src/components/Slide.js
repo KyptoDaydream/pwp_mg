@@ -28,6 +28,12 @@ const SlideCard = styled.div`
   @media (max-width: 930px) {
     display: none;
   }
+  @media (min-width: 1500px) {
+    .slideImage {
+      width: 800px;
+      height: 800px;
+    }
+  }
 `
 
 class Slide extends React.Component {
