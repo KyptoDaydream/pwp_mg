@@ -4,6 +4,9 @@ import Slide from './Slide'
 import data from '../data/sliderData'
 import SliderButton from './SliderButton'
 import SliderInfo from './SliderInfo'
+import slide_1 from '../assets/mg_illustracia_1.png'
+import slide_2 from '../assets/mg_illustracia_2.png'
+import slide_3 from '../assets/mg_illustracia_3.png'
 
 const SliderWrapper = styled.div`
   width: 100%;
@@ -22,6 +25,12 @@ class SliderWelcome extends React.Component {
   }
 
   componentDidMount () {
+    const images = [slide_1, slide_2, slide_3]
+    images.forEach(picture => {
+      const img = new Image()
+      img.src = picture.fileName
+    })
+
     this.interval = setInterval(() => {
       this.nextProperty()
     }, 10000)
