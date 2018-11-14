@@ -111,6 +111,9 @@ const ContentWrapper = styled.div`
   background-color: var(--white);
   position: relative !important;
   .hide {
+    position: absolute;
+    width: 0;
+    height: 0;
     display: none;
   }
   .home_content {
@@ -431,6 +434,8 @@ class Index extends React.Component {
           </Scene>
           <Scene pin>
             <ContentWrapper>
+              <img src={slide_2} alt="" className="hide" />
+              <img src={slide_3} alt="" className="hide" />
               <div className="floating_branch_1">
                 <img alt="branch_bg_1" src={bg_branch_2} />
               </div>
@@ -522,8 +527,6 @@ class Index extends React.Component {
             </ContentWrapper>
           </Scene>
         </Controller>
-        <img src={slide_2} alt="" className="hide" />
-        <img src={slide_3} alt="" className="hide" />
       </Home>
     )
   }
