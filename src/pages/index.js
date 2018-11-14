@@ -15,6 +15,8 @@ import MouseScrollIcon from '../components/MouseScrollIcon'
 import Carousel from '../components/Carousel'
 import Testimonials from '../components/Testimonials'
 import News from '../components/News'
+import slide_2 from '../assets/mg_illustracia_2.png'
+import slide_3 from '../assets/mg_illustracia_3.png'
 
 const Home = styled.div`
 overflow: hidden;
@@ -108,6 +110,9 @@ const SliderSpace = styled.div`
 const ContentWrapper = styled.div`
   background-color: var(--white);
   position: relative !important;
+  .hide {
+    display: none;
+  }
   .home_content {
     position: relative;
     max-width: 1230px;
@@ -517,6 +522,8 @@ class Index extends React.Component {
             </ContentWrapper>
           </Scene>
         </Controller>
+        <img src={slide_2} alt="" className="hide" />
+        <img src={slide_3} alt="" className="hide" />
       </Home>
     )
   }
