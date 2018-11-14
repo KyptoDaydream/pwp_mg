@@ -1,12 +1,15 @@
 import React from 'react'
 import { Router, Link, Head } from 'react-static'
 import styled, { injectGlobal } from 'styled-components'
+import { Preloader, Placeholder } from 'react-preloading-screen'
 import Routes from 'react-static-routes'
 import Logo from 'components/Logo'
 import Linkedin from 'components/Linkedin'
 import ContactButton from './components/ContactButton'
 import HamburgerMenu from './components/BurgerMenu'
 import title_bg from './assets/title_bg.svg'
+import loading_logo from './assets/loading_logo.png'
+
 
 injectGlobal`
   body {
@@ -133,29 +136,134 @@ const AppStyles = styled.div`
     }
   }
 `
+const PreloaderWindow = styled.div`
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  background-color: #F2EFEA;
+  position: fixed;
+  z-index: 1000000000;
+  transition: 0.5s;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  .lds-ellipsis {
+    display: inline-block;
+    position: relative;
+    width: 64px;
+    height: 64px;
+  }
+  .lds-ellipsis div {
+    position: absolute;
+    top: 27px;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: #F69676;
+    animation-timing-function: cubic-bezier(0, 1, 1, 0);
+  }
+  .lds-ellipsis div:nth-child(1) {
+    left: 6px;
+    animation: lds-ellipsis1 0.6s infinite;
+  }
+  .lds-ellipsis div:nth-child(2) {
+    left: 6px;
+    animation: lds-ellipsis2 0.6s infinite;
+  }
+  .lds-ellipsis div:nth-child(3) {
+    left: 26px;
+    animation: lds-ellipsis2 0.6s infinite;
+  }
+  .lds-ellipsis div:nth-child(4) {
+    left: 45px;
+    animation: lds-ellipsis3 0.6s infinite;
+  }
+  @keyframes lds-ellipsis1 {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  @keyframes lds-ellipsis3 {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0);
+    }
+  }
+  @keyframes lds-ellipsis2 {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(19px, 0);
+    }
+  }
+  .loader_wrapper {
+    color: #212D50;
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: 1.04px
+    line-height: 21px;
+    margin-top: 40px;
+    text-transform: uppercase;
+    flex-basis: 100%;
+    text-align: center;
+    width: 100%;
+    min-width: 100%;
+  }
+  .loader_image {
+    width: 250px;
+    height: 125px;
+    background-image: url(${loading_logo});
+    background-size: cover;
+  }
+`
 
 const App = () => (
-  <Router>
-    <AppStyles>
-      <Head>
-        <meta charSet="UTF-8" />
-        <title>Mária Gáliková</title>
-        <link rel="shortcut icon" type="image/png" href="/favicon.png" />
-        <link href="https://fonts.googleapis.com/css?family=Pacifico|Poppins:400,700,900&amp;subset=latin-ext" rel="stylesheet" />
-      </Head>
-      <Logo />
-      <HamburgerMenu />
-      <Linkedin />
-      <ContactButton />
-      <nav>
-        <Link exact to="/">Home</Link>
-        <Link to="/blog">Blog</Link>
-      </nav>
-      <div className="content">
-        <Routes />
-      </div>
-    </AppStyles>
-  </Router>
+  <Preloader className="preload">
+    <Placeholder>
+      <PreloaderWindow>
+        <div className="loader_image" />
+        <div className="loader_wrapper">
+          stránka sa načítava
+        </div>
+        <div className="lds-ellipsis">
+          <div />
+          <div />
+          <div />
+          <div />
+        </div>
+      </PreloaderWindow>
+    </Placeholder>
+    <Router>
+      <AppStyles>
+        <Head>
+          <meta charSet="UTF-8" />
+          <title>Mária Gáliková</title>
+          <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+          <link href="https://fonts.googleapis.com/css?family=Pacifico|Poppins:400,700,900&amp;subset=latin-ext" rel="stylesheet" />
+        </Head>
+        <Logo />
+        <HamburgerMenu />
+        <Linkedin />
+        <ContactButton />
+        <nav>
+          <Link exact to="/">Home</Link>
+          <Link to="/blog">Blog</Link>
+        </nav>
+        <div className="content">
+          <Routes />
+        </div>
+      </AppStyles>
+    </Router>
+  </Preloader>
+  
 )
 
 export default App
