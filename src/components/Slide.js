@@ -1,6 +1,8 @@
 import * as React from 'react'
 import styled from 'styled-components'
 import slide_1 from '../assets/mg_illustracia_1.png'
+import slide_2 from '../assets/mg_illustracia_2.png'
+import slide_3 from '../assets/mg_illustracia_3.png'
 
 const SlideCard = styled.div`
   width: 100%;
@@ -46,7 +48,7 @@ class Slide extends React.Component {
   }
 
   render () {
-    const image = this.props.property.index === 0 ? slide_1 : slide_1
+    const image = this.props.property.index === 0 ? slide_1 : (this.props.property.index === 1 ? slide_2 : slide_3)
     return (
       <SlideCard props={this.props.property} innerRef={this.selectSlideCard} className="run_animation">
         <img alt="slide1" src={image} className="slideImage" />
