@@ -143,7 +143,6 @@ const PreloaderWindow = styled.div`
   margin: 0;
   background-color: #F2EFEA;
   position: fixed;
-  z-index: 1000000000;
   transition: 0.5s;
   display: flex;
   flex-wrap: wrap;
@@ -224,9 +223,11 @@ const PreloaderWindow = styled.div`
     background-size: cover;
   }
 `
-
+const loading_style = {
+  zIndex: 100000000,
+}
 const App = () => (
-  <Preloader className="preload">
+  <Preloader className="preload" style={loading_style}>
     <Placeholder>
       <PreloaderWindow>
         <div className="loader_image" />
