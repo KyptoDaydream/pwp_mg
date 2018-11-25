@@ -131,8 +131,6 @@ const ContentWrapper = styled.div`
 `
 class Ahoj extends React.Component {
   render () {
-    const items = this.props.posts.reverse()
-    console.log(items)
     return (
       <NewsWrapper>
         <ContentWrapper>
@@ -150,7 +148,7 @@ class Ahoj extends React.Component {
               <a className="button_text news_button" target="_blank" href="https://www.linkedin.com/in/m%C3%A1ria-g%C3%A1likov%C3%A1/">
                 viac info
               </a>
-              <News posts={items} location="home" />
+              <News posts={this.props.posts} location="aktuality" />
             </div>
           </div>
         </ContentWrapper>

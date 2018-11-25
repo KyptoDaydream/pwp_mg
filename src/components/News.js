@@ -10,10 +10,9 @@ class News extends React.Component {
   constructor (data) {
     super()
     this.state = {
-      posts: data.location === 'home' ? data.posts : data.posts,
+      posts: data.location === 'home' ? (data.posts.length > 3 ? data.posts.reverse().slice(0, 3) : data.posts.reverse()) : data.posts.reverse(),
     }
   }
-
   render () {
     return (
       <NewsWrapper>

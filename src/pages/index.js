@@ -448,7 +448,6 @@ class Index extends React.Component {
   }
 
   render () {
-    const items = this.props.posts.length > 3 ? this.props.posts.reverse().slice(0, 3) : this.props.posts.reverse()
     return (
       <Home>
         <Controller globalSceneOptions={{ triggerHook: 'onLeave' }}>
@@ -551,7 +550,7 @@ class Index extends React.Component {
               </div>
               <div className="home_content">
                 <div className="content_full_width margin_top_mquery">
-                  <News posts={items} location="home" />
+                  <News posts={this.props.posts} location="home" />
                   <Link className="button_text news_link" to="/aktuality">všetky posty</Link>
                 </div>
               </div>
