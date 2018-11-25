@@ -90,7 +90,6 @@ class Clanok extends React.Component {
             <img alt="branch_bg_2" src={bg_branch_3} />
           </div>
           <div className="content_wrapper">
-            <img className="thumbnail_image" src={this.props.post.data.thumbnail} alt="" />
             <Markdown source={this.props.post.content} escapeHtml={false} />
             <Link className="button_text" to="/aktuality">všetky články</Link>
           </div>
