@@ -160,7 +160,7 @@ class NewsItem extends React.Component {
     super()
     this.state = {
       type: data.post.data.type,
-      data: data.post.data
+      post: data.post
     }
   }
 
@@ -177,23 +177,24 @@ class NewsItem extends React.Component {
               Statusík
             </h3>
             <p>
-              {this.state.data.title}
+              {this.state.post.data.title}
             </p>
           </div>
         </Status>)
     } else if (this.state.type === 'clanok') {
+      console.log(this.state.post)
       const imageBg = {
-        backgroundImage: 'url(' + this.state.data.thumbnail + ')'
+        backgroundImage: 'url(' + this.state.post.data.thumbnail + ')'
       }
-      const text = 'asdasdasdas'
+      const text = this.state.post.content.slice(0, 120) + ' ...'
       item = (
-        <Link to={`/aktuality/clanky/${this.state.data.slug}`}>
-          <Post href={this.state.data.url} target="_blank">
+        <Link to={`/aktuality/clanky/${this.state.post.data.slug}`}>
+          <Post href={this.state.post.data.url} target="_blank">
             <div className="post_wrapper">
               <div className="image_wrapper" style={imageBg} />
               <div className="text_wrapper">
                 <h2 className="title">
-                  {this.state.data.title}
+                  {this.state.post.data.title}
                 </h2>
                 <p>
                   {text}
@@ -204,16 +205,16 @@ class NewsItem extends React.Component {
         </Link>)
     } else {
       const imageBg = {
-        backgroundImage: 'url(' + this.state.data.thumbnail + ')'
+        backgroundImage: 'url(' + this.state.post.data.thumbnail + ')'
       }
-      const text = this.state.data.vycuc.slice(0, 120) + ' ...'
+      const text = this.state.post.data.vycuc.slice(0, 120) + ' ...'
       item = (
-        <PostLink href={this.state.data.url} target="_blank">
+        <PostLink href={this.state.post.data.url} target="_blank">
           <div className="post_wrapper">
             <div className="image_wrapper" style={imageBg} />
             <div className="text_wrapper">
               <h2 className="title">
-                {this.state.data.title}
+                {this.state.post.data.title}
               </h2>
               <p>
                 {text}
