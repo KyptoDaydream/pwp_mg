@@ -7,7 +7,7 @@ public_folder: "/uploads" # Folder path where uploaded files will be accessed, r
 
 collections:
   - name: "status" # Used in routes, e.g., /admin/collections/blog
-    label: "status" # Used in the UI
+    label: "Status" # Used in the UI
     folder: "src/posts" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{hour}}-{{minute}}-{{second}}" # Filename template, e.g., YYYY-MM-DD-title.md
@@ -17,7 +17,7 @@ collections:
       - {label: "Type", name: "type", widget: "hidden", default: "status"}
       - {label: "Status", name: "title", widget: "string"}
   - name: "odkaz" # Used in routes, e.g., /admin/collections/blog
-    label: "odkaz" # Used in the UI
+    label: "Odkaz" # Used in the UI
     folder: "src/posts" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{hour}}-{{minute}}-{{second}}" # Filename template, e.g., YYYY-MM-DD-title.md
@@ -29,8 +29,8 @@ collections:
       - {label: "Obrázok", name: "thumbnail", widget: "image"}  
       - {label: "Link", name: "url", widget: "string"}
       - {label: "Výcuc", name: "vycuc", widget: "string"}    
-  - name: "odkaz" # Used in routes, e.g., /admin/collections/blog
-    label: "odkaz" # Used in the UI
+  - name: "clanok" # Used in routes, e.g., /admin/collections/blog
+    label: "Článok" # Used in the UI
     folder: "src/posts" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{hour}}-{{minute}}-{{second}}--{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
