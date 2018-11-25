@@ -5,10 +5,12 @@ import Markdown from 'react-markdown'
 import menu_bg from '../assets/menu_bg.svg'
 import bg_branch_2 from '../assets/bg_branch_2.svg'
 import bg_branch_3 from '../assets/bg_branch_3.svg'
+import menu_branch from '../assets/menu_branch.svg'
 
 const PostWrapper = styled.div`
   width: 100vw;
   .post_header {
+    position: relative;
     background-image: url(${menu_bg});
     background-repeat: no-repeat;
     background-color: var(--red);
@@ -72,12 +74,36 @@ const PostWrapper = styled.div`
       }
     }
   }
+  @media (max-width: 950px) {
+    .floating_branch_2, .floating_branch_1 {
+      display: none;
+    }
+    .post_content, .post_header {
+      padding-left: 80px;
+      padding-right: 80px;
+      max-width: 950px;
+      box-sizing: border-box;
+    }
+  }
+`
+const ModalBranch = styled.div`
+  position: absolute;
+  bottom: -100px;
+  right: 0px;
+  height: 350px;
+  width: 200px;
+  background-image: url(${menu_branch});
+  background-size: cover;
+  @media (max-width: 950px) {
+    display: none;
+  }
 `
 class Clanok extends React.Component {
   render () {
     return (
       <PostWrapper>
         <div className="post_header">
+          <ModalBranch />
           <h2 className="post_header_title">
             {this.props.post.data.title}
           </h2>
