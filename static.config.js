@@ -64,6 +64,13 @@ export default {
         getData: () => ({
           posts,
         }),
+        children: posts.map(post => ({
+          path: `/clanky/${post.data.slug}`,
+          component: 'src/containers/Post',
+          getData: () => ({
+            post,
+          }),
+        })),
       },
     ]
   },

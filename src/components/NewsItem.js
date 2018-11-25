@@ -1,5 +1,6 @@
 import * as React from 'react'
 import styled from 'styled-components'
+import { Link } from 'react-static'
 import mg_avatar from '../assets/mg_avatar.jpg'
 
 const Status = styled.div`
@@ -42,7 +43,7 @@ const Status = styled.div`
     }
   }
 `
-const Post = styled.a`
+const PostLink = styled.a`
   .post_wrapper {
     position: relative;
     display: block;
@@ -85,7 +86,63 @@ const Post = styled.a`
     .image_wrapper {
       flex-basis: 100%;
       min-width: 100%;
+      height: 150px;;
+      }
+      .text_wrapper {
+        padding-left: 0;
+        flex-basis: 100%;
+        min-width: 100%;
+      }
+    }
+  }
+  &:hover h2 {
+    text-decoration: underline;
+  }
+`
+const Post = styled.div`
+  .post_wrapper {
+    position: relative;
+    display: block;
+    border-radius: 10px;
+    width: 70%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0px;
+    display: flex;
+    text-align: left;
+    transition: 0.3s;
+    margin-bottom: 40px;
+    .image_wrapper {
+      flex-basis: 200px;
+      min-width: 200px;
       height: 150px;
+      background-size: cover;
+    }
+    .text_wrapper {
+      padding-left: 50px;
+      height: 120px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      box-sizing: border-box;
+      position: relative;
+      text-align: justify;
+      h2.title {
+        font-size: 24px;
+        line-height: 24px;
+      }
+      p {
+        font-weight: normal;
+      }
+    }
+    @media (max-width: 1175px) {
+      width: 100%;
+    }
+    @media (max-width: 500px) {
+      flex-wrap: wrap;
+    .image_wrapper {
+      flex-basis: 100%;
+      min-width: 100%;
+      height: 150px;;
       }
       .text_wrapper {
         padding-left: 0;
@@ -109,7 +166,6 @@ class NewsItem extends React.Component {
 
   render () {
     let item
-    console.log(this.state)
     if (this.state.type === 'status') {
       item = (
         <Status>
@@ -125,13 +181,34 @@ class NewsItem extends React.Component {
             </p>
           </div>
         </Status>)
+    } else if (this.state.type === 'clanok') {
+      const imageBg = {
+        backgroundImage: 'url(' + this.state.data.thumbnail + ')'
+      }
+      const text = 'asdasdasdas'
+      item = (
+        <Link to={`/aktuality/clanky/${this.state.data.slug}`}>
+          <Post href={this.state.data.url} target="_blank">
+            <div className="post_wrapper">
+              <div className="image_wrapper" style={imageBg} />
+              <div className="text_wrapper">
+                <h2 className="title">
+                  {this.state.data.title}
+                </h2>
+                <p>
+                  {text}
+                </p>
+              </div>
+            </div>
+          </Post>
+        </Link>)
     } else {
       const imageBg = {
         backgroundImage: 'url(' + this.state.data.thumbnail + ')'
       }
       const text = this.state.data.vycuc.slice(0, 120) + ' ...'
       item = (
-        <Post href={this.state.data.url} target="_blank">
+        <PostLink href={this.state.data.url} target="_blank">
           <div className="post_wrapper">
             <div className="image_wrapper" style={imageBg} />
             <div className="text_wrapper">
@@ -143,7 +220,7 @@ class NewsItem extends React.Component {
               </p>
             </div>
           </div>
-        </Post>)
+        </PostLink>)
     }
 
     return (
