@@ -42,6 +42,26 @@ const PostWrapper = styled.div`
       img.thumbnail_image {
         margin-top: 0px;
       }
+      h1 {
+        color: var(--red);
+        font-family: var(--titleFontFamily);
+        font-size: 38px;
+        font-weight: 700;
+        margin-bottom: 12px;
+        line-height: 38px;
+        margin-top: 50px;
+      }
+      h2 {
+        font-family: var(--titleFontFamily);
+        font-weight: 500;
+        font-size: 15px;
+        letter-spacing: 1.04px
+        line-height: 22px;
+        margin-bottom: 40px;
+        margin-top: 0px;
+        text-transform: uppercase;
+        color: var(--blue);
+      }
     }
     .floating_branch_1 {
     position: absolute;
