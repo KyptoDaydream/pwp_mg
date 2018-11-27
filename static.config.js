@@ -89,14 +89,14 @@ const diacritics_change = [
   {'base':'z','letters':/[\u007A\u24E9\uFF5A\u017A\u1E91\u017C\u017E\u1E93\u1E95\u01B6\u0225\u0240\u2C6C\uA763]/g}
 ]
 
-function getPosts () {
+function getPosts (posts_path) {
   const items = []
   // Walk ("klaw") through posts directory and push file paths into items array //
   const getFiles = () =>
     new Promise(resolve => {
       // Check if posts directory exists //
-      if (fs.existsSync('./src/posts/articles')) {
-        klaw('./src/posts/articles')
+      if (fs.existsSync(posts_path)) {
+        klaw(posts_path)
           .on('data', item => {
             // Filter function to retrieve .md files //
             if (path.extname(item.path) === '.md') {
@@ -108,6 +108,7 @@ function getPosts () {
               dataObj.data.slug = dataObj.data.title
                 .toLowerCase()
                 .replace(/ /g, '_')
+                .replace(/[&\/\\#,+()$~%.'":*?<>{}]/g,'_');
               for(var i=0; i<diacritics_change.length; i++) {
                 dataObj.data.slug = dataObj.data.slug.replace(diacritics_change[i].letters, diacritics_change[i].base);
               }
@@ -139,7 +140,10 @@ export default {
     title: 'Mária Gáliková',
   }),
   getRoutes: async () => {
-    const posts = await getPosts()
+    const posts_articles = await getPosts('./src/posts/articles')
+    const posts_links = await getPosts('./src/posts/links')
+    const posts_statuses = await getPosts('./src/posts/statuses')
+    const posts = posts_articles.concat(posts_links.concat(posts_statuses))
     return [
       {
         path: '/',

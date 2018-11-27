@@ -174,7 +174,7 @@ class NewsItem extends React.Component {
           </div>
           <div className="text_wrapper">
             <h3 className="sub_title">
-              Statusík
+              Status
             </h3>
             <p>
               {this.state.post.data.title}
