@@ -16,7 +16,7 @@ collections:
       - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
       - {label: "Type", name: "type", widget: "hidden", default: "status"}
       - {label: "Status", name: "title", widget: "string"}
-      - {label: "Dátum publikovania", name: "start", widget: "datetime", format: "DD-MM-YY HH:mm"}
+      - {label: "Dátum publikovania", name: "start", widget: "datetime", format: "DD-MM-YYYY HH:mm"}
   - name: "odkaz" # Used in routes, e.g., /admin/collections/blog
     label: "Odkaz" # Used in the UI
     folder: "src/posts/links" # The path to the folder where the documents are stored
@@ -27,7 +27,7 @@ collections:
       - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
       - {label: "Type", name: "type", widget: "hidden", default: "odkaz"}
       - {label: "Titulok", name: "title", widget: "string"}
-      - {label: "Dátum publikovania", name: "start", widget: "datetime", format: "DD-MM-YY HH:mm"}
+      - {label: "Dátum publikovania", name: "start", widget: "datetime", format: "DD-MM-YYYY HH:mm"}
       - {label: "Obrázok", name: "thumbnail", widget: "image"}  
       - {label: "Link", name: "url", widget: "string"}
       - {label: "Výcuc", name: "vycuc", widget: "string"}     
@@ -41,6 +41,6 @@ collections:
       - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
       - {label: "Type", name: "type", widget: "hidden", default: "clanok"}
       - {label: "Titulok", name: "title", widget: "string"}
-      - {label: "Dátum publikovania", name: "start", widget: "datetime", format: "DD-MM-YY HH:mm"}
+      - {label: "Dátum publikovania", name: "start", widget: "datetime", format: "DD-MM-YYYY HH:mm"}
       - {label: "Obrázok", name: "thumbnail", widget: "image"}  
       - {label: "Článok", name: "body", widget: "markdown"}  
