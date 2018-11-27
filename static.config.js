@@ -105,7 +105,6 @@ function getPosts (posts_path) {
               // Convert to frontmatter object and markdown content //
               const dataObj = matter(data)
               // Create slug for URL //
-              console.log(dataObj)
               dataObj.data.slug = dataObj.data.title
                 .toLowerCase()
                 .replace(/ /g, '_')

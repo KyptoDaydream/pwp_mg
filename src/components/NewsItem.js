@@ -164,6 +164,7 @@ class NewsItem extends React.Component {
 
   render () {
     let item
+    console.log(this.state.post.data)
     if (this.state.type === 'status') {
       item = (
         <Status>
@@ -172,7 +173,7 @@ class NewsItem extends React.Component {
           </div>
           <div className="text_wrapper">
             <h3 className="sub_title">
-              Status
+              {this.state.post.data.start}
             </h3>
             <p>
               {this.state.post.data.title}
