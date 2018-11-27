@@ -69,7 +69,6 @@ const PostLink = styled.a`
       text-overflow: ellipsis;
       box-sizing: border-box;
       position: relative;
-      text-align: justify;
       h2.title {
         font-size: 24px;
         line-height: 24px;
@@ -125,7 +124,6 @@ const Post = styled.div`
       text-overflow: ellipsis;
       box-sizing: border-box;
       position: relative;
-      text-align: justify;
       h2.title {
         font-size: 24px;
         line-height: 24px;
@@ -182,7 +180,6 @@ class NewsItem extends React.Component {
           </div>
         </Status>)
     } else if (this.state.type === 'clanok') {
-      console.log(this.state.post)
       const imageBg = {
         backgroundImage: 'url(' + this.state.post.data.thumbnail + ')'
       }
