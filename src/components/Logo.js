@@ -1,6 +1,5 @@
 import * as React from 'react'
 import styled from 'styled-components'
-import { Link } from 'react-static'
 import logo from '../assets/logo.png'
 
 const LogoWrapper = styled.div`
@@ -51,9 +50,9 @@ class Logo extends React.Component {
   render () {
     return (
       <LogoWrapper>
-        <Link to="/">
+        <a href="https://www.mariagalikova.sk/">
           <div className="logo" />
-        </Link>
+        </a>
       </LogoWrapper>
     )
   }
