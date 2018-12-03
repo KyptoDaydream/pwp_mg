@@ -23,7 +23,7 @@ const InfoWrapper = styled.div`
   @media (max-height: 700px) {  
     top: 120px;
   }
-  @media (max-height: 600px) {  
+  @media (max-height: 600px) and (max-width: 500px) {  
     display: none;
   }
 `

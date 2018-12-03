@@ -5,6 +5,7 @@ import { Preloader, Placeholder } from 'react-preloading-screen'
 import Routes from 'react-static-routes'
 import Logo from 'components/Logo'
 import Linkedin from 'components/Linkedin'
+import ReactGA from 'react-ga'
 import ContactButton from './components/ContactButton'
 import HamburgerMenu from './components/BurgerMenu'
 import title_bg from './assets/title_bg.svg'
@@ -228,6 +229,10 @@ const PreloaderWindow = styled.div`
 const loading_style = {
   zIndex: 100000000,
 }
+
+ReactGA.initialize('UA-130310753-1')
+ReactGA.pageview('/homepage')
+
 const App = () => (
   <Preloader className="preload" style={loading_style}>
     <Placeholder>
@@ -303,6 +308,7 @@ const App = () => (
         <Head>
           <meta charSet="UTF-8" />
           <title>Mária Gáliková</title>
+          <meta name="keywords" content="maria galikova,zivotny kouc,zivotny poradca,zivotna zmena,poradca pre zeny" />
           <link rel="shortcut icon" type="image/png" href="/favicon.png" />
           <link href="https://fonts.googleapis.com/css?family=Pacifico|Poppins:400,700,900&amp;subset=latin-ext" rel="stylesheet" />
         </Head>

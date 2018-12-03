@@ -100,7 +100,7 @@ const MenuLinkAlt = styled.p`
   @media (max-width: 500px) {
     max-width: 260px;
   }
-  @media (max-height: 630px) {
+  @media (max-height: 630px) and (max-width: 600px) {
     display: none;
   }
 `

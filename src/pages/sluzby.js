@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Head } from 'react-static'
 import { Controller, Scene } from 'react-scrollmagic'
 import foto_4 from '../assets/mg_foto_4.jpg'
 import foto_5 from '../assets/mg_foto_5.jpg'
@@ -19,7 +20,6 @@ const ContentWrapper = styled.div`
   background-color: var(--white);
   position: relative !important;
   .home_content {import { Link } from 'react-static';
-
     max-width: 1230px;
     width: 100%;
     margin-right: auto;
@@ -29,6 +29,7 @@ const ContentWrapper = styled.div`
     justify-content: space-between;
     padding-top: 50px;
     .content_left{
+      z-index: 10;
       flex-basis: 50%;
       padding-left: 185px;
       box-sizing: border-box;
@@ -37,12 +38,14 @@ const ContentWrapper = styled.div`
       }
     }
     .content_right{
+      z-index: 10;
       position: relative;
       flex-basis: 50%;
       padding-right: 185px;
       box-sizing: border-box;
     }
     .content_full_width {
+      z-index: 10;
       flex-basis: 100%;
       padding: 120px 185px 120px 185px;
       .qoute_wrapper {
@@ -274,6 +277,9 @@ export default class Services extends React.Component {
   render () {
     return (
       <ServicesWrapper>
+        <Head>
+          <meta name="keywords" content="maria galikova,zmena mysle,telesna zmena,zmena vizaze,spolocenska etiketa" />
+        </Head>
         <ContentWrapper>
           <div className="floating_branch_1">
             <img alt="branch_bg_1" src={bg_branch_2} />

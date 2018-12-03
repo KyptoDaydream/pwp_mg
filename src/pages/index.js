@@ -426,6 +426,20 @@ const ContentWrapper = styled.div`
     .floating_branch_5 { 
       top: 3700px;
     }
+    .home_content {
+      .content_left, .content_right, .content_full_width {
+        h4.sub_quote {
+        font-size: 14px;
+        line-height: 18px;
+        }
+      }
+    }
+  }
+  @media (max-width: 340px) {
+    h4.quote {
+        font-size: 48px;
+        line-height: 72px;
+      }
   }
 `
 

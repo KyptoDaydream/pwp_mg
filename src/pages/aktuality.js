@@ -1,5 +1,5 @@
 import React from 'react'
-import { withRouteData } from 'react-static'
+import { withRouteData, Head } from 'react-static'
 import styled from 'styled-components'
 import bg_branch_2 from '../assets/bg_branch_2.svg'
 import bg_branch_3 from '../assets/bg_branch_3.svg'
@@ -133,6 +133,9 @@ class Ahoj extends React.Component {
   render () {
     return (
       <NewsWrapper>
+        <Head>
+          <meta name="keywords" content="phdr maria galikova,maria galikova clanky,maria galikova facebook,maria galikova kniha" />
+        </Head>
         <ContentWrapper>
           <div className="floating_branch_1">
             <img alt="branch_bg_1" src={bg_branch_2} />
@@ -145,7 +148,7 @@ class Ahoj extends React.Component {
           </div>
           <div className="home_content">
             <div className="content_full_width">
-              <a className="button_text news_button" target="_blank" href="https://www.linkedin.com/in/m%C3%A1ria-g%C3%A1likov%C3%A1/">
+              <a className="button_text news_button" target="_blank" href="https://www.facebook.com/profile.php?id=100005008548203">
                 viac info
               </a>
               <News posts={this.props.posts} location="aktuality" />

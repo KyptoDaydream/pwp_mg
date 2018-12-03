@@ -164,7 +164,6 @@ class NewsItem extends React.Component {
 
   render () {
     let item
-    console.log(this.state.post.data)
     if (this.state.type === 'status') {
       item = (
         <Status>

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Head } from 'react-static'
 import styled from 'styled-components'
 import { Controller, Scene } from 'react-scrollmagic'
 import foto_1 from '../assets/mg_foto_1.jpg'
@@ -25,6 +26,7 @@ const ContentWrapper = styled.div`
     justify-content: space-between;
     padding-top: 50px;
     .content_left{
+      z-index: 10;
       flex-basis: 50%;
       padding-left: 185px;
       box-sizing: border-box;
@@ -33,12 +35,14 @@ const ContentWrapper = styled.div`
       }
     }
     .content_right{
+      z-index: 10;
       position: relative;
       flex-basis: 50%;
       padding-right: 185px;
       box-sizing: border-box;
     }
     .content_full_width {
+      z-index: 10;
       flex-basis: 100%;
       padding: 120px 185px 120px 185px;
       width: 100%;
@@ -271,12 +275,33 @@ const ContentWrapper = styled.div`
     .floating_branch_3 {
       display: none;
     }
+    .home_content {
+      .content_left, .content_right, .content_full_width {
+        h4.sub_quote_wide {
+        font-size: 14px;
+        line-height: 18px;
+        }
+      }
+    }
+  }
+  @media (max-width: 340px) {
+    .home_content {
+      .content_left, .content_right, .content_full_width {
+        h4.quote {
+        font-size: 48px;
+        line-height: 72px;
+      }
+      }
+    } 
   }
 `
 export default class AbouteMe extends React.Component {
   render () {
     return (
       <Services>
+        <Head>
+          <meta name="keywords" content="maria galikova,marketingovy riaditel,tv joj,mg prime,beckovske slnko" />
+        </Head>
         <ContentWrapper>
           <div className="floating_branch_1">
             <img alt="branch_bg_1" src={bg_branch_2} />
