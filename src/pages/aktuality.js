@@ -148,7 +148,7 @@ class Ahoj extends React.Component {
           </div>
           <div className="home_content">
             <div className="content_full_width">
-              <a className="button_text news_button" target="_blank" href="https://www.facebook.com/profile.php?id=100005008548203">
+              <a className="button_text news_button" target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/profile.php?id=100005008548203">
                 viac info
               </a>
               <News posts={this.props.posts} location="aktuality" />

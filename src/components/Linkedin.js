@@ -37,7 +37,7 @@ class Icon extends React.Component {
   render () {
     return (
       <IconWrapper>
-        <a target="_blank" href="https://www.linkedin.com/in/m%C3%A1ria-g%C3%A1likov%C3%A1/">
+        <a target="_blank" href="https://www.facebook.com/profile.php?id=100005008548203">
           <svg version="1.1"
             xmlns="http://www.w3.org/2000/svg"
             x="0px" y="0px" width={`${this.state.size * 2}px`} height={`${this.state.size * 2}px`} viewBox={`0 0 ${this.state.size * 2} ${this.state.size * 2}`}
