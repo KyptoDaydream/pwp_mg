@@ -23,11 +23,13 @@ Takýto človek je vystresovaný, nevie sa sústrediť na konverzáciu, ktorá j
 
 ![Table manners](/uploads/dinning.jpg)
 
-Keď som žila v zahraničí, ako manželka diplomata, tak sa ma veľa mojich známych pýtalo, či to nie je náročné a obmedzujúce správať sa podľa protokolu? Môžem povedať, že je to práve naopak. Protokol Vás vedie ,a čím lepšie ste pripravený, čím lepšie ovládate pravidlá, tým sa na takýchto akciách pohybujete s väčšou samozrejmosťou, pocitom istoty a uvoľnenosti. Doslova si tieto výnimočné podujatia užívate.
+Keď som žila v zahraničí, ako manželka diplomata, tak sa ma veľa mojich známych pýtalo, či to nie je náročné a obmedzujúce správať sa podľa protokolu? Môžem povedať, že je to práve naopak. Protokol Vás vedie, a čím lepšie ste pripravený, čím lepšie ovládate pravidlá, tým sa na takýchto akciách pohybujete s väčšou samozrejmosťou, pocitom istoty a uvoľnenosti. Doslova si tieto výnimočné podujatia užívate.
 
 Francúzi majú pre odľahčené pravidlá etikety výraz "savoir vivre" (savoar vivr) - umenie žiť. Francúzi si vedia užívať krásy a radosti života. Dobré správanie, ohľaduplnosť, úspešné prežitie života, príjemné stolovanie. Dnes už si asi všetci uvedomujeme, že etiketa otvára dvere k akémukoľvek kontaktu. Či už sa jedná v spoločenskom styku, na úradoch, obchodných rokovaniach, v osobnom živote.
 
 Etiketa je dôležitá pre mladých úspešných ľudí, ktorí sú schopní a firma im dá možnosti stať sa riaditeľmi, dostávajú sa im možnosti rokovať so zahraničnými partnermi a príde situácia, kedy majú vycestovať do zahraničia, stretnúť sa s obchodným partnerom a rokovať o miliónových kontraktoch. A nastane otázka: Aký oblek si vziať na večeru? Aká košeľa? Kravata? Viem si vôbec uviazať uzol? Ako sa predstaviť, pozdraviť? A pri stole? Toľko príborov... ktorý zobrať prvý? Kam uložiť obrúsok? Ako držať pohár na víno... 
+
+![kravata](/uploads/kravata.jpg)
 
 A zrazu sa už nevie sústrediť na rokovanie, lebo rieši situácie, ktoré sú pre jeho partnera samozrejmosťou a jeho správanie je tým pádom prirodzené. Nič ho nevyrušuje, okrem obchodného partnera. Urobí si nie veľmi dobrý úsudok, a povie si: Preboha čo je to za človeka, odkiaľ prišiel, keď nepozná základné pravidlá... Nabudúce sa s ním už nebude chcieť stretnúť. Ale ak príde človek, ktorý je príjemný spoločník, vkusne oblečený a noblesne stoluje, prirodzene, bez stresu komunikuje, chce sa s ním stretnúť aj nabudúce.
 
