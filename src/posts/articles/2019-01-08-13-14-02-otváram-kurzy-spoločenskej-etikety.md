@@ -15,6 +15,8 @@ Veľa z nás sa opýta: Sú pravidlá slušného správania nutné? Nie sú na �
 
 Slovné spojenie "prirodzené správanie" ľudia často chápu ako možnosť správať sa "prirodzene", teda spontánne, neformálne, bez regulovania svojho správania akýmikoľvek pravidlami. Je to klam, pretože čo je pre niekoho "prirodzené", môže byť pre niekoho druhého neprijateľné. Pre niekoho je prirodzené zobrať si z misy šunku rukou, alebo prísť do hotelovej reštaurácie v plavkách, či oblizovať nôž, takýchto príkladov by sme našli veľa. 
 
+![](/uploads/women-handshake.jpg)
+
 Niekto si podáva ruky ako ho to napadne, iný sa cíti trápne, lebo vzniká zmätok. Práve preto existujú pravidlá, ktoré vytvárajú rámec nášho správania. V ňom máme možnosť ukázať svoju osobnosť o to dokonalejšie, ako v hre bez pravidiel. Keď si sadá ku stolu človek, ktorý nie je zbehlý v pravidlách stolovania, musí sa veľmi sústrediť na všetky nástrahy, ktoré ho pri stole čakajú: čo robiť s obrúskom, ako držať príbor, ktorý má na čo použiť, ako sa drží pohár na víno.....
 
 Takýto človek je vystresovaný, nevie sa sústrediť na konverzáciu, ktorá je hlavným zmyslom spoločenského stolovania. A tu je vidieť ten rozdiel v porovnaní s človekom, ktorý bezchybne ovláda pravidlá stolovania, vie, ktorý príbor sa na čo používa, .... a všetko robí so samozrejmosťou. Môže sa plne venovať konverzácii s obchodným partnerom, jeho správanie je odľahčené, uvoľnené a teda aj prirodzené. S takýmto spoločníkom je vždy príjemné sa stretnúť, dokáže si podmaniť obchodného partnera, ale aj objekt súkromného záujmu.
