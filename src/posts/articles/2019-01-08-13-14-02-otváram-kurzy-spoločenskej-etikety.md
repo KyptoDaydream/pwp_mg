@@ -1,7 +1,7 @@
 ---
 layout: blog
 type: clanok
-title: Otváram kurzy spoločenskej etikety
+title: Otváram kurz spoločenskej etikety
 start: '08.01.2019 12:46'
 thumbnail: /uploads/mg_ilustracia_5.png
 ---
