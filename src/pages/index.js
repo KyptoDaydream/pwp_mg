@@ -500,7 +500,8 @@ class Index extends React.Component {
                   <h2 className="title first_title">Vitajte</h2>
                   <h3 className="sub_title">Som PhDr. Mária Gáliková, Váš životný kouč a poradca.</h3>
                   <p>Pomáham ženám žiť v prítomnosti a netrápiť sa minulosťou.</p>
-                  <p>Spolu prekonáme strach, ktorý Vás paralyzuje a vydáme sa na cestu za šťastnejším a plnohodnotnejším životom.</p>
+                  <p>Je dôležité, aby sme to čo chceme, žili a robili teraz. To je ten najpodstatnejší moment. Všetko čo v živote máme, si priťahujeme my sami vlastnými myšlienkami, pocitmi, vedomými alebo podvedomými vzorcami. </p>
+                  <p>Spolu prekonáme strach, ktorý Vás paralyzuje a vydáme sa na cestu za šťastnejším a plnohodnotnejším životom. </p>
                   <Link className="button_text" to="/o_mne">viac o mne</Link>
                 </div>
                 <div className="content_right">

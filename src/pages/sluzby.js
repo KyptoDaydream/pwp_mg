@@ -393,6 +393,7 @@ príležitosti.
               </p>
               <p className="block_padded">Zbavíte sa pocitu menejcennosti v spoločnosti, lebo Vám nebudú chýbať znalosti etikety. 
               </p>
+              <a className="button_text news_link" href="https://www.mariagalikova.sk/aktuality/clanky/otvaram_kurzy_spolocenskej_etikety/">viac o kurze</a>
               <Controller>
                 <Scene classToggle="reveal_animation" triggerElement="#trigger_foto5">
                   <div className="illustration_foto_1 photo_wrapper">

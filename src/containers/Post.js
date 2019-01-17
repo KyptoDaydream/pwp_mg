@@ -42,6 +42,11 @@ const PostWrapper = styled.div`
       img.thumbnail_image {
         margin-top: 0px;
       }
+      p {
+        font-weight: 400;
+        font-size: 16px;
+        margin-bottom: 40px;
+      }
       h1 {
         color: var(--red);
         font-family: var(--titleFontFamily);
@@ -137,7 +142,7 @@ class Clanok extends React.Component {
           </div>
           <div className="content_wrapper">
             <Markdown source={this.props.post.content} escapeHtml={false} />
-            <Link className="button_text" to="/aktuality">všetky články</Link>
+            <a className="button_text news_link" href="https://www.mariagalikova.sk/aktuality">všetky články</a>
           </div>
         </div>
       </PostWrapper>

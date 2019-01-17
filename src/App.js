@@ -57,6 +57,7 @@ const AppStyles = styled.div`
   p {
     color: #7d8292;
     font-size: 13px;
+    font-weight: 300;
     font-family: var(--titleFontFamily);
 
   }
@@ -310,7 +311,7 @@ const App = () => (
           <title>Mária Gáliková</title>
           <meta name="keywords" content="maria galikova,zivotny kouc,zivotny poradca,zivotna zmena,poradca pre zeny" />
           <link rel="shortcut icon" type="image/png" href="/favicon.png" />
-          <link href="https://fonts.googleapis.com/css?family=Pacifico|Poppins:400,700,900&amp;subset=latin-ext" rel="stylesheet" />
+          <link href="https://fonts.googleapis.com/css?family=Pacifico|Poppins:300,400,700,900&amp;subset=latin-ext" rel="stylesheet" />
         </Head>
         <Logo />
         <HamburgerMenu />

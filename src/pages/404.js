@@ -1,7 +1,21 @@
 import React from 'react'
+import styled from 'styled-components'
 
-export default () => (
-  <div>
-    <h1>404 - Oh no! Stránka sa nenašla :(</h1>
-  </div>
-)
+const NotFound = styled.div`
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+font-size: 24px;
+font-weight: bold;
+`
+
+export default class AbouteMe extends React.Component {
+  render () {
+    return (
+      <NotFound>
+        Stránka sa nenašla
+      </NotFound>
+    )
+  }
+}
