@@ -498,7 +498,7 @@ class Index extends React.Component {
               <div className="home_content" id="trigger_foto1">
                 <div className="content_left">
                   <h2 className="title first_title">Vitajte</h2>
-                  <h3 className="sub_title">Som PhDr. Mária Gáliková, Váš životný kouč a poradca.</h3>
+                  <h3 className="sub_title">Som PhDr. Mária Gáliková, Váš osobný kouč a poradca.</h3>
                   <p>Pomáham ženám žiť v prítomnosti a netrápiť sa minulosťou.</p>
                   <p>Je dôležité, aby sme to čo chceme, žili a robili teraz. To je ten najpodstatnejší moment. Všetko čo v živote máme, si priťahujeme my sami vlastnými myšlienkami, pocitmi, vedomými alebo podvedomými vzorcami. </p>
                   <p>Spolu prekonáme strach, ktorý Vás paralyzuje a vydáme sa na cestu za šťastnejším a plnohodnotnejším životom. </p>
