@@ -5,4 +5,6 @@ title: Kurzy Etikety - Video
 start: '07.10.2019 18:37'
 thumbnail: /uploads/b-01.jpeg
 ---
+Pozrite si moje nové video o mojich kurzoch etikety.
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/5ioq0XSQg1w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
