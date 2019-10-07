@@ -1,7 +1,7 @@
 ---
 layout: blog
 type: clanok
-title: Kurzy Etikety - Video
+title: Kurzy etikety - Video
 start: '07.10.2019 18:37'
 thumbnail: /uploads/b-01.jpeg
 ---
