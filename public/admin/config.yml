@@ -11,36 +11,71 @@ collections:
     folder: "src/posts/statuses" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{hour}}-{{minute}}-{{second}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter. 
-    # Remove any that aren't needed for posts
-      - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
-      - {label: "Type", name: "type", widget: "hidden", default: "status"}
-      - {label: "Status", name: "title", widget: "string"}
-      - {label: "Dátum publikovania", name: "start", widget: "datetime", format: "DD.MM.YYYY HH:mm"}
+    fields: # The fields for each document, usually in front matter.
+      # Remove any that aren't needed for posts
+      - { label: "Layout", name: "layout", widget: "hidden", default: "blog" }
+      - { label: "Type", name: "type", widget: "hidden", default: "status" }
+      - { label: "Status", name: "title", widget: "string" }
+      - {
+          label: "Dátum publikovania",
+          name: "start",
+          widget: "datetime",
+          format: "DD.MM.YYYY HH:mm",
+        }
   - name: "odkaz" # Used in routes, e.g., /admin/collections/blog
     label: "Odkaz" # Used in the UI
     folder: "src/posts/links" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{hour}}-{{minute}}-{{second}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter. 
-    # Remove any that aren't needed for posts
-      - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
-      - {label: "Type", name: "type", widget: "hidden", default: "odkaz"}
-      - {label: "Titulok", name: "title", widget: "string"}
-      - {label: "Dátum publikovania", name: "start", widget: "datetime", format: "DD.MM.YYYY HH:mm"}
-      - {label: "Obrázok", name: "thumbnail", widget: "image"}  
-      - {label: "Link", name: "url", widget: "string"}
-      - {label: "Výcuc", name: "vycuc", widget: "string"}     
+    fields: # The fields for each document, usually in front matter.
+      # Remove any that aren't needed for posts
+      - { label: "Layout", name: "layout", widget: "hidden", default: "blog" }
+      - { label: "Type", name: "type", widget: "hidden", default: "odkaz" }
+      - { label: "Titulok", name: "title", widget: "string" }
+      - {
+          label: "Dátum publikovania",
+          name: "start",
+          widget: "datetime",
+          format: "DD.MM.YYYY HH:mm",
+        }
+      - { label: "Obrázok", name: "thumbnail", widget: "image" }
+      - { label: "Link", name: "url", widget: "string" }
+      - { label: "Výcuc", name: "vycuc", widget: "string" }
   - name: "clanok" # Used in routes, e.g., /admin/collections/blog
     label: "Článok" # Used in the UI
     folder: "src/posts/articles" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{hour}}-{{minute}}-{{second}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter. 
-    # Remove any that aren't needed for posts
-      - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
-      - {label: "Type", name: "type", widget: "hidden", default: "clanok"}
-      - {label: "Titulok", name: "title", widget: "string"}
-      - {label: "Dátum publikovania", name: "start", widget: "datetime", format: "DD.MM.YYYY HH:mm"}
-      - {label: "Obrázok", name: "thumbnail", widget: "image"}  
-      - {label: "Článok", name: "body", widget: "markdown"}  
+    fields: # The fields for each document, usually in front matter.
+      # Remove any that aren't needed for posts
+      - { label: "Layout", name: "layout", widget: "hidden", default: "blog" }
+      - { label: "Type", name: "type", widget: "hidden", default: "clanok" }
+      - { label: "Titulok", name: "title", widget: "string" }
+      - {
+          label: "Dátum publikovania",
+          name: "start",
+          widget: "datetime",
+          format: "DD.MM.YYYY HH:mm",
+        }
+      - { label: "Obrázok", name: "thumbnail", widget: "image" }
+      - { label: "Článok", name: "body", widget: "markdown" }
+  - name: "kurz" # Used in routes, e.g., /admin/collections/blog
+    label: "Kurz" # Used in the UI
+    folder: "src/posts/courses" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter.
+      # Remove any that aren't needed for posts
+      - { label: "Layout", name: "layout", widget: "hidden", default: "blog" }
+      - { label: "Type", name: "type", widget: "hidden", default: "clanok" }
+      - { label: "Titulok", name: "title", widget: "string" }
+      - { label: "Brief Text", name: "brief", widget: "string" }
+      - { label: "Brief Obrázok", name: "thumbnail", widget: "image" }
+      - {
+          label: "Odkaz Objednat",
+          name: "book",
+          widget: "select",
+          options: ["áno", "nie"],
+          default: ["áno"],
+        }
+      - { label: "Článok", name: "body", widget: "markdown" }
