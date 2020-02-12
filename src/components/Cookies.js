@@ -39,12 +39,17 @@ class Cookies extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      cookies_seen: localStorage.getItem("cookies_seen")
+      cookies_seen:
+        typeof window !== "undefined"
+          ? window.localStorage.getItem("cookies_seen")
+          : true
     };
   }
 
   onClickHandle = () => {
-    localStorage.setItem("cookies_seen", true);
+    if (typeof window !== "undefined") {
+      window.localStorage.setItem("cookies_seen", true);
+    }
     this.setState({ cookies_seen: true });
   };
   render() {
