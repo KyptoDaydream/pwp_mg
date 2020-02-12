@@ -12,4 +12,4 @@ brief: >-
 thumbnail: /uploads/umenie-spolocenskeho-vystupovania.jpg
 book: nie
 ---
-viac info coskoro
+viac info čoskoro
