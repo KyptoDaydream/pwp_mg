@@ -443,12 +443,7 @@ export default class Contact extends React.Component {
                   />
                 </div>
                 <div>
-                  <textarea
-                    placeholder="Správa"
-                    id="msg"
-                    name="Správa"
-                    required
-                  />
+                  <textarea placeholder="Správa" id="msg" name="Správa" />
                 </div>
                 <div className="checkbox_wrapper">
                   <input type="checkbox" name="q" id="a-0" required autofocus />
@@ -456,6 +451,7 @@ export default class Contact extends React.Component {
                     Súhlasím s odoslaním údajov. (
                     <a
                       className="poucenie"
+                      target="_blank"
                       href="https://www.mariagalikova.sk/GDPR.pdf"
                     >
                       poučenie

@@ -57,9 +57,10 @@ class Cookies extends React.Component {
     this.setState({ cookies_seen: true });
   };
   render() {
-    const cookie_class = this.state.cookies_seen
-      ? "cookie_wrapper hidden"
-      : "cookie_wrapper";
+    const cookie_class =
+      this.state.cookies_seen !== null
+        ? "cookie_wrapper hidden"
+        : "cookie_wrapper";
     return (
       <CookiesWrapper className={cookie_class}>
         <p>
