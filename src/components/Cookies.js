@@ -13,6 +13,9 @@ const CookiesWrapper = styled.div`
   border: 1px solid var(--brightBlue);
   padding: 25px;
   transition: 0.3s;
+  &.hidden {
+    display: none;
+  }
   a {
     text-decoration: underline;
   }
@@ -29,6 +32,7 @@ const CookiesWrapper = styled.div`
     color: #108db8;
     font-size: 14px;
     font-weight: bold;
+    float: right;
   }
   button:hover {
     background: var(--brightBlue);
@@ -53,21 +57,21 @@ class Cookies extends React.Component {
     this.setState({ cookies_seen: true });
   };
   render() {
-    const cookies_content = this.state.cookies_seen ? (
-      ""
-    ) : (
-      <CookiesWrapper>
+    const cookie_class = this.state.cookies_seen
+      ? "cookie_wrapper hidden"
+      : "cookie_wrapper";
+    return (
+      <CookiesWrapper className={cookie_class}>
         <p>
-          Tieto stránky používajú súbory
+          Tieto stránky používajú súbory{" "}
           <a href="/Cookies.pdf" target="_blank">
             cookies
           </a>
           .
         </p>
-        <button onClick={this.onClickHandle}>suhlasim 👨</button>
+        <button onClick={this.onClickHandle}>suhlasim</button>
       </CookiesWrapper>
     );
-    return cookies_content;
   }
 }
 
