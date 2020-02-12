@@ -509,20 +509,19 @@ class Index extends React.Component {
                 <div className="content_left">
                   <h2 className="title first_title">Vitajte</h2>
                   <h3 className="sub_title">
-                    Som PhDr. Mária Gáliková, Váš osobný kouč a poradca.
+                    Som PhDr. Mária Gáliková, MBE, váš osobný kouč a poradca,
+                    odborníčka na spoločenskú etiketu.
                   </h3>
                   <p>
-                    Pomáham ženám žiť v prítomnosti a netrápiť sa minulosťou.
+                    Ženy boli po celé stáročia chránené, boli zárukou zachovania
+                    rodu a muži im dvorili. Ženy sú v spoločnosti považované za
+                    významnejšie a muži sa k nim správajú galantne, vytvárajú im
+                    maximálny komfort, jednoducho ich rozmaznávajú. Dovoľme im
+                    to, nechajme sa, milé dámy, rozmaznávať.
                   </p>
                   <p>
-                    Je dôležité, aby sme to čo chceme, žili a robili teraz. To
-                    je ten najpodstatnejší moment. Všetko čo v živote máme, si
-                    priťahujeme my sami vlastnými myšlienkami, pocitmi, vedomými
-                    alebo podvedomými vzorcami.{" "}
-                  </p>
-                  <p>
-                    Spolu prekonáme strach, ktorý Vás paralyzuje a vydáme sa na
-                    cestu za šťastnejším a plnohodnotnejším životom.{" "}
+                    Pomáham ženám získať zdravé sebavedomie, lebo ono je
+                    predpokladom vyššej kvality života.
                   </p>
                   <Link className="button_text" to="/o_mne">
                     viac o mne
@@ -578,27 +577,26 @@ class Index extends React.Component {
                     </Scene>
                   </Controller>
                   <p>
-                    Podstatou je zmeniť svoju energiu a svoje vibrácie, ktoré
-                    vysielate navonok. Zmeniť svoj postoj k jednotlivým
-                    situáciám. Ak zmeníte svoj postoj, otvoria sa Vám nové
-                    možnosti a príležitosti žiť šťastnejší život.
+                    Dôležité je žiť v prítomnosti a vedome. Minulosť nás
+                    limituje a bráni nám dosahovať nové ciele. Všetko, čo v
+                    živote máme, si priťahujeme vlastnými myšlienkmi, vedomými a
+                    podvedomými vzorcami.
                   </p>
                   <p>
-                    Chcem pomôcť všetkým ženám nájsť odvahu a čeliť neznámemu.
-                    Ak chcete mať sebavedomie, musíte predovšetkým spoznať samú
-                    seba. Potom viete veriť vo svoje schopnosti, a teda konať,
-                    prejavovať sa a rozprávať ako zdravo sebavedomý človek.
+                    Spoločne prokonáme strachy, ktoré nás paralyzujú, a spolu sa
+                    vydáme na cestu za šťastnejším plnohodnotným životom.
                   </p>
                   <p>
-                    Medzi moje základné hodnoty, na ktorých staviam svoje služby
-                    sú: úprimnosť, autentickosť, spoľahlivosť, ústretovosť a
-                    empatia.
+                    Naučím vás aj to, ako zvládnuť spoločenskú etiketu,
+                    bezchybne stolovať a suverénne sa správať na rôznych
+                    spoločenských podujatiach. Čím pozitívnejšie a istejšie
+                    vystupujete, tým vás lepšie okolie hodnotí a prijíma.
                   </p>
                   <Link className="button_text hide_normal" to="/sluzby">
                     moje sluzby
                   </Link>
-                  <Link className="button_text hide_mquery" to="/o_mne">
-                    viac o mne
+                  <Link className="button_text hide_mquery" to="/kurzy">
+                    viac o kurzoch
                   </Link>
                 </div>
                 <div className="content_right hide_mquery">

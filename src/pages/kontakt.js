@@ -3,11 +3,9 @@ import { Head } from "react-static";
 import styled from "styled-components";
 import { Controller, Scene } from "react-scrollmagic";
 import foto_1 from "../assets/mg_foto_1.jpg";
-import foto_3 from "../assets/mg_foto_2.jpg";
-import foto_4 from "../assets/mg_foto_3.jpg";
+import check from "../assets/check.png";
 import bg_branch_2 from "../assets/bg_branch_2.svg";
 import bg_branch_3 from "../assets/bg_branch_3.svg";
-import olive_branch from "../assets/olive_branch.png";
 
 const Services = styled.div`
   overflow: hidden;
@@ -53,6 +51,93 @@ const ContentWrapper = styled.div`
       }
     }
   }
+  form p {
+    margin-bottom: 10px;
+  }
+  form button {
+    color: var(--blue);
+    font-weight: 700;
+    font-family: var(--titleFontFamily);
+    font-size: 15px;
+    line-height: 50px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    border: 0;
+    padding: 0 20px 0 20px;
+    display: inline-block;
+    text-align: center;
+    background-image: linear-gradient(120deg, var(--red) 0%, var(--red) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: 0 45px;
+    transition: 0.2s ease-in;
+    cursor: pointer;
+    &:hover {
+      background-position: 0 0;
+    }
+  }
+  form input,
+  form textarea {
+    border: 1px solid var(--lightBlue);
+    background: var(--lightBlue);
+    border-radius: 4px;
+    box-shadow: none;
+    padding: 15px 25px;
+    font-size: 16px;
+    width: 80%;
+    margin-bottom: 10px;
+  }
+
+  form input:focus,
+  form textarea:focus {
+    border: 1px solid var(--brightBlue);
+    outline: none;
+  }
+  form input[type="checkbox"] {
+    border-radius: 50% !important;
+    background: var(--lightBlue);
+    -webkit-appearance: none;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    float: left;
+    cursor: pointer;
+    margin: 0;
+  }
+  form input[type="checkbox"]:focus {
+    border: 0;
+  }
+  form input[type="checkbox"]:checked,
+  form input[type="checkbox"]:checked:active {
+    background: var(--brightBlue);
+    border: 1px solid var(--white);
+    box-shadow: 0 0 3px rgba(0,0,0,0.3);
+  }
+  form input[type="checkbox"]:checked:after,
+  form input[type="checkbox"]:checked:active:after {
+    content: '';
+    display: block;
+    background: url(${check}) center center;
+    background-size: 10px 10px;
+    background-repeat: no-repeat;
+    height: 18px;
+    width: 18px;
+    position: absolute;
+    border-radius: 50%;
+  }
+
+  form .checkbox_label {
+    float: left;
+    line-height: 20px;
+    margin-left: 10px;
+    font-size: 12px;
+    cursor: pointer;
+  }
+
+  form .checkbox_wrapper {
+    height: 22px;
+  } 
   .first_title {
     margin-top: 100px;
   }
@@ -295,7 +380,7 @@ const ContentWrapper = styled.div`
     } 
   }
 `;
-export default class AbouteMe extends React.Component {
+export default class Contact extends React.Component {
   render() {
     return (
       <Services>
@@ -312,42 +397,78 @@ export default class AbouteMe extends React.Component {
           <div className="floating_branch_2">
             <img alt="branch_bg_2" src={bg_branch_3} />
           </div>
-          <div className="floating_branch_3">
-            <img alt="olive_branch" src={olive_branch} />
-          </div>
-          <div className="floating_branch_4">
-            <img alt="branch_bg_2" src={bg_branch_3} />
-          </div>
           <div className="home_content">
             <div
               className="content_left padding_bottom_mquery"
               id="trigger_foto1"
             >
-              <h2 className="title first_title">Každá žena je iná</h2>
-              <h3 className="sub_title">
-                V živote som však zažívala strach tak ako aj Vy.
-              </h3>
+              <h2 className="title first_title">Kontakt</h2>
               <p className="block_padded">
-                Môj príbeh sa začal v Prahe, kde som v tom čase žila. Mala som
-                20 rokov, keď som na ministerstve zahraničných vecí absolvovala
-                kurz diplomatickeho protokolu. Tento kurz obsahoval spoločenskú
-                etiketu, diplomatický protokol, etiketu stolovania, dress code.
+                Hlaváčikova 35, 841 05 Bratislava
+                <br />
+                0911 544 533
+                <br />
+                <a href="mailto:ahoj@mariagalikova.sk">ahoj@mariagalikova.sk</a>
               </p>
-              <p className="block_padded" id="trigger_foto2">
-                Nasledoval 5-ročný zahraničný pobyt s exmanželom v západnom
-                Berlíne v pozícii manželky diplomata. Tu som mohla v praxi
-                zúročiť všetky znalosti z oblasti protokolu a spoločenskej
-                etikety.
-              </p>
-              <p className="block_padded">
-                Počas pobytu v zahraničí som študovala nemecký jazyk na Herbert
-                Universität v Berlíne.
-              </p>
-              <p className="block_padded">
-                Po návrate do Prahy som založila cestovnú kanceláriu ITIS
-                Reisen, s.r.o. V rámci môjho podnikania som pre klientov
-                organizovala rôzne spoločenské podujatia, recepcie a bankety.
-              </p>
+              <form
+                method="post"
+                action="https://www.briskforms.com/go/715a785ffead4b4dbb21f0a42a2a7896"
+              >
+                <p>Prihláste sa na kurz:</p>
+                <div>
+                  <input
+                    placeholder="Meno"
+                    type="text"
+                    id="name"
+                    name="Meno"
+                    required
+                  />
+                </div>
+                <div>
+                  <input
+                    placeholder="Telefón"
+                    type="text"
+                    id="phone"
+                    name="Telefón"
+                    required
+                  />
+                </div>
+                <div>
+                  <input
+                    placeholder="Email"
+                    type="email"
+                    id="mail"
+                    name="Email"
+                    required
+                  />
+                </div>
+                <div>
+                  <textarea
+                    placeholder="Správa"
+                    id="msg"
+                    name="Správa"
+                    required
+                  />
+                </div>
+                <div className="checkbox_wrapper">
+                  <input type="checkbox" name="q" id="a-0" required autofocus />
+                  <label className="checkbox_label" for="a-0">
+                    Súhlasím s odoslaním údajov. (
+                    <a
+                      className="poucenie"
+                      href="https://www.mariagalikova.sk/GDPR.pdf"
+                    >
+                      poučenie
+                    </a>
+                    )
+                  </label>
+                </div>
+                <div className="button">
+                  <button type="submit">
+                    <span>Prihlásiť sa na kurz</span>
+                  </button>
+                </div>
+              </form>
             </div>
             <div className="content_right">
               <Controller>
@@ -364,122 +485,6 @@ export default class AbouteMe extends React.Component {
                   </div>
                 </Scene>
               </Controller>
-            </div>
-            <div className="content_full_width hide_mquery">
-              <Controller>
-                <Scene
-                  classToggle="reveal_animation"
-                  triggerElement="#trigger_foto2"
-                >
-                  <div className="illustration_foto_2 photo_wrapper">
-                    <img
-                      alt="girls chating"
-                      src={foto_3}
-                      className="illustration_foto_2"
-                    />
-                  </div>
-                </Scene>
-              </Controller>
-            </div>
-            <div className="content_left padding_top_mquery">
-              <p className="block_padded">
-                Po niekoľkých rokoch som opäť vycestovala s exmanželom
-                diplomatom do Bonnu. Absolvovala som nespočetné množstvo
-                spoločenských podujatí za účasti významných VIP hostí, dokonca
-                aj recepcie s členmi anglickej kráľovskej rodiny.
-              </p>
-              <p className="block_padded" id="trigger_foto3">
-                Moje diplomatické skúsenosti a znalosti business etikety som
-                žila v praxi. Po niekoľkých rokoch som sa rozviedla a
-                presťahovala do Bratislavy, kde žijem aj dnes.
-              </p>
-              <p className="block_padded">
-                Opäť som sa vydala a začala žiť nový šťastný súkromný život.
-              </p>
-              <p className="block_padded">
-                Titul profesionálny manager som získala na The Open University v
-                Londýne.
-              </p>
-              <Controller>
-                <Scene
-                  classToggle="reveal_animation"
-                  triggerElement="#trigger_foto3"
-                >
-                  <div className="illustration_foto_1 photo_wrapper">
-                    <img
-                      alt="girls chating"
-                      src={foto_4}
-                      className="illustration_foto_1"
-                    />
-                  </div>
-                </Scene>
-              </Controller>
-              <p className="block_padded">
-                Následne som vyštudovala medzinárodné vzťahy, kde som tiež
-                absolvovala skúšku z diplomatického protokolu. Titul PhDr. som
-                získala na Fakulte masmédií PEVŠ.
-              </p>
-              <p className="block_padded">
-                Pracovala som v súkromnej firme na pozícii account managera pre
-                TOP klientov. Do širšieho povedomia som sa dostala ako
-                marketingová riaditeľka TV JOJ. Na tejto pozícii som pracovala 5
-                rokov.
-              </p>
-              <p className="block_padded">
-                Neskôr som pôsobila ešte na pozíciách výkonnej a obchodnej
-                riaditeľky iných firiem.
-              </p>
-              <p className="block_padded">
-                Viem, čo znamenalo pre mňa rozhodnutie skončiť na rôznych
-                riadiacich pozíciách – strach zo zmeny na jednej strane, a na
-                druhej strane oslobodenie a naplnenie vlastných ambícií.
-              </p>
-            </div>
-            <div className="content_right" />
-            <div className="content_full_width">
-              <h4 className="quote">Myslím,</h4>
-              <div className="qoute_wrapper sub_qoute_wide">
-                <h4 className="sub_quote_wide">
-                  že osud človeka sa odvíja na základe volieb, ktoré človek
-                  učiní a ja som si bola istá, že moja voľba je tá správna.
-                  Vedela som, že môj život už nebude tým čím bol, a že ma
-                  stretne niečo krásne, možno dokonca zázračné. Bolo to úžasné
-                  precitnutie.
-                </h4>
-              </div>
-            </div>
-            <div className="content_left padded last_block">
-              <p className="block_padded">
-                Vďaka obrovskej podpore môjho manžela som zobrala osud do
-                svojich rúk a založila vlastnú firmu MG Prime, s.r.o.
-              </p>
-              <p className="block_padded">
-                Okrem marketingu sa venujem aj ženám, ich premenám, spoločenskej
-                etikete, business etikete, etikete stolovania.
-              </p>
-              <p className="block_padded">
-                Som vydatá, mám dve dospelé dcéry, jednu úžasnú vnučku a žijem
-                šťastný a spokojný život.
-              </p>
-              <p className="block_padded">
-                Mojím životným krédom je pomáhať tým, ktorí pomoc potrebujú.
-                Robím to z lásky a bez očakávaní.
-              </p>
-              <p className="block_padded">
-                Želám si, aby boli ľudia k sebe slušní a zdvorilí. Aby poznali
-                pravidlá spoločenského správania. To je etiketa.
-              </p>
-              <p className="block_padded">
-                Preto som sa rozhodla svoje vedomosti a dlhoročné skúsenosti
-                zdieľať s ostatnými, ktorí sa chcú naučiť správať sa
-                kultivovane.
-              </p>
-              <p className="block_padded">
-                Vzhľadom na to, že prechovávam úctu a obdiv k osobnostiam, ktoré
-                vo svojom živote dosiahli úspech a sú uznávaní aj za hranicami
-                Slovenska, organizujem prestížne podujatie Beckovské slnko, na
-                ktorom oceňujem týchto výnimočných ľudí.
-              </p>
             </div>
           </div>
         </ContentWrapper>

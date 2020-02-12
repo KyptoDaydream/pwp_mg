@@ -291,15 +291,18 @@ class Courses extends React.Component {
     let iterator = 0;
     let block_id = "";
     let wrapper_class = "content_wrapper";
+    let title_class = "secondary_title";
     this.props.posts_courses.forEach(post => {
       iterator++;
       wrapper_class =
         iterator % 2 === 1 ? "content_wrapper" : "content_wrapper reverse";
+      title_class =
+        iterator === 1 ? "secondary_title first_title" : "secondary_title";
       block_id = `trigger_photo_${iterator}`;
       rendered_elements.push(
         <div className={wrapper_class}>
           <div className="content_left">
-            <h2 className="secondary_title">{post.data.title}</h2>
+            <h2 className={title_class}>{post.data.title}</h2>
             <p className="block_padded first_title" id={block_id}>
               {post.data.brief}
             </p>
@@ -371,13 +374,6 @@ class Courses extends React.Component {
                 podujatia užívať plnými dúškami. Pravidlá etikety nás chránia
                 pred spoločenskými prešľapmi
               </p>
-              <p>
-                Je to ako so šoférovaním. Ak si pravidlá osvojíte, budete ich
-                považovať za súčasť svojho života. Vaše správanie bude
-                prirodzené a pritom v súlade s pravidlami etikety. Budete
-                príjemnými spoločníkmi, ktorí bez stresu komunikujú, a ľudia sa
-                s vami budú chcieť stretnúť aj nabudúce.
-              </p>
             </div>
             <div className="content_right">
               <Controller>
@@ -395,6 +391,27 @@ class Courses extends React.Component {
                 </Scene>
               </Controller>
             </div>
+            <div className="content_full_width">
+              <h4 className="quote">Etiketa</h4>
+              <div className="qoute_wrapper sub_qoute_wide">
+                <h4 className="sub_quote_wide">
+                  otvára dvere k akémukoľvek kontaktu. Či už ide o spoločenskú
+                  udalosť, komunikáciu na úradoch, obchodných rokovaniach alebo
+                  v osobnom živote.
+                </h4>
+              </div>
+            </div>
+            <div className="content_left">
+              <p>
+                Je to ako so šoférovaním. Ak si pravidlá osvojíte, budete ich
+                považovať za súčasť svojho života. Vaše správanie bude
+                prirodzené a pritom v súlade s pravidlami etikety. Budete
+                príjemnými spoločníkmi, ktorí bez stresu komunikujú, a ľudia sa
+                s vami budú chcieť stretnúť aj nabudúce.
+              </p>
+            </div>
+            <div className="content_right"></div>
+
             {rendered_elements}
           </div>
         </ContentWrapper>

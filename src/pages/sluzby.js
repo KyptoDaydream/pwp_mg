@@ -1,20 +1,20 @@
-import React from 'react'
-import styled from 'styled-components'
-import { Head } from 'react-static'
-import { Controller, Scene } from 'react-scrollmagic'
-import foto_4 from '../assets/mg_foto_4.jpg'
-import foto_5 from '../assets/mg_foto_5.jpg'
-import foto_6 from '../assets/mg_foto_6.jpg'
-import foto_7 from '../assets/mg_foto_7.jpg'
-import foto_8 from '../assets/mg_foto_8.jpg'
-import bg_branch_2 from '../assets/bg_branch_2.svg'
-import bg_branch_3 from '../assets/bg_branch_3.svg'
-import olive_branch from '../assets/olive_branch.png'
-import data from '../data/carouselData'
+import React from "react";
+import styled from "styled-components";
+import { Head } from "react-static";
+import { Controller, Scene } from "react-scrollmagic";
+import foto_4 from "../assets/mg_foto_4.jpg";
+import foto_5 from "../assets/mg_foto_5.jpg";
+import foto_6 from "../assets/mg_foto_6.jpg";
+import foto_7 from "../assets/mg_foto_7.jpg";
+import foto_8 from "../assets/mg_foto_8.jpg";
+import bg_branch_2 from "../assets/bg_branch_2.svg";
+import bg_branch_3 from "../assets/bg_branch_3.svg";
+import olive_branch from "../assets/olive_branch.png";
+import data from "../data/carouselData";
 
 const ServicesWrapper = styled.div`
-overflow: hidden;
-`
+  overflow: hidden;
+`;
 const ContentWrapper = styled.div`
   margin-top: 100px;
   background-color: var(--white);
@@ -272,13 +272,16 @@ const ContentWrapper = styled.div`
       display: none;
     }
   }
-`
+`;
 export default class Services extends React.Component {
-  render () {
+  render() {
     return (
       <ServicesWrapper>
         <Head>
-          <meta name="keywords" content="maria galikova,zmena mysle,telesna zmena,zmena vizaze,spolocenska etiketa" />
+          <meta
+            name="keywords"
+            content="maria galikova,zmena mysle,telesna zmena,zmena vizaze,spolocenska etiketa"
+          />
         </Head>
         <ContentWrapper>
           <div className="floating_branch_1">
@@ -297,118 +300,177 @@ export default class Services extends React.Component {
             <div className="content_left" id="trigger_foto1">
               <h2 className="title first_title">Viem ako Vám pomôcť</h2>
               <h3 className="sub_title">Myslím pozitívne a žijem vedome.</h3>
-              <p className="block_padded">Svoju víziu sa snažím dosiahnuť práve prostredníctvom žien, ktoré si začnú viac
-uvedomovať svoju hodnotu a pri rozhodnutiach sa riadia viac srdcom ako len
-rozumom. Svojim klientkam poskytujem nasledovné služby:
+              <p className="block_padded">
+                Svoju víziu sa snažím dosiahnuť práve prostredníctvom žien,
+                ktoré si začnú viac uvedomovať svoju hodnotu a pri rozhodnutiach
+                sa riadia viac srdcom ako len rozumom. Svojim klientkam
+                poskytujem nasledovné služby:
               </p>
             </div>
             <div className="content_right">
               <Controller>
-                <Scene classToggle="reveal_animation" triggerElement="#trigger_foto1">
+                <Scene
+                  classToggle="reveal_animation"
+                  triggerElement="#trigger_foto1"
+                >
                   <div className="mg_foto_1 photo_wrapper">
-                    <img alt="maria galikova" src={foto_4} className="mg_foto_1" />
+                    <img
+                      alt="maria galikova"
+                      src={foto_4}
+                      className="mg_foto_1"
+                    />
                   </div>
                 </Scene>
               </Controller>
             </div>
 
             <div className="content_left first_title">
-              <h2 className="secondary_title">
-                {data.properties[0].title}
-              </h2>
-              <p className="block_padded first_title" id="trigger_foto3">Naša myseľ prúdi neustále ako voda. Neobmedzený tok myšlienok na povinnosti, a
-milión iných vecí vyčerpá každého.
+              <h2 className="secondary_title">{data.properties[0].title}</h2>
+              <p className="block_padded first_title" id="trigger_foto3">
+                Naša myseľ prúdi neustále ako voda. Neobmedzený tok myšlienok na
+                povinnosti, a milión iných vecí vyčerpá každého.
               </p>
-              <p className="block_padded">Pomôžem Vám získať nadhľad, iný uhol pohľadu
-a sebadôveru. Podelím sa s Vami o moje skúsenosti a princípy, ktoré fungujú.
+              <p className="block_padded">
+                Pomôžem Vám získať nadhľad, iný uhol pohľadu a sebadôveru.
+                Podelím sa s Vami o moje skúsenosti a princípy, ktoré fungujú.
               </p>
-              <p className="block_padded">Zmeníte svoj postoj k životu.
-              </p>
+              <p className="block_padded">Zmeníte svoj postoj k životu.</p>
               <Controller>
-                <Scene classToggle="reveal_animation" triggerElement="#trigger_foto3">
+                <Scene
+                  classToggle="reveal_animation"
+                  triggerElement="#trigger_foto3"
+                >
                   <div className="illustration_foto_1 photo_wrapper">
-                    <img alt="girls chating" src={foto_5} className="illustration_foto_1" />
+                    <img
+                      alt="girls chating"
+                      src={foto_5}
+                      className="illustration_foto_1"
+                    />
                   </div>
                 </Scene>
               </Controller>
             </div>
             <div className="content_right">
-              <img className="service_illustration" alt={data.properties[0].title} src={data.properties[0].url} />
+              <img
+                className="service_illustration"
+                alt={data.properties[0].title}
+                src={data.properties[0].url}
+              />
             </div>
 
             <div className="content_left first_title">
-              <h2 className="secondary_title">
-                {data.properties[3].title}
-              </h2>
-              <p className="block_padded first_title" id="trigger_foto2">V zdravom tele zdravý duch.
+              <h2 className="secondary_title">{data.properties[3].title}</h2>
+              <p className="block_padded first_title" id="trigger_foto2">
+                V zdravom tele zdravý duch.
               </p>
-              <p className="block_padded">Základné princípy vždy fungovali a na mojich klientkach
-to rozhodne vidno. Pomôžem Vám nájsť motiváciu na zmenu životného štýlu - pohyb,
-osobný tréner, životospráva, strava.
+              <p className="block_padded">
+                Základné princípy vždy fungovali a na mojich klientkach to
+                rozhodne vidno. Pomôžem Vám nájsť motiváciu na zmenu životného
+                štýlu - pohyb, osobný tréner, životospráva, strava.
               </p>
-              <p className="block_padded">Naučíte sa pravidelnosti, lebo len tak sa dajú dosiahnuť úspechy.
+              <p className="block_padded">
+                Naučíte sa pravidelnosti, lebo len tak sa dajú dosiahnuť
+                úspechy.
               </p>
               <Controller>
-                <Scene classToggle="reveal_animation" triggerElement="#trigger_foto2">
+                <Scene
+                  classToggle="reveal_animation"
+                  triggerElement="#trigger_foto2"
+                >
                   <div className="illustration_foto_1 photo_wrapper">
-                    <img alt="girls chating" src={foto_6} className="illustration_foto_1" />
+                    <img
+                      alt="girls chating"
+                      src={foto_6}
+                      className="illustration_foto_1"
+                    />
                   </div>
                 </Scene>
               </Controller>
             </div>
             <div className="content_right">
-              <img className="service_illustration" alt={data.properties[0].title} src={data.properties[3].url} />
+              <img
+                className="service_illustration"
+                alt={data.properties[0].title}
+                src={data.properties[3].url}
+              />
             </div>
 
             <div className="content_left first_title">
-              <h2 className="secondary_title">
-                {data.properties[2].title}
-              </h2>
-              <p className="block_padded first_title" id="trigger_foto4">Príležitosť vzbudiť dobrý prvý dojem máte vždy len jednu. Pomôžem Vám pri zmene
-vizáže, budovaní štýlu či výbere kozmetiky a salónu.
+              <h2 className="secondary_title">{data.properties[2].title}</h2>
+              <p className="block_padded first_title" id="trigger_foto4">
+                Príležitosť vzbudiť dobrý prvý dojem máte vždy len jednu.
+                Pomôžem Vám pri zmene vizáže, budovaní štýlu či výbere kozmetiky
+                a salónu.
               </p>
-              <p className="block_padded">Zistíte čo Vám sluší, ako sa obliekať a ako by mal vyzerať Váš šatník.
+              <p className="block_padded">
+                Zistíte čo Vám sluší, ako sa obliekať a ako by mal vyzerať Váš
+                šatník.
               </p>
               <Controller>
-                <Scene classToggle="reveal_animation" triggerElement="#trigger_foto4">
+                <Scene
+                  classToggle="reveal_animation"
+                  triggerElement="#trigger_foto4"
+                >
                   <div className="illustration_foto_1 photo_wrapper">
-                    <img alt="girls chating" src={foto_7} className="illustration_foto_1" />
+                    <img
+                      alt="girls chating"
+                      src={foto_7}
+                      className="illustration_foto_1"
+                    />
                   </div>
                 </Scene>
               </Controller>
             </div>
             <div className="content_right">
-              <img className="service_illustration" alt={data.properties[0].title} src={data.properties[2].url} />
+              <img
+                className="service_illustration"
+                alt={data.properties[0].title}
+                src={data.properties[2].url}
+              />
             </div>
 
             <div className="content_left first_title">
-              <h2 className="secondary_title">
-                {data.properties[1].title}
-              </h2>
-              <p className="block_padded first_title" id="trigger_foto5">Niekedy sa ženy ocitnú v pozícii, na ktorú ich nikto nepripravil.
+              <h2 className="secondary_title">{data.properties[1].title}</h2>
+              <p className="block_padded first_title" id="trigger_foto5">
+                Niekedy sa ženy ocitnú v pozícii, na ktorú ich nikto
+                nepripravil.
               </p>
-              <p className="block_padded">Pomôžem Vám zhostiť
-sa novej roli, rozvinúť Vaše prirodzené "soft skills" a osvojiť si bontón pre rôzne
-príležitosti.
+              <p className="block_padded">
+                Pomôžem Vám zhostiť sa novej roli, rozvinúť Vaše prirodzené
+                "soft skills" a osvojiť si bontón pre rôzne príležitosti.
               </p>
-              <p className="block_padded">Zbavíte sa pocitu menejcennosti v spoločnosti, lebo Vám nebudú chýbať znalosti etikety. 
+              <p className="block_padded">
+                Zbavíte sa pocitu menejcennosti v spoločnosti, lebo Vám nebudú
+                chýbať znalosti etikety.
               </p>
-              <a className="button_text news_link" href="https://www.mariagalikova.sk/aktuality/clanky/otvaram_kurzy_spolocenskej_etikety/">viac o kurze</a>
+              <a className="button_text news_link" href="/kurzy">
+                viac o kurze
+              </a>
               <Controller>
-                <Scene classToggle="reveal_animation" triggerElement="#trigger_foto5">
+                <Scene
+                  classToggle="reveal_animation"
+                  triggerElement="#trigger_foto5"
+                >
                   <div className="illustration_foto_1 photo_wrapper">
-                    <img alt="girls chating" src={foto_8} className="illustration_foto_1" />
+                    <img
+                      alt="girls chating"
+                      src={foto_8}
+                      className="illustration_foto_1"
+                    />
                   </div>
                 </Scene>
               </Controller>
             </div>
             <div className="content_right">
-              <img className="service_illustration" alt={data.properties[0].title} src={data.properties[1].url} />
+              <img
+                className="service_illustration"
+                alt={data.properties[0].title}
+                src={data.properties[1].url}
+              />
             </div>
-            
           </div>
         </ContentWrapper>
       </ServicesWrapper>
-    )
+    );
   }
 }

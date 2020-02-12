@@ -155,7 +155,7 @@ class Ahoj extends React.Component {
                 className="button_text news_button"
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://www.facebook.com/profile.php?id=100005008548203"
+                href="https://www.facebook.com/sEtiketouNaSlovicko/"
               >
                 viac info
               </a>

@@ -282,7 +282,7 @@ export default {
         }),
         children: posts_courses.map(post => ({
           path: `/${post.data.slug}`,
-          component: "src/containers/Post",
+          component: "src/containers/Kurz",
           getData: () => ({
             post
           })
