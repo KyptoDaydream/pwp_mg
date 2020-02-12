@@ -9,6 +9,6 @@ brief: >-
   zložiť obrúsok na kolená. Pravidlá etikety si zautomatizujete a budete si
   sebavedomo užívať večere a bankety v krásnom prostredí so skvelým jedlom
 thumbnail: /uploads/etiketa-stolovania-1-.jpg
-book: nie
+book: áno
 ---
 viac info čoskoro
