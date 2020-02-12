@@ -1,30 +1,30 @@
-import React from 'react'
-import styled from 'styled-components'
-import { withRouteData, Link } from 'react-static'
-import { Controller, Scene } from 'react-scrollmagic'
-import logoImg from '../assets/mg_welcome_photo.png'
-import bg_branches from '../assets/bg_branches.svg'
-import bg_branches_2 from '../assets/bg_branches_2.svg'
-import bg_branch_2 from '../assets/bg_branch_2.svg'
-import bg_branch_3 from '../assets/bg_branch_3.svg'
-import olive_branch from '../assets/olive_branch.png'
-import foto_1 from '../assets/mg_foto_1.jpg'
-import foto_2 from '../assets/illustration_foto_1.jpg'
-import SliderWelcome from '../components/SliderWelcome'
-import MouseScrollIcon from '../components/MouseScrollIcon'
-import Carousel from '../components/Carousel'
-import Testimonials from '../components/Testimonials'
-import News from '../components/News'
-import slide_2 from '../assets/mg_illustracia_2.png'
-import slide_3 from '../assets/mg_illustracia_3.png'
+import React from "react";
+import styled from "styled-components";
+import { withRouteData, Link } from "react-static";
+import { Controller, Scene } from "react-scrollmagic";
+import logoImg from "../assets/mg_welcome_photo.png";
+import bg_branches from "../assets/bg_branches.svg";
+import bg_branches_2 from "../assets/bg_branches_2.svg";
+import bg_branch_2 from "../assets/bg_branch_2.svg";
+import bg_branch_3 from "../assets/bg_branch_3.svg";
+import olive_branch from "../assets/olive_branch.png";
+import foto_1 from "../assets/mg_foto_1.jpg";
+import foto_2 from "../assets/illustration_foto_1.jpg";
+import SliderWelcome from "../components/SliderWelcome";
+import MouseScrollIcon from "../components/MouseScrollIcon";
+import Carousel from "../components/Carousel";
+import Testimonials from "../components/Testimonials";
+import News from "../components/News";
+import slide_2 from "../assets/mg_illustracia_2.png";
+import slide_3 from "../assets/mg_illustracia_3.png";
 
 const Home = styled.div`
-overflow: hidden;
-`
+  overflow: hidden;
+`;
 const WelcomeScreen = styled.div`
   width: 100vw;
   height: 100vh;
-  background: var(--white);  
+  background: var(--white);
   .welcomePhoto {
     position: absolute;
     bottom: 0;
@@ -32,17 +32,17 @@ const WelcomeScreen = styled.div`
     z-index: 9990;
   }
   @media (max-width: 930px) {
-    background: var(--sliderBackground);  
+    background: var(--sliderBackground);
     .welcomePhoto {
       left: 310px;
     }
   }
-  @media (max-width: 730px) {  
+  @media (max-width: 730px) {
     .welcomePhoto {
       left: 10px;
     }
   }
-  @media (max-width: 500px) {  
+  @media (max-width: 500px) {
     .welcomePhoto {
       left: 0;
       width: 450px;
@@ -54,7 +54,7 @@ const WelcomeScreen = styled.div`
       width: 600px;
     }
   }
-`
+`;
 const WelcomeTitle = styled.h1`
   position: absolute;
   font-family: var(--titleFontFamily);
@@ -67,22 +67,28 @@ const WelcomeTitle = styled.h1`
   max-width: 400px;
   animation: showup 1s;
   @keyframes showup {
-    0% {opacity:0;}
-    50% {opacity:0;}
-    100% {opacity:1;}
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
   @media (max-width: 930px) {
-    left: 200px; 
+    left: 200px;
   }
-  @media (max-width: 730px) {  
+  @media (max-width: 730px) {
     left: 150px;
-    bottom: 70px; 
+    bottom: 70px;
   }
-  @media (max-width: 500px) {  
+  @media (max-width: 500px) {
     left: 90px;
     font-size: 62px;
   }
-  @media (max-width: 320px) {  
+  @media (max-width: 320px) {
     left: 80px;
     font-size: 48px;
   }
@@ -90,7 +96,7 @@ const WelcomeTitle = styled.h1`
     bottom: 30%;
     left: calc(37.5% - 346px);
   }
-`
+`;
 const WelcomeSubTitle = styled.h2`
   position: absolute;
   font-family: var(--titleFontFamily);
@@ -104,20 +110,20 @@ const WelcomeSubTitle = styled.h2`
   font-weight: 400;
   max-width: 400px;
   @media (max-width: 930px) {
-    left: 200px; 
+    left: 200px;
   }
-  @media (max-width: 730px) {  
+  @media (max-width: 730px) {
     left: 150px;
-    bottom: 60px; 
+    bottom: 60px;
     background: white;
     padding: 10px;
     border-radius: 10px;
   }
-  @media (max-width: 500px) {  
+  @media (max-width: 500px) {
     left: 90px;
     font-size: 18px;
   }
-  @media (max-width: 320px) {  
+  @media (max-width: 320px) {
     bottom: 50px;
     left: 80px;
     font-size: 14px;
@@ -126,7 +132,7 @@ const WelcomeSubTitle = styled.h2`
     bottom: 30%;
     left: calc(37.5% - 346px);
   }
-`
+`;
 const SliderSpace = styled.div`
   width: 62.5%;
   height: 100vh;
@@ -135,9 +141,9 @@ const SliderSpace = styled.div`
   position: relative;
   @media (max-width: 930px) {
     width: 100%;
-    background: var(--sliderBackground);  
+    background: var(--sliderBackground);
   }
-`
+`;
 const ContentWrapper = styled.div`
   background-color: var(--white);
   position: relative !important;
@@ -441,35 +447,39 @@ const ContentWrapper = styled.div`
         line-height: 72px;
       }
   }
-`
+`;
 
 class Index extends React.Component {
-  constructor () {
-    super()
- 
+  constructor() {
+    super();
+
     this.state = {
-      screen_width: typeof window !== 'undefined' ? window.innerWidth : 3000,
-    }
-    this.updateDimensions = this.updateDimensions.bind(this)
+      screen_width: typeof window !== "undefined" ? window.innerWidth : 3000
+    };
+    this.updateDimensions = this.updateDimensions.bind(this);
   }
 
-  componentDidMount () {
-    window.addEventListener('resize', this.updateDimensions)
+  componentDidMount() {
+    window.addEventListener("resize", this.updateDimensions);
   }
 
-  updateDimensions () {
-    this.setState({ screen_width: window.innerWidth })
+  updateDimensions() {
+    this.setState({ screen_width: window.innerWidth });
   }
 
-  render () {
+  render() {
     return (
       <Home>
-        <Controller globalSceneOptions={{ triggerHook: 'onLeave' }}>
+        <Controller globalSceneOptions={{ triggerHook: "onLeave" }}>
           <Scene pin>
             <WelcomeScreen>
               <WelcomeTitle>Život je zmena.</WelcomeTitle>
               <WelcomeSubTitle>Akú potrebuje ten Váš?</WelcomeSubTitle>
-              <img alt="maria galikova" src={logoImg} className="welcomePhoto" />
+              <img
+                alt="maria galikova"
+                src={logoImg}
+                className="welcomePhoto"
+              />
               <SliderSpace>
                 <SliderWelcome />
               </SliderSpace>
@@ -498,17 +508,38 @@ class Index extends React.Component {
               <div className="home_content" id="trigger_foto1">
                 <div className="content_left">
                   <h2 className="title first_title">Vitajte</h2>
-                  <h3 className="sub_title">Som PhDr. Mária Gáliková, Váš osobný kouč a poradca.</h3>
-                  <p>Pomáham ženám žiť v prítomnosti a netrápiť sa minulosťou.</p>
-                  <p>Je dôležité, aby sme to čo chceme, žili a robili teraz. To je ten najpodstatnejší moment. Všetko čo v živote máme, si priťahujeme my sami vlastnými myšlienkami, pocitmi, vedomými alebo podvedomými vzorcami. </p>
-                  <p>Spolu prekonáme strach, ktorý Vás paralyzuje a vydáme sa na cestu za šťastnejším a plnohodnotnejším životom. </p>
-                  <Link className="button_text" to="/o_mne">viac o mne</Link>
+                  <h3 className="sub_title">
+                    Som PhDr. Mária Gáliková, Váš osobný kouč a poradca.
+                  </h3>
+                  <p>
+                    Pomáham ženám žiť v prítomnosti a netrápiť sa minulosťou.
+                  </p>
+                  <p>
+                    Je dôležité, aby sme to čo chceme, žili a robili teraz. To
+                    je ten najpodstatnejší moment. Všetko čo v živote máme, si
+                    priťahujeme my sami vlastnými myšlienkami, pocitmi, vedomými
+                    alebo podvedomými vzorcami.{" "}
+                  </p>
+                  <p>
+                    Spolu prekonáme strach, ktorý Vás paralyzuje a vydáme sa na
+                    cestu za šťastnejším a plnohodnotnejším životom.{" "}
+                  </p>
+                  <Link className="button_text" to="/o_mne">
+                    viac o mne
+                  </Link>
                 </div>
                 <div className="content_right">
                   <Controller>
-                    <Scene classToggle="reveal_animation" triggerElement="#trigger_foto1">
+                    <Scene
+                      classToggle="reveal_animation"
+                      triggerElement="#trigger_foto1"
+                    >
                       <div className="mg_foto_1 photo_wrapper">
-                        <img alt="maria galikova" src={foto_1} className="mg_foto_1" />
+                        <img
+                          alt="maria galikova"
+                          src={foto_1}
+                          className="mg_foto_1"
+                        />
                       </div>
                     </Scene>
                   </Controller>
@@ -516,36 +547,59 @@ class Index extends React.Component {
                 <div className="content_full_width">
                   <h4 className="quote margin_top">Želám si</h4>
                   <div className="qoute_wrapper">
-                    <h4 className="sub_quote">aby ľudia začali viac rozpoznávať skutočné hodnoty a dostali medziľudské
-                      vzťahy na vyššiu úroveň
+                    <h4 className="sub_quote">
+                      aby ľudia začali viac rozpoznávať skutočné hodnoty a
+                      dostali medziľudské vzťahy na vyššiu úroveň
                     </h4>
                   </div>
                 </div>
                 <div className="content_left padded" id="trigger_foto2">
-                  <p>Veľkú časť mojich služieb tvoria konzultácie s klientkami naživo.</p>
-                  <p>Zdieľam so ženami svoje skúsenosti, svoje pohľady, a svoje princípy, ktoré som
-                    vyselektovala pri svojej ceste životom, a ktoré budú fungovať aj Vám.
+                  <p>
+                    Veľkú časť mojich služieb tvoria konzultácie s klientkami
+                    naživo.
+                  </p>
+                  <p>
+                    Zdieľam so ženami svoje skúsenosti, svoje pohľady, a svoje
+                    princípy, ktoré som vyselektovala pri svojej ceste životom,
+                    a ktoré budú fungovať aj Vám.
                   </p>
                   <Controller>
-                    <Scene classToggle="reveal_animation" triggerElement="#trigger_foto2">
+                    <Scene
+                      classToggle="reveal_animation"
+                      triggerElement="#trigger_foto2"
+                    >
                       <div className="illustration_foto_1 photo_wrapper">
-                        <img alt="girls chating" src={foto_2} className="illustration_foto_1" />
+                        <img
+                          alt="girls chating"
+                          src={foto_2}
+                          className="illustration_foto_1"
+                        />
                       </div>
                     </Scene>
                   </Controller>
-                  <p>Podstatou je zmeniť svoju energiu a svoje vibrácie, ktoré vysielate navonok. Zmeniť svoj
-                    postoj k jednotlivým situáciám. Ak zmeníte svoj postoj, otvoria sa Vám nové možnosti a
-                    príležitosti žiť šťastnejší život.
+                  <p>
+                    Podstatou je zmeniť svoju energiu a svoje vibrácie, ktoré
+                    vysielate navonok. Zmeniť svoj postoj k jednotlivým
+                    situáciám. Ak zmeníte svoj postoj, otvoria sa Vám nové
+                    možnosti a príležitosti žiť šťastnejší život.
                   </p>
-                  <p>Chcem pomôcť všetkým ženám nájsť odvahu a čeliť neznámemu. Ak chcete mať
-                    sebavedomie, musíte predovšetkým spoznať samú seba. Potom viete veriť vo svoje
-                    schopnosti, a teda konať, prejavovať sa a rozprávať ako zdravo sebavedomý človek.
+                  <p>
+                    Chcem pomôcť všetkým ženám nájsť odvahu a čeliť neznámemu.
+                    Ak chcete mať sebavedomie, musíte predovšetkým spoznať samú
+                    seba. Potom viete veriť vo svoje schopnosti, a teda konať,
+                    prejavovať sa a rozprávať ako zdravo sebavedomý človek.
                   </p>
-                  <p>Medzi moje základné hodnoty, na ktorých staviam svoje služby sú: úprimnosť,
-                    autentickosť, spoľahlivosť, ústretovosť a empatia.
+                  <p>
+                    Medzi moje základné hodnoty, na ktorých staviam svoje služby
+                    sú: úprimnosť, autentickosť, spoľahlivosť, ústretovosť a
+                    empatia.
                   </p>
-                  <Link className="button_text hide_normal" to="/sluzby">moje sluzby</Link>
-                  <Link className="button_text hide_mquery" to="/o_mne">viac o mne</Link>
+                  <Link className="button_text hide_normal" to="/sluzby">
+                    moje sluzby
+                  </Link>
+                  <Link className="button_text hide_mquery" to="/o_mne">
+                    viac o mne
+                  </Link>
                 </div>
                 <div className="content_right hide_mquery">
                   <Carousel />
@@ -556,7 +610,8 @@ class Index extends React.Component {
                   <div className="content_full_width">
                     <h4 className="quote">PREČO</h4>
                     <div className="qoute_wrapper">
-                      <h4 className="sub_quote">si myslím, že Vám viem pomôcť
+                      <h4 className="sub_quote">
+                        si myslím, že Vám viem pomôcť
                       </h4>
                     </div>
                   </div>
@@ -566,15 +621,17 @@ class Index extends React.Component {
               <div className="home_content">
                 <div className="content_full_width margin_top_mquery">
                   <News posts={this.props.posts} location="home" />
-                  <Link className="button_text news_link" to="/aktuality">všetky posty</Link>
+                  <Link className="button_text news_link" to="/aktuality">
+                    všetky posty
+                  </Link>
                 </div>
               </div>
             </ContentWrapper>
           </Scene>
         </Controller>
       </Home>
-    )
+    );
   }
 }
 
-export default withRouteData(Index)
+export default withRouteData(Index);

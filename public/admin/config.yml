@@ -67,7 +67,7 @@ collections:
     fields: # The fields for each document, usually in front matter.
       # Remove any that aren't needed for posts
       - { label: "Layout", name: "layout", widget: "hidden", default: "blog" }
-      - { label: "Type", name: "type", widget: "hidden", default: "clanok" }
+      - { label: "Type", name: "type", widget: "hidden", default: "kurz" }
       - { label: "Titulok", name: "title", widget: "string" }
       - { label: "Brief Text", name: "brief", widget: "string" }
       - { label: "Brief Obrázok", name: "thumbnail", widget: "image" }

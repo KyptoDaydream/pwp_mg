@@ -1,7 +1,7 @@
 ---
 layout: blog
 type: kurz
-title: Business Manners
+title: Business Manners 2
 brief: >-
   Pravidlá etikety vládnu aj vo svete biznisu. Osvojte si ich a podporte svoj
   sebavedomý postoj a vyrovnanosť v rôznych pracovných i spoločenských

@@ -1,14 +1,14 @@
-import React from 'react'
-import { withRouteData, Head } from 'react-static'
-import styled from 'styled-components'
-import bg_branch_2 from '../assets/bg_branch_2.svg'
-import bg_branch_3 from '../assets/bg_branch_3.svg'
-import olive_branch from '../assets/olive_branch.png'
-import News from '../components/News'
+import React from "react";
+import { withRouteData, Head } from "react-static";
+import styled from "styled-components";
+import bg_branch_2 from "../assets/bg_branch_2.svg";
+import bg_branch_3 from "../assets/bg_branch_3.svg";
+import olive_branch from "../assets/olive_branch.png";
+import News from "../components/News";
 
 const NewsWrapper = styled.div`
-overflow: hidden;
-`
+  overflow: hidden;
+`;
 const ContentWrapper = styled.div`
   margin-top: 100px;
   background-color: var(--white);
@@ -128,13 +128,16 @@ const ContentWrapper = styled.div`
       right: -200px;
     }
   }
-`
+`;
 class Ahoj extends React.Component {
-  render () {
+  render() {
     return (
       <NewsWrapper>
         <Head>
-          <meta name="keywords" content="phdr maria galikova,maria galikova clanky,maria galikova facebook,maria galikova kniha" />
+          <meta
+            name="keywords"
+            content="phdr maria galikova,maria galikova clanky,maria galikova facebook,maria galikova kniha"
+          />
         </Head>
         <ContentWrapper>
           <div className="floating_branch_1">
@@ -148,7 +151,12 @@ class Ahoj extends React.Component {
           </div>
           <div className="home_content">
             <div className="content_full_width">
-              <a className="button_text news_button" target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/profile.php?id=100005008548203">
+              <a
+                className="button_text news_button"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.facebook.com/profile.php?id=100005008548203"
+              >
                 viac info
               </a>
               <News posts={this.props.posts} location="aktuality" />
@@ -156,8 +164,8 @@ class Ahoj extends React.Component {
           </div>
         </ContentWrapper>
       </NewsWrapper>
-    )
+    );
   }
 }
 
-export default withRouteData(Ahoj)
+export default withRouteData(Ahoj);
