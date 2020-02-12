@@ -53,11 +53,11 @@ class Cookies extends React.Component {
     ) : (
       <CookiesWrapper>
         <p>
-          Táto stránka používa{" "}
+          Tieto stránky používajú súbory
           <a href="/Cookies.pdf" target="_blank">
             cookies
           </a>
-          . Okej, berem na vedomie šéfe.{" "}
+          .
         </p>
         <button onClick={this.onClickHandle}>suhlasim 👨</button>
       </CookiesWrapper>
