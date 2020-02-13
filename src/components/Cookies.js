@@ -62,10 +62,7 @@ class Cookies extends React.Component {
       } else {
         this.setState({ cookies_class: "cookie_wrapper" });
       }
-      console.log(window);
-      console.log(window.localStorage.getItem("cookies_seen"));
     }
-    console.log(this.state.cookies_class);
     return (
       <CookiesWrapper className={this.state.cookies_class}>
         <p>
@@ -75,7 +72,7 @@ class Cookies extends React.Component {
           </a>
           .
         </p>
-        <button onClick={this.onClickHandle}>suhlasim</button>
+        <button onClick={this.onClickHandle}>súhlasím</button>
       </CookiesWrapper>
     );
   }

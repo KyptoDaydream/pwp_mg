@@ -125,6 +125,17 @@ const ModalBranch = styled.div`
 `;
 class Clanok extends React.Component {
   render() {
+    const button =
+      this.props.post.data.book === "nie" ? (
+        ""
+      ) : (
+        <a
+          className="button_text news_link"
+          href="https://www.mariagalikova.sk/aktuality"
+        >
+          objednať kurz
+        </a>
+      );
     return (
       <PostWrapper>
         <div className="post_header">
@@ -140,12 +151,7 @@ class Clanok extends React.Component {
           </div>
           <div className="content_wrapper">
             <Markdown source={this.props.post.content} escapeHtml={false} />
-            <a
-              className="button_text news_link"
-              href="https://www.mariagalikova.sk/aktuality"
-            >
-              objednať kurz
-            </a>
+            {button}
           </div>
         </div>
       </PostWrapper>

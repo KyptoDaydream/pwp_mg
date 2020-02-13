@@ -31,6 +31,11 @@ const MenuScreenContent = styled.div`
   @media (max-width: 800px) {
     width: 100vw;
   }
+  .text_wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
 `;
 const MenuBranch = styled.div`
   position: absolute;
@@ -51,8 +56,12 @@ const WelcomeTitle = styled.h4`
   color: var(--blue);
   font-size: 62px;
   padding-left: 60px;
-  margin: 20px 0 60px 0;
+  padding-top: 20px;
+  margin: 0 0 60px 0;
   cursor: pointer;
+  @media (max-width: 690px) {
+    margin: 0 0 30px 0;
+  }
 `;
 const MenuLink = styled.h4`
   font-family: var(--titleFontFamily);
@@ -102,6 +111,34 @@ const MenuLinkAlt = styled.p`
   }
   @media (max-height: 630px) and (max-width: 600px) {
     display: none;
+  }
+`;
+const MenuSecondary = styled.div`
+  position: absolute;
+  top: 420px;
+  left: 550px;
+  z-index: 9;
+  display: flex;
+  flex-direction: column;
+  a.secondary_menu {
+    color: var(--white);
+    padding: 15px 30px;
+    border-radius: 40px;
+    background-color: var(--blue);
+    margin-bottom: 8px;
+    transition: 0.3s;
+  }
+  a.secondary_menu:hover {
+    background-color: #11182d;
+  }
+  @media (max-width: 690px) {
+    top: auto;
+    left: 60px;
+    bottom: 20px;
+    flex-direction: row;
+    a.secondary_menu {
+      margin-right: 5px;
+    }
   }
 `;
 class MenuScreen extends React.Component {
@@ -157,32 +194,50 @@ class MenuScreen extends React.Component {
                 transform: `translateX(${style.x_content}px)`
               }}
             >
-              <WelcomeTitle>Vitajte</WelcomeTitle>
-              <Link to="/o_mne" onClick={this.props.handleClick}>
-                <MenuLink>
-                  <span data-hover="o mne">o mne</span>
-                </MenuLink>
-              </Link>
-              <MenuLinkAlt className="blue">
-                Každá žena je iná. V živote som však zažívala strach tak ako aj
-                Vy.
-              </MenuLinkAlt>
-              <Link to="/sluzby" onClick={this.props.handleClick}>
-                <MenuLink>
-                  <span data-hover="služby">služby</span>
-                </MenuLink>
-              </Link>
-              <MenuLinkAlt className="blue">
-                Želám si aby ľudia začali viac rozpoznávať skutočné hodnoty.
-              </MenuLinkAlt>
-              <Link to="/aktuality" onClick={this.props.handleClick}>
-                <MenuLink>
-                  <span data-hover="aktuality">aktuality</span>
-                </MenuLink>
-              </Link>
-              <MenuLinkAlt className="blue">
-                To najnovšie z môjho profesného života.
-              </MenuLinkAlt>
+              <div class="text_wrapper">
+                <WelcomeTitle>Vitajte</WelcomeTitle>
+                <Link to="/o_mne" onClick={this.props.handleClick}>
+                  <MenuLink>
+                    <span data-hover="o mne">o mne</span>
+                  </MenuLink>
+                </Link>
+                <MenuLinkAlt className="blue">
+                  Každá žena je iná. V živote som však zažívala strach tak ako
+                  aj Vy.
+                </MenuLinkAlt>
+                <Link to="/sluzby" onClick={this.props.handleClick}>
+                  <MenuLink>
+                    <span data-hover="služby">služby</span>
+                  </MenuLink>
+                </Link>
+                <MenuLinkAlt className="blue">
+                  Želám si aby ľudia začali viac rozpoznávať skutočné hodnoty.
+                </MenuLinkAlt>
+                <Link to="/kurzy" onClick={this.props.handleClick}>
+                  <MenuLink>
+                    <span data-hover="kurzy">kurzy</span>
+                  </MenuLink>
+                </Link>
+                <MenuLinkAlt className="blue">
+                  Etiketa otvára dvere k akémukoľvek kontaktu.
+                </MenuLinkAlt>
+                <MenuSecondary>
+                  <Link
+                    className="secondary_menu"
+                    to="/aktuality"
+                    onClick={this.props.handleClick}
+                  >
+                    aktuality
+                  </Link>
+                  <Link
+                    className="secondary_menu"
+                    to="/kontakt"
+                    onClick={this.props.handleClick}
+                  >
+                    kontakt
+                  </Link>
+                </MenuSecondary>
+              </div>
               <MenuBranch />
             </MenuScreenContent>
           </MenuScreenWrapper>

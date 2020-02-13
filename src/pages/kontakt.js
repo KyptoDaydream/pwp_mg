@@ -6,6 +6,7 @@ import foto_1 from "../assets/mg_foto_1.jpg";
 import check from "../assets/check.png";
 import bg_branch_2 from "../assets/bg_branch_2.svg";
 import bg_branch_3 from "../assets/bg_branch_3.svg";
+import arrow from "../assets/arrow_select.png";
 import { withRouteData } from "react-static";
 
 const Services = styled.div`
@@ -27,6 +28,7 @@ const ContentWrapper = styled.div`
     .content_left{
       z-index: 10;
       flex-basis: 50%;
+      max-width: 50%;
       padding-left: 185px;
       box-sizing: border-box;
       &.padded {
@@ -37,6 +39,7 @@ const ContentWrapper = styled.div`
       z-index: 10;
       position: relative;
       flex-basis: 50%;
+      max-width: 50%;
       padding-right: 185px;
       box-sizing: border-box;
     }
@@ -91,8 +94,22 @@ const ContentWrapper = styled.div`
     box-shadow: none;
     padding: 15px 25px;
     font-size: 16px;
-    width: 80%;
+    width: 90%;
+    box-sizing: border-box;
+    max-width: 100%;
     margin-bottom: 10px;
+  }
+
+  form select {
+    position: relative;
+    background-color: var(--pink);
+    background-image: url(${arrow});
+    background-position-x: 95%;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    color: #108db8;
+    color: var(--blue);
   }
 
   form input:focus,
@@ -331,10 +348,19 @@ const ContentWrapper = styled.div`
     padding-bottom: 100px;
   }
   @media (max-width: 1175px) {
+    form input,
+    form select,
+    form textarea {
+      width: 80%;
+    }
     .home_content {
-      .content_left, .content_right, .content_full_width {
-      flex-basis: 70%;
-      width: 70%;
+      .content_right {
+        display: none;
+      }
+      .content_left, .content_full_width {
+      flex-basis: 80%;
+      width: 80%;
+      max-width: 80%;
       padding: 0;
       margin-left: 15%;
       &.padding_bottom_mquery {
@@ -415,7 +441,7 @@ class Contact extends React.Component {
     if (this.props.posts_dates.length > 0) {
       options.push(
         <option value="" disabled selected>
-          Vyber si svoj kurz
+          Vyberte si svoj kurz
         </option>
       );
       this.props.posts_dates.forEach((post, i) => {
