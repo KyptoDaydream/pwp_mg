@@ -44,12 +44,7 @@ class Cookies extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      cookies_class:
-        typeof window !== "undefined"
-          ? window.localStorage.getItem("cookies_seen") !== null
-            ? "cookie_wrapper hidden"
-            : "cookie_wrapper"
-          : "cookie_wrapper"
+      cookies_class: ""
     };
   }
 
@@ -59,8 +54,14 @@ class Cookies extends React.Component {
     }
     this.setState({ cookies_class: "cookie_wrapper hidden" });
   };
+
   render() {
-    if (typeof window !== "undefined") {
+    if (typeof window !== "undefined" && this.state.cookies_class === "") {
+      if (window.localStorage.getItem("cookies_seen") !== null) {
+        this.setState({ cookies_class: "cookie_wrapper hidden" });
+      } else {
+        this.setState({ cookies_class: "cookie_wrapper" });
+      }
       console.log(window);
       console.log(window.localStorage.getItem("cookies_seen"));
     }
