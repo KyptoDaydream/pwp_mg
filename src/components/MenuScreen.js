@@ -1,15 +1,15 @@
-import * as React from 'react'
-import { Motion, spring } from 'react-motion'
-import { Link } from 'react-static'
-import close from '../assets/close.png'
-import styled from 'styled-components'
-import menu_bg from '../assets/menu_bg.svg'
-import menu_branch from '../assets/menu_branch.svg'
+import * as React from "react";
+import { Motion, spring } from "react-motion";
+import { Link } from "react-static";
+import close from "../assets/close.png";
+import styled from "styled-components";
+import menu_bg from "../assets/menu_bg.svg";
+import menu_branch from "../assets/menu_branch.svg";
 
 const MenuScreenWrapper = styled.div`
   position: fixed;
   z-index: 100002;
-`
+`;
 const MenuScreenBackgroud = styled.div`
   position: relative;
   width: 100vw;
@@ -19,7 +19,7 @@ const MenuScreenBackgroud = styled.div`
   @media (max-width: 800px) {
     display: none;
   }
-`
+`;
 const MenuScreenContent = styled.div`
   position: absolute;
   top: 0;
@@ -31,7 +31,7 @@ const MenuScreenContent = styled.div`
   @media (max-width: 800px) {
     width: 100vw;
   }
-`
+`;
 const MenuBranch = styled.div`
   position: absolute;
   bottom: 0;
@@ -45,7 +45,7 @@ const MenuBranch = styled.div`
     background-repeat: no-repeat;
     background-image: none;
   }
-`
+`;
 const WelcomeTitle = styled.h4`
   font-family: var(--welcomeFontFamily);
   color: var(--blue);
@@ -53,7 +53,7 @@ const WelcomeTitle = styled.h4`
   padding-left: 60px;
   margin: 20px 0 60px 0;
   cursor: pointer;
-`
+`;
 const MenuLink = styled.h4`
   font-family: var(--titleFontFamily);
   color: var(--white);
@@ -86,7 +86,7 @@ const MenuLink = styled.h4`
       background-position: 0 88%;
     }
   }
-`
+`;
 const MenuLinkAlt = styled.p`
   font-family: var(--titleFontFamily);
   font-weight: 400;
@@ -103,69 +103,93 @@ const MenuLinkAlt = styled.p`
   @media (max-height: 630px) and (max-width: 600px) {
     display: none;
   }
-`
+`;
 class MenuScreen extends React.Component {
-  constructor (props) {
-    super()
- 
+  constructor(props) {
+    super();
+
     this.state = {
-      screen_width: typeof window !== 'undefined' ? window.innerWidth : 3000,
-    }
-    this.updateDimensions = this.updateDimensions.bind(this)
+      screen_width: typeof window !== "undefined" ? window.innerWidth : 3000
+    };
+    this.updateDimensions = this.updateDimensions.bind(this);
   }
 
   componentDidMount() {
-    window.addEventListener('resize', this.updateDimensions)
+    window.addEventListener("resize", this.updateDimensions);
   }
 
   updateDimensions() {
-    this.setState({ screen_width: window.innerWidth })
+    this.setState({ screen_width: window.innerWidth });
   }
 
-  render () {
-    const x_background = this.props.display ? 0 : this.state.screen_width
-    const x_content = this.props.display ? (this.state.screen_width < 800 ? 0 : this.state.screen_width - 800) : this.state.screen_width
+  render() {
+    const x_background = this.props.display ? 0 : this.state.screen_width;
+    const x_content = this.props.display
+      ? this.state.screen_width < 800
+        ? 0
+        : this.state.screen_width - 800
+      : this.state.screen_width;
     return (
-        <Motion 
-          defaultStyle={{
-            x_background: this.state.screen_width,
-            x_content: this.state.screen_width * 1.5
-          }}
-          style={{
-            x_background: spring( x_background, {stiffness: 120, damping: 48 }),
-            x_content: spring( x_content, {stiffness: 120, damping: 48 })
-          }}
-        >
-          {style => (
-            <MenuScreenWrapper style={{
-              transform: `translateX(${style.x_background}px)`,
-            }}>
-              <MenuScreenBackgroud style={{
-                transform: `translateX(${style.x_background}px)`,
-              }} onClick={this.props.handleClick}/>
-              <MenuScreenContent style={{
-                transform: `translateX(${style.x_content}px)`,
-              }}>
-                <WelcomeTitle>Vitajte</WelcomeTitle>
-                <Link to="/o_mne" onClick={this.props.handleClick}>
-                  <MenuLink><span data-hover="o mne">o mne</span></MenuLink>
-                </Link>
-                <MenuLinkAlt className="blue">Každá žena je iná. V živote som však zažívala strach tak ako aj Vy.</MenuLinkAlt>
-                <Link to="/sluzby" onClick={this.props.handleClick}>
-                  <MenuLink><span data-hover="služby">služby</span></MenuLink>
-                </Link>
-                <MenuLinkAlt className="blue">Želám si aby ľudia začali viac rozpoznávať skutočné hodnoty.</MenuLinkAlt>
-                <Link to="/aktuality" onClick={this.props.handleClick}>
-                  <MenuLink><span data-hover="aktuality">aktuality</span></MenuLink>
-                </Link>
-                <MenuLinkAlt className="blue">To najnovšie z môjho profesného života.</MenuLinkAlt>
-                <MenuBranch />
-              </MenuScreenContent>
-            </MenuScreenWrapper>
-          )}
-        </Motion>
-    )
+      <Motion
+        defaultStyle={{
+          x_background: this.state.screen_width,
+          x_content: this.state.screen_width * 1.5
+        }}
+        style={{
+          x_background: spring(x_background, { stiffness: 120, damping: 48 }),
+          x_content: spring(x_content, { stiffness: 120, damping: 48 })
+        }}
+      >
+        {style => (
+          <MenuScreenWrapper
+            style={{
+              transform: `translateX(${style.x_background}px)`
+            }}
+          >
+            <MenuScreenBackgroud
+              style={{
+                transform: `translateX(${style.x_background}px)`
+              }}
+              onClick={this.props.handleClick}
+            />
+            <MenuScreenContent
+              style={{
+                transform: `translateX(${style.x_content}px)`
+              }}
+            >
+              <WelcomeTitle>Vitajte</WelcomeTitle>
+              <Link to="/o_mne" onClick={this.props.handleClick}>
+                <MenuLink>
+                  <span data-hover="o mne">o mne</span>
+                </MenuLink>
+              </Link>
+              <MenuLinkAlt className="blue">
+                Každá žena je iná. V živote som však zažívala strach tak ako aj
+                Vy.
+              </MenuLinkAlt>
+              <Link to="/sluzby" onClick={this.props.handleClick}>
+                <MenuLink>
+                  <span data-hover="služby">služby</span>
+                </MenuLink>
+              </Link>
+              <MenuLinkAlt className="blue">
+                Želám si aby ľudia začali viac rozpoznávať skutočné hodnoty.
+              </MenuLinkAlt>
+              <Link to="/aktuality" onClick={this.props.handleClick}>
+                <MenuLink>
+                  <span data-hover="aktuality">aktuality</span>
+                </MenuLink>
+              </Link>
+              <MenuLinkAlt className="blue">
+                To najnovšie z môjho profesného života.
+              </MenuLinkAlt>
+              <MenuBranch />
+            </MenuScreenContent>
+          </MenuScreenWrapper>
+        )}
+      </Motion>
+    );
   }
 }
 
-export default MenuScreen
+export default MenuScreen;

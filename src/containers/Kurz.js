@@ -1,5 +1,5 @@
 import React from "react";
-import { withRouteData, Link } from "react-static";
+import { withRouteData } from "react-static";
 import styled from "styled-components";
 import Markdown from "react-markdown";
 import menu_bg from "../assets/menu_bg.svg";

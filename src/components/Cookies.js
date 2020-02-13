@@ -10,9 +10,10 @@ const CookiesWrapper = styled.div`
   transition: 0.2s;
   z-index: 9987;
   border-radius: 4px;
-  border: 1px solid var(--brightBlue);
+  border: 1px solid #ccc;
   padding: 25px;
   transition: 0.3s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   &.hidden {
     display: none;
   }
@@ -61,6 +62,9 @@ class Cookies extends React.Component {
       this.state.cookies_seen !== null
         ? "cookie_wrapper hidden"
         : "cookie_wrapper";
+    console.log(this.state.cookies_seen);
+    console.log(this.state.cookies_seen !== null);
+    console.log(cookie_class);
     return (
       <CookiesWrapper className={cookie_class}>
         <p>

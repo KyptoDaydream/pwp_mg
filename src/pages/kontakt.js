@@ -6,6 +6,7 @@ import foto_1 from "../assets/mg_foto_1.jpg";
 import check from "../assets/check.png";
 import bg_branch_2 from "../assets/bg_branch_2.svg";
 import bg_branch_3 from "../assets/bg_branch_3.svg";
+import { withRouteData } from "react-static";
 
 const Services = styled.div`
   overflow: hidden;
@@ -76,8 +77,14 @@ const ContentWrapper = styled.div`
       background-position: 0 0;
     }
   }
+
+  form select {
+    appearance: none;
+  }
+
   form input,
-  form textarea {
+  form textarea,
+  form select {
     border: 1px solid var(--lightBlue);
     background: var(--lightBlue);
     border-radius: 4px;
@@ -93,7 +100,7 @@ const ContentWrapper = styled.div`
     border: 1px solid var(--brightBlue);
     outline: none;
   }
-  form input[type="checkbox"] {
+  form .checkbox_wrapper input[type="checkbox"] {
     border-radius: 50% !important;
     background: var(--lightBlue);
     -webkit-appearance: none;
@@ -105,17 +112,24 @@ const ContentWrapper = styled.div`
     cursor: pointer;
     margin: 0;
   }
-  form input[type="checkbox"]:focus {
+  form .checkbox_wrapper:hover input[type="checkbox"] {
+    background: #cbd8e8;
+  }
+
+  form .checkbox_wrapper input[type="checkbox"]:focus {
     border: 0;
   }
-  form input[type="checkbox"]:checked,
-  form input[type="checkbox"]:checked:active {
+
+  form .checkbox_wrapper:hover input[type="checkbox"]:checked,
+  form .checkbox_wrapper:hover input[type="checkbox"]:checked:active,
+  form .checkbox_wrapper input[type="checkbox"]:checked,
+  form .checkbox_wrapper input[type="checkbox"]:checked:active {
     background: var(--brightBlue);
     border: 1px solid var(--white);
     box-shadow: 0 0 3px rgba(0,0,0,0.3);
   }
-  form input[type="checkbox"]:checked:after,
-  form input[type="checkbox"]:checked:active:after {
+  form .checkbox_wrapper input[type="checkbox"]:checked:after,
+  form .checkbox_wrapper input[type="checkbox"]:checked:active:after {
     content: '';
     display: block;
     background: url(${check}) center center;
@@ -125,6 +139,18 @@ const ContentWrapper = styled.div`
     width: 18px;
     position: absolute;
     border-radius: 50%;
+  }
+
+  form .courses_wrapper input[type="checkbox"] {
+    display: none;
+  }
+  form .courses_wrapper label {
+    font-size: 10px;
+    padding: 10px 15px;
+    border: 1px solid var(--brightBlue);
+    border-radius: 30px;
+    margin: 5px;
+    display: inline-block;
   }
 
   form .checkbox_label {
@@ -380,8 +406,32 @@ const ContentWrapper = styled.div`
     } 
   }
 `;
-export default class Contact extends React.Component {
+class Contact extends React.Component {
+  checkboxClick = () => {};
+
   render() {
+    const options = [];
+    let iterator = 0;
+    if (this.props.posts_dates.length > 0) {
+      options.push(
+        <option value="" disabled selected>
+          Vyber si svoj kurz
+        </option>
+      );
+      this.props.posts_dates.forEach((post, i) => {
+        iterator++;
+        options.push(
+          <option value={post.data.title}>{post.data.title}</option>
+        );
+      });
+    } else {
+      options.push(
+        <option value="" disabled selected>
+          Nie sú otvorené žiadne kurzy
+        </option>
+      );
+    }
+
     return (
       <Services>
         <Head>
@@ -442,12 +492,15 @@ export default class Contact extends React.Component {
                     required
                   />
                 </div>
+                <div className="courses_wrapper">
+                  <select name="kurz">{options}</select>
+                </div>
                 <div>
                   <textarea placeholder="Správa" id="msg" name="Správa" />
                 </div>
                 <div className="checkbox_wrapper">
-                  <input type="checkbox" name="q" id="a-0" required autofocus />
-                  <label className="checkbox_label" for="a-0">
+                  <input type="checkbox" name="q" id="a-0" required autoFocus />
+                  <label className="checkbox_label">
                     Súhlasím s odoslaním údajov. (
                     <a
                       className="poucenie"
@@ -488,3 +541,5 @@ export default class Contact extends React.Component {
     );
   }
 }
+
+export default withRouteData(Contact);

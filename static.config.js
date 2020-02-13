@@ -267,6 +267,7 @@ export default {
     const posts_links = await getPosts("./src/posts/links");
     const posts_statuses = await getPosts("./src/posts/statuses");
     const posts_courses = await getPosts("./src/posts/courses");
+    const posts_dates = await getPosts("./src/posts/dates");
     const posts = posts_articles.concat(posts_links.concat(posts_statuses));
     return [
       {
@@ -287,6 +288,12 @@ export default {
             post
           })
         }))
+      },
+      {
+        path: "/kontakt",
+        getData: () => ({
+          posts_dates
+        })
       },
       {
         path: "/aktuality",
