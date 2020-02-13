@@ -132,9 +132,12 @@ const MenuSecondary = styled.div`
     background-color: #11182d;
   }
   @media (max-width: 690px) {
+    position: relative;
     top: auto;
-    left: 60px;
-    bottom: 20px;
+    left: auto;
+    bottom: auto;
+    margin-top: 20px;
+    padding-left: 60px;
     flex-direction: row;
     a.secondary_menu {
       margin-right: 5px;

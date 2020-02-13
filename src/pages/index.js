@@ -379,7 +379,8 @@ const ContentWrapper = styled.div`
         margin-bottom: 40px;
       }
       .hide_normal {
-        display: inline-block;
+        display: inline-block !important;
+        margin-right: 20px;
       }
       .hide_mquery {
         display: none;
@@ -509,19 +510,19 @@ class Index extends React.Component {
                 <div className="content_left">
                   <h2 className="title first_title">Vitajte</h2>
                   <h3 className="sub_title">
-                    Som PhDr. Mária Gáliková, MBE, váš osobný kouč a poradca,
-                    odborníčka na spoločenskú etiketu.
+                    Som PhDr. Mária Gáliková, MBE, váš osobný kouč a poradca,
+                    odborníčka na spoločenskú etiketu.
                   </h3>
                   <p>
-                    Ženy boli po celé stáročia chránené, boli zárukou zachovania
-                    rodu a muži im dvorili. Ženy sú v spoločnosti považované za
-                    významnejšie a muži sa k nim správajú galantne, vytvárajú im
-                    maximálny komfort, jednoducho ich rozmaznávajú. Dovoľme im
-                    to, nechajme sa, milé dámy, rozmaznávať.
+                    Ženy boli po celé stáročia chránené, boli zárukou zachovania
+                    rodu a muži im dvorili. Ženy sú v spoločnosti považované za
+                    významnejšie a muži sa k nim správajú galantne, vytvárajú im
+                    maximálny komfort, jednoducho ich rozmaznávajú. Dovoľme im
+                    to, nechajme sa, milé dámy, rozmaznávať.
                   </p>
                   <p>
-                    Pomáham ženám získať zdravé sebavedomie, lebo ono je
-                    predpokladom vyššej kvality života.
+                    Pomáham ženám získať zdravé sebavedomie, lebo ono je
+                    predpokladom vyššej kvality života.
                   </p>
                   <Link className="button_text" to="/o_mne">
                     viac o mne
@@ -577,25 +578,25 @@ class Index extends React.Component {
                     </Scene>
                   </Controller>
                   <p>
-                    Dôležité je žiť v prítomnosti a vedome. Minulosť nás
-                    limituje a bráni nám dosahovať nové ciele. Všetko, čo v
-                    živote máme, si priťahujeme vlastnými myšlienkmi, vedomými a
-                    podvedomými vzorcami.
+                    Dôležité je žiť v prítomnosti a vedome. Minulosť nás
+                    limituje a bráni nám dosahovať nové ciele. Všetko, čo v
+                    živote máme, si priťahujeme vlastnými myšlienkmi, vedomými a
+                    podvedomými vzorcami.
                   </p>
                   <p>
-                    Spoločne prokonáme strachy, ktoré nás paralyzujú, a spolu sa
-                    vydáme na cestu za šťastnejším plnohodnotným životom.
+                    Spoločne prokonáme strachy, ktoré nás paralyzujú, a spolu sa
+                    vydáme na cestu za šťastnejším plnohodnotným životom.
                   </p>
                   <p>
-                    Naučím vás aj to, ako zvládnuť spoločenskú etiketu,
-                    bezchybne stolovať a suverénne sa správať na rôznych
-                    spoločenských podujatiach. Čím pozitívnejšie a istejšie
-                    vystupujete, tým vás lepšie okolie hodnotí a prijíma.
+                    Naučím vás aj to, ako zvládnuť spoločenskú etiketu,
+                    bezchybne stolovať a suverénne sa správať na rôznych
+                    spoločenských podujatiach. Čím pozitívnejšie a istejšie
+                    vystupujete, tým vás lepšie okolie hodnotí a prijíma.
                   </p>
                   <Link className="button_text hide_normal" to="/sluzby">
                     moje sluzby
                   </Link>
-                  <Link className="button_text hide_mquery" to="/kurzy">
+                  <Link className="button_text" to="/kurzy">
                     viac o kurzoch
                   </Link>
                 </div>

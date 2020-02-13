@@ -1,11 +1,11 @@
-import React from 'react'
-import { withRouteData, Link } from 'react-static'
-import styled from 'styled-components'
-import Markdown from 'react-markdown'
-import menu_bg from '../assets/menu_bg.svg'
-import bg_branch_2 from '../assets/bg_branch_2.svg'
-import bg_branch_3 from '../assets/bg_branch_3.svg'
-import menu_branch from '../assets/menu_branch.svg'
+import React from "react";
+import { withRouteData, Link } from "react-static";
+import styled from "styled-components";
+import Markdown from "react-markdown";
+import menu_bg from "../assets/menu_bg.svg";
+import bg_branch_2 from "../assets/bg_branch_2.svg";
+import bg_branch_3 from "../assets/bg_branch_3.svg";
+import menu_branch from "../assets/menu_branch.svg";
 
 const PostWrapper = styled.div`
   width: 100vw;
@@ -42,46 +42,86 @@ const PostWrapper = styled.div`
       img.thumbnail_image {
         margin-top: 0px;
       }
+      strong {
+        color: var(--brightBlue);
+      }
       p {
         font-weight: 400;
         font-size: 16px;
-        margin-bottom: 40px;
+        margin: 0;
+        padding: 20px 0;
       }
       h1 {
         color: var(--red);
         font-family: var(--titleFontFamily);
-        font-size: 38px;
-        font-weight: 700;
-        margin-bottom: 12px;
-        line-height: 38px;
-        margin-top: 50px;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 32px;
+        margin: 0;
+        padding: 40px 0;
+        strong {
+          color: var(--blue);
+        }
       }
       h2 {
         font-family: var(--titleFontFamily);
-        font-weight: 500;
         font-size: 15px;
-        letter-spacing: 1.04px
+        letter-spacing: 1.04px;
         line-height: 22px;
-        margin-bottom: 40px;
-        margin-top: 0px;
         text-transform: uppercase;
         color: var(--blue);
+        margin: 0;
+        padding: 20px 0 10px 0;
+        font-weight: 600;
+        strong {
+          color: var(--blue);
+        }
+      }
+      blockquote {
+        margin: 50px 0;
+        padding: 20px 35px;
+        background: var(--lightBlue);
+        p {
+          font-size: 15px;
+          font-style: italic;
+          color: var(--brightBlue);
+        }
+      }
+      ul {
+        padding-bottom: 30px;
+      }
+      ul li {
+        font-weight: 400;
+        font-size: 16px;
+        margin: 0;
+        padding: 7px 0;
+        color: #7d8292;
       }
     }
     .floating_branch_1 {
-    position: absolute;
-    top: 100px;
-    left: -130px;
-    height: 300px;
-    width: 300px;
-    animation: move_branch_1 15s infinite linear;
-    @keyframes move_branch_1 {
-    0% {transform: rotate(0deg);}
-    25% {transform: rotate(6deg);}
-    50% {transform: rotate(0deg);}
-    75% {transform: rotate(-6deg);}
-    100% {transform: rotate(0deg);}
-    }
+      position: absolute;
+      top: 100px;
+      left: -130px;
+      height: 300px;
+      width: 300px;
+      animation: move_branch_1 15s infinite linear;
+      @keyframes move_branch_1 {
+        0% {
+          transform: rotate(0deg);
+        }
+        25% {
+          transform: rotate(6deg);
+        }
+        50% {
+          transform: rotate(0deg);
+        }
+        75% {
+          transform: rotate(-6deg);
+        }
+        100% {
+          transform: rotate(0deg);
+        }
+      }
     }
     .floating_branch_2 {
       position: absolute;
@@ -91,26 +131,38 @@ const PostWrapper = styled.div`
       width: 300px;
       animation: move_branch_2 10s infinite linear;
       @keyframes move_branch_2 {
-      0% {transform: rotate(0deg);}
-      25% {transform: rotate(-6deg);}
-      50% {transform: rotate(0deg);}
-      75% {transform: rotate(6deg);}
-      100% {transform: rotate(0deg);}
+        0% {
+          transform: rotate(0deg);
+        }
+        25% {
+          transform: rotate(-6deg);
+        }
+        50% {
+          transform: rotate(0deg);
+        }
+        75% {
+          transform: rotate(6deg);
+        }
+        100% {
+          transform: rotate(0deg);
+        }
       }
     }
   }
   @media (max-width: 950px) {
-    .floating_branch_2, .floating_branch_1 {
+    .floating_branch_2,
+    .floating_branch_1 {
       display: none;
     }
-    .post_content, .post_header {
+    .post_content,
+    .post_header {
       padding-left: 80px;
       padding-right: 80px;
       max-width: 950px;
       box-sizing: border-box;
     }
   }
-`
+`;
 const ModalBranch = styled.div`
   position: absolute;
   bottom: -100px;
@@ -122,16 +174,14 @@ const ModalBranch = styled.div`
   @media (max-width: 950px) {
     display: none;
   }
-`
+`;
 class Clanok extends React.Component {
-  render () {
+  render() {
     return (
       <PostWrapper>
         <div className="post_header">
           <ModalBranch />
-          <h2 className="post_header_title">
-            {this.props.post.data.title}
-          </h2>
+          <h2 className="post_header_title">{this.props.post.data.title}</h2>
         </div>
         <div className="post_content">
           <div className="floating_branch_1">
@@ -142,12 +192,17 @@ class Clanok extends React.Component {
           </div>
           <div className="content_wrapper">
             <Markdown source={this.props.post.content} escapeHtml={false} />
-            <a className="button_text news_link" href="https://www.mariagalikova.sk/aktuality">všetky články</a>
+            <a
+              className="button_text news_link"
+              href="https://www.mariagalikova.sk/aktuality"
+            >
+              všetky články
+            </a>
           </div>
         </div>
       </PostWrapper>
-    )
+    );
   }
 }
 
-export default withRouteData(Clanok)
+export default withRouteData(Clanok);

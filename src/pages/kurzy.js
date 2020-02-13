@@ -241,17 +241,27 @@ const ContentWrapper = styled.div`
       }
       }
     }
+    .content_wrapper .content_right {
+      display: none;
+    }
+    .home_content .content_wrapper.reverse {
+      flex-direction: row;
+    }
+    .home_content .content_wrapper.reverse .content_left {
+      padding: 0;
+    }
     .floating_branch_3 {
       right: -150px;
+    }
+    .floating_branch_4 {
+      display: none;
     }
     .hide_mquery {
       display: none;
     }
     .mg_foto_1 {
       margin: 0 auto !important;
-    }
-    .illustration_foto_1 {
-      display: none;
+      padding-bottom: 20px;
     }
     .service_illustration {
       width: 70%;

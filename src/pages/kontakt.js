@@ -522,12 +522,12 @@ class Contact extends React.Component {
                   <select name="Kurz">{options}</select>
                 </div>
                 <div>
-                  <textarea placeholder="Sprava" id="msg" name="Správa" />
+                  <textarea placeholder="Správa" id="msg" name="Sprava" />
                 </div>
                 <div className="checkbox_wrapper">
                   <input
                     type="checkbox"
-                    name="Suhlas s GDPR"
+                    name="GDPR"
                     id="a-0"
                     required
                     autoFocus

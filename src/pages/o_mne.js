@@ -328,25 +328,25 @@ export default class AbouteMe extends React.Component {
                 V živote som však zažívala strach tak ako aj Vy.
               </h3>
               <p className="block_padded">
-                Môj príbeh sa začal v Prahe, kde som v tom čase žila. Mala som
-                20 rokov, keď som na ministerstve zahraničných vecí absolvovala
-                kurz diplomatickeho protokolu. Tento kurz obsahoval spoločenskú
-                etiketu, diplomatický protokol, etiketu stolovania, dress code.
+                Môj príbeh sa začal v Prahe, kde som v tom čase žila. Mala som
+                20 rokov, keď som na ministerstve zahraničných vecí absolvovala
+                kurz diplomatickeho protokolu. Tento kurz obsahoval spoločenskú
+                etiketu, diplomatický protokol, etiketu stolovania, dress code.
               </p>
               <p className="block_padded" id="trigger_foto2">
-                Nasledoval 5-ročný zahraničný pobyt s exmanželom v západnom
-                Berlíne v pozícii manželky diplomata. Tu som mohla v praxi
-                zúročiť všetky znalosti z oblasti protokolu a spoločenskej
+                Nasledoval 5-ročný zahraničný pobyt s exmanželom v západnom
+                Berlíne v pozícii manželky diplomata. Tu som mohla v praxi
+                zúročiť všetky znalosti z oblasti protokolu a spoločenskej
                 etikety.
               </p>
               <p className="block_padded">
-                Počas pobytu v zahraničí som študovala nemecký jazyk na Herbert
-                Universität v Berlíne.
+                Počas pobytu v zahraničí som študovala nemecký jazyk na Herbert
+                Universität v Berlíne.
               </p>
               <p className="block_padded">
-                Po návrate do Prahy som založila cestovnú kanceláriu ITIS
-                Reisen, s.r.o. V rámci môjho podnikania som pre klientov
-                organizovala rôzne spoločenské podujatia, recepcie a bankety.
+                Po návrate do Prahy som založila cestovnú kanceláriu ITIS
+                Reisen, s.r.o. V rámci môjho podnikania som pre klientov
+                organizovala rôzne spoločenské podujatia, recepcie a bankety.
               </p>
             </div>
             <div className="content_right">
@@ -383,22 +383,22 @@ export default class AbouteMe extends React.Component {
             </div>
             <div className="content_left padding_top_mquery">
               <p className="block_padded">
-                Po niekoľkých rokoch som opäť vycestovala s exmanželom
-                diplomatom do Bonnu. Absolvovala som nespočetné množstvo
-                spoločenských podujatí za účasti významných VIP hostí, dokonca
-                aj recepcie s členmi anglickej kráľovskej rodiny.
+                Po niekoľkých rokoch som opäť vycestovala s exmanželom
+                diplomatom do Bonnu. Absolvovala som nespočetné množstvo
+                spoločenských podujatí za účasti významných VIP hostí, dokonca
+                aj recepcie s členmi anglickej kráľovskej rodiny.
               </p>
               <p className="block_padded" id="trigger_foto3">
-                Moje diplomatické skúsenosti a znalosti business etikety som
-                žila v praxi. Po niekoľkých rokoch som sa rozviedla a
-                presťahovala do Bratislavy, kde žijem aj dnes.
+                Moje diplomatické skúsenosti a znalosti business etikety som
+                žila v praxi. Po niekoľkých rokoch som sa rozviedla a
+                presťahovala do Bratislavy, kde žijem aj dnes.
               </p>
               <p className="block_padded">
-                Opäť som sa vydala a začala žiť nový šťastný súkromný život.
+                Opäť som sa vydala a začala žiť nový šťastný súkromný život.
               </p>
               <p className="block_padded">
-                Titul profesionálny manager som získala na The Open University v
-                Londýne.
+                Titul profesionálny manager som získala na The Open University v
+                Londýne.
               </p>
               <Controller>
                 <Scene
@@ -415,24 +415,24 @@ export default class AbouteMe extends React.Component {
                 </Scene>
               </Controller>
               <p className="block_padded">
-                Následne som vyštudovala medzinárodné vzťahy, kde som tiež
-                absolvovala skúšku z diplomatického protokolu. Titul PhDr. som
-                získala na Fakulte masmédií PEVŠ.
+                Následne som vyštudovala medzinárodné vzťahy, kde som tiež
+                absolvovala skúšku z diplomatického protokolu. Titul PhDr. som
+                získala na Fakulte masmédií PEVŠ.
               </p>
               <p className="block_padded">
-                Pracovala som v súkromnej firme na pozícii account managera pre
-                TOP klientov. Do širšieho povedomia som sa dostala ako
-                marketingová riaditeľka TV JOJ. Na tejto pozícii som pracovala 5
+                Pracovala som v súkromnej firme na pozícii account managera pre
+                TOP klientov. Do širšieho povedomia som sa dostala ako
+                marketingová riaditeľka TV JOJ. Na tejto pozícii som pracovala 5
                 rokov.
               </p>
               <p className="block_padded">
-                Neskôr som pôsobila ešte na pozíciách výkonnej a obchodnej
-                riaditeľky iných firiem.
+                Neskôr som pôsobila ešte na pozíciách výkonnej a obchodnej
+                riaditeľky iných firiem.
               </p>
               <p className="block_padded">
-                Viem, čo znamenalo pre mňa rozhodnutie skončiť na rôznych
-                riadiacich pozíciách – strach zo zmeny na jednej strane, a na
-                druhej strane oslobodenie a naplnenie vlastných ambícií.
+                Viem, čo znamenalo pre mňa rozhodnutie skončiť na rôznych
+                riadiacich pozíciách – strach zo zmeny na jednej strane, a na
+                druhej strane oslobodenie a naplnenie vlastných ambícií.
               </p>
             </div>
             <div className="content_right" />
@@ -450,27 +450,27 @@ export default class AbouteMe extends React.Component {
             </div>
             <div className="content_left padded last_block">
               <p className="block_padded">
-                Vďaka obrovskej podpore môjho manžela som zobrala osud do
-                svojich rúk a založila vlastnú firmu MG Prime, s.r.o. Okrem
-                marketingu sa venujem aj ženám, ich premenám, spoločenskej
+                Vďaka obrovskej podpore môjho manžela som zobrala osud do
+                svojich rúk a založila vlastnú firmu MG Prime, s.r.o.Okrem
+                marketingu sa venujem aj ženám, ich premenám, spoločenskej
                 etikete, business etikete, etikete stolovania.
               </p>
               <p className="block_padded">
-                Som vydatá, mám dve dospelé dcéry, jednu úžasnú vnučku a žijem
-                šťastný a spokojný život. Mojím životným krédom je pomáhať tým,
-                ktorí pomoc potrebujú. Robím to z lásky a bez očakávaní.
+                Som vydatá, mám dve dospelé dcéry, jednu úžasnú vnučku a žijem
+                šťastný a spokojný život. Mojím životným krédom je pomáhať tým,
+                ktorí pomoc potrebujú. Robím to z lásky a bez očakávaní.
               </p>
               <p className="block_padded">
-                Želám si, aby boli ľudia k sebe slušní a zdvorilí. Aby poznali
-                pravidlá spoločenského správania. To je etiketa. Preto som sa
-                rozhodla svoje vedomosti a dlhoročné skúsenosti zdieľať s
-                ostatnými, ktorí sa chcú naučiť správať sa kultivovane.
+                Želám si, aby boli ľudia k sebe slušní a zdvorilí. Aby poznali
+                pravidlá spoločenského správania. To je etiketa. Preto som sa
+                rozhodla svoje vedomosti a dlhoročné skúsenosti zdieľať s
+                ostatnými, ktorí sa chcú naučiť správať sa kultivovane.
               </p>
               <p className="block_padded">
-                Vzhľadom na to, že prechovávam úctu a obdiv k osobnostiam, ktoré
-                vo svojom živote dosiahli úspech a sú uznávaní aj za hranicami
-                Slovenska, organizujem prestížne podujatie Beckovské slnko, na
-                ktorom oceňujem týchto výnimočných ľudí.
+                Vzhľadom na to, že prechovávam úctu a obdiv k osobnostiam, ktoré
+                vo svojom živote dosiahli úspech a sú uznávaní aj za hranicami
+                Slovenska, organizujem prestížne podujatie Beckovské slnko, na
+                ktorom oceňujem týchto výnimočných ľudí.
               </p>
             </div>
           </div>
