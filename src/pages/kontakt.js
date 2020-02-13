@@ -2,7 +2,7 @@ import React from "react";
 import { Head } from "react-static";
 import styled from "styled-components";
 import { Controller, Scene } from "react-scrollmagic";
-import foto_1 from "../assets/mg_foto_1.jpg";
+import foto_1 from "../assets/mg_foto_10.jpg";
 import check from "../assets/check.png";
 import bg_branch_2 from "../assets/bg_branch_2.svg";
 import bg_branch_3 from "../assets/bg_branch_3.svg";
@@ -488,7 +488,7 @@ class Contact extends React.Component {
               </p>
               <form
                 method="post"
-                action="https://www.briskforms.com/go/715a785ffead4b4dbb21f0a42a2a7896"
+                action="https://forms.un-static.com/forms/9acd0f1130fcb5ad475182f03e22cd815de5d940"
               >
                 <p>Prihláste sa na kurz:</p>
                 <div>
@@ -505,7 +505,7 @@ class Contact extends React.Component {
                     placeholder="Telefón"
                     type="text"
                     id="phone"
-                    name="Telefón"
+                    name="Telefon"
                     required
                   />
                 </div>
@@ -519,13 +519,19 @@ class Contact extends React.Component {
                   />
                 </div>
                 <div className="courses_wrapper">
-                  <select name="kurz">{options}</select>
+                  <select name="Kurz">{options}</select>
                 </div>
                 <div>
-                  <textarea placeholder="Správa" id="msg" name="Správa" />
+                  <textarea placeholder="Sprava" id="msg" name="Správa" />
                 </div>
                 <div className="checkbox_wrapper">
-                  <input type="checkbox" name="q" id="a-0" required autoFocus />
+                  <input
+                    type="checkbox"
+                    name="Suhlas s GDPR"
+                    id="a-0"
+                    required
+                    autoFocus
+                  />
                   <label className="checkbox_label">
                     Súhlasím s odoslaním údajov. (
                     <a

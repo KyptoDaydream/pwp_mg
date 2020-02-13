@@ -451,28 +451,20 @@ export default class AbouteMe extends React.Component {
             <div className="content_left padded last_block">
               <p className="block_padded">
                 Vďaka obrovskej podpore môjho manžela som zobrala osud do
-                svojich rúk a založila vlastnú firmu MG Prime, s.r.o.
-              </p>
-              <p className="block_padded">
-                Okrem marketingu sa venujem aj ženám, ich premenám, spoločenskej
+                svojich rúk a založila vlastnú firmu MG Prime, s.r.o. Okrem
+                marketingu sa venujem aj ženám, ich premenám, spoločenskej
                 etikete, business etikete, etikete stolovania.
               </p>
               <p className="block_padded">
                 Som vydatá, mám dve dospelé dcéry, jednu úžasnú vnučku a žijem
-                šťastný a spokojný život.
-              </p>
-              <p className="block_padded">
-                Mojím životným krédom je pomáhať tým, ktorí pomoc potrebujú.
-                Robím to z lásky a bez očakávaní.
+                šťastný a spokojný život. Mojím životným krédom je pomáhať tým,
+                ktorí pomoc potrebujú. Robím to z lásky a bez očakávaní.
               </p>
               <p className="block_padded">
                 Želám si, aby boli ľudia k sebe slušní a zdvorilí. Aby poznali
-                pravidlá spoločenského správania. To je etiketa.
-              </p>
-              <p className="block_padded">
-                Preto som sa rozhodla svoje vedomosti a dlhoročné skúsenosti
-                zdieľať s ostatnými, ktorí sa chcú naučiť správať sa
-                kultivovane.
+                pravidlá spoločenského správania. To je etiketa. Preto som sa
+                rozhodla svoje vedomosti a dlhoročné skúsenosti zdieľať s
+                ostatnými, ktorí sa chcú naučiť správať sa kultivovane.
               </p>
               <p className="block_padded">
                 Vzhľadom na to, že prechovávam úctu a obdiv k osobnostiam, ktoré

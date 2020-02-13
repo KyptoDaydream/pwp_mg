@@ -509,8 +509,8 @@ class Index extends React.Component {
                 <div className="content_left">
                   <h2 className="title first_title">Vitajte</h2>
                   <h3 className="sub_title">
-                    Som PhDr. Mária Gáliková, MBE, váš osobný kouč a poradca,
-                    odborníčka na spoločenskú etiketu.
+                    Som PhDr. Mária Gáliková, MBE, váš osobný kouč a poradca,
+                    odborníčka na spoločenskú etiketu.
                   </h3>
                   <p>
                     Ženy boli po celé stáročia chránené, boli zárukou zachovania
