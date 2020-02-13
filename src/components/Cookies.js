@@ -66,7 +66,7 @@ class Cookies extends React.Component {
     console.log(this.state.cookies_seen !== null);
     console.log(cookie_class);
     return (
-      <CookiesWrapper>
+      <CookiesWrapper className={cookie_class}>
         <p>
           Tieto stránky používajú súbory{" "}
           <a href="/Cookies.pdf" target="_blank">
