@@ -39,12 +39,25 @@ Kurz ukončíme asistovanou večerou, kde si v praxi precvičíme pravidlá etik
 * etiketa všedného dňa
 
 
+```
+Termín kurzu: 18. – 19. 4. 2020
+```
 
-Termín kurzu: 18. – 19. 4. 2020\
-Miesto kurzu: DoubleTree by Hilton, Bratislava\
-Počet účastníkov: max. 12\
-Cena: 890 € za osobu\
+```
+Miesto kurzu: DoubleTree by Hilton, Bratislava
+```
+
+```
+Počet účastníkov: max. 12
+```
+
+```
+Cena: 890 € za osobu
+```
+
+```
 V cene je zahrnuté: študijné materiály, malé občerstvenie počas dňa, jedna asistovaná večera v hoteli DoubleTree by Hilton.
+```
 
 
 
