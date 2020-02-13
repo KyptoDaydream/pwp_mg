@@ -38,10 +38,14 @@ Kurz ukončíme asistovanou večerou, kde si v praxi precvičíme pravidlá etik
 * spoločenská komunikácia
 * etiketa všedného dňa
 
-**Termín kurzu: **18. – 19. 4. 2020\
-**Miesto kurzu:** DoubleTree by Hilton, Bratislava\
-**Počet účastníkov:** max. 12\
-**Cena:** 890 € za osobu\
-**V cene je zahrnuté:** študijné materiály, malé občerstvenie počas dňa, jedna asistovaná večera v hoteli DoubleTree by Hilton.
+
+
+1. **Termín kurzu: **18. – 19. 4. 2020
+2. **Miesto kurzu:** DoubleTree by Hilton, Bratislava
+3. **Počet účastníkov:** max. 12
+4. **Cena:** 890 € za osobu
+5. **V cene je zahrnuté:** študijné materiály, malé občerstvenie počas dňa, jedna asistovaná večera v hoteli DoubleTree by Hilton.
+
+
 
 ## **Absolvent získa certifikát o absolvovaní kurzu Business Manners.**
