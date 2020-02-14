@@ -227,14 +227,14 @@ class MenuScreen extends React.Component {
                 <MenuSecondary>
                   <Link
                     className="secondary_menu"
-                    to="/aktuality"
+                    to="/aktuality/"
                     onClick={this.props.handleClick}
                   >
                     aktuality
                   </Link>
                   <Link
                     className="secondary_menu"
-                    to="/kontakt"
+                    to="/kontakt/"
                     onClick={this.props.handleClick}
                   >
                     kontakt

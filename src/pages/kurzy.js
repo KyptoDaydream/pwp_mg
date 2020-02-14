@@ -3,11 +3,9 @@ import styled from "styled-components";
 import { withRouteData, Head } from "react-static";
 import { Controller, Scene } from "react-scrollmagic";
 import foto_9 from "../assets/mg_foto_9.jpg";
-import foto_5 from "../assets/mg_foto_5.jpg";
 import bg_branch_2 from "../assets/bg_branch_2.svg";
 import bg_branch_3 from "../assets/bg_branch_3.svg";
 import olive_branch from "../assets/olive_branch.png";
-import data from "../data/carouselData";
 
 const ServicesWrapper = styled.div`
   overflow: hidden;
@@ -348,7 +346,7 @@ class Courses extends React.Component {
         <Head>
           <meta
             name="keywords"
-            content="maria galikova,zmena mysle,telesna zmena,zmena vizaze,spolocenska etiketa"
+            content="maria galikova mbe,etiketa kurzy,kurzy etikety,s etiketou na slovicko,business manners"
           />
         </Head>
         <ContentWrapper>

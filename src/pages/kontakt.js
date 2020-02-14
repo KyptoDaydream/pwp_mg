@@ -488,7 +488,7 @@ class Contact extends React.Component {
               </p>
               <form
                 method="post"
-                action="https://forms.un-static.com/forms/9acd0f1130fcb5ad475182f03e22cd815de5d940"
+                action="https://forms.un-static.com/forms/d2621aaa25756ea3a7117cc484e29e76dc1cfadd"
               >
                 <p>Prihláste sa na kurz:</p>
                 <div>
