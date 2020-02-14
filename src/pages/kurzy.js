@@ -44,6 +44,8 @@ const ContentWrapper = styled.div`
     .content_wrapper {
       display: flex;
       flex-basis: 100%;
+      width: 100%;
+      max-width: 100%;
       flex-direction: row;
       &.reverse {
         flex-direction: row-reverse;

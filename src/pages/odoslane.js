@@ -1,11 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 
-const NotFound = styled.div`
+const SendScreen = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  padding: 20px;
   font-size: 14px;
   font-weight: bold;
   text-align: center;
@@ -30,10 +31,10 @@ const NotFound = styled.div`
   }
 `;
 
-export default class AbouteMe extends React.Component {
+export default class SendSuccesfullScreen extends React.Component {
   render() {
     return (
-      <NotFound>
+      <SendScreen>
         <span class="highlight">Gratulujem Vám</span>
         <br />
         Práve ste urobili prvý krok k tomu, aby ste svet biznisu a spoločenských
@@ -45,7 +46,7 @@ export default class AbouteMe extends React.Component {
         <a class="mail_button" href="https://www.mariagalikova.sk/">
           Späť na hlavnú stránku
         </a>
-      </NotFound>
+      </SendScreen>
     );
   }
 }

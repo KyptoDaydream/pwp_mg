@@ -382,6 +382,9 @@ const ContentWrapper = styled.div`
         display: inline-block !important;
         margin-right: 20px;
       }
+      .no_bottom_margin {
+        margin-bottom: 0;
+      }
       .hide_mquery {
         display: none;
       }
@@ -593,11 +596,11 @@ class Index extends React.Component {
                     spoločenských podujatiach. Čím pozitívnejšie a istejšie
                     vystupujete, tým vás lepšie okolie hodnotí a prijíma.
                   </p>
-                  <Link className="button_text hide_normal" to="/sluzby">
-                    moje sluzby
-                  </Link>
-                  <Link className="button_text" to="/kurzy">
+                  <Link className="button_text no_bottom_margin" to="/kurzy">
                     viac o kurzoch
+                  </Link>
+                  <Link className="button_text hide_normal" to="/sluzby">
+                    moje služby
                   </Link>
                 </div>
                 <div className="content_right hide_mquery">

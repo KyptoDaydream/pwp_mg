@@ -183,7 +183,7 @@ class Clanok extends React.Component {
       ) : (
         <a
           className="button_text news_link"
-          href="https://www.mariagalikova.sk/aktuality"
+          href="https://www.mariagalikova.sk/kontakt"
         >
           objednať kurz
         </a>
