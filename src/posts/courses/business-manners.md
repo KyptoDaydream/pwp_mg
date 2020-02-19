@@ -16,7 +16,7 @@ book:
 ---
 # Dvojdňový intenzívny kurz etikety pre podnikateľov, manažérov a všetkých, ktorí sa pohybujú vo svete biznisu a spoločenských udalostí.
 
-Vďaka kurzu Business Manners budete mať v malíčku dress code, správanie v rôznych situáciách pripracovných stretnutiach aj v medzinárodnom kolektíve. Neprekvapí vás žiadna pracovná večera anibanket. Stanete sa dokonalými spoločníkmi, vďaka čomu budete ľahšie budovať dôveru u svojho obchodného partnera.
+Vďaka kurzu Business Manners budete mať v malíčku dress code, správanie v rôznych situáciách pri pracovných stretnutiach aj v medzinárodnom kolektíve. Neprekvapí vás žiadna pracovná večera ani banket. Stanete sa dokonalými spoločníkmi, vďaka čomu budete ľahšie budovať dôveru u svojho obchodného partnera.
 
 Želáme si, aby ste z kurzu získali čo najviac užitočných informácií a chceme vám vytvoriť dostatočnýpriestor na vaše otázky. Práve preto sme obmedzili maximálny počet účastníkov na 12.
 
@@ -46,8 +46,6 @@ Kurz ukončíme asistovanou večerou, kde si v praxi precvičíme pravidlá etik
 
 **Cena:** 890 € za osobu
 
-**V cene je zahrnuté:** študijné materiály, malé občerstvenie počas dňa, jedna asistovaná večera v hoteli DoubleTree by Hilton.
-
-
+**V cene je zahrnuté:** študijné materiály, obed v prvý deň kurzu, malé občerstvenie počas dňa, jedna asistovaná večera v hoteli DoubleTree by Hilton.
 
 ## **Absolvent získa certifikát o absolvovaní kurzu Business Manners.**
