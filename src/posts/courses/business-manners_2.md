@@ -16,11 +16,9 @@ book: áno
 
 Vďaka tomuto kurzu sa budete cítiť istejšie a sebavedomejšie na rôznych spoločenských podujatiach, ale aj v situáciách, ktoré prináša bežný deň v práci, v rodine i s priateľmi. Umenie spoločenského vystupovania je komplexný prehľad všetkého potrebného z etikety, čo budete potrebovať vo svojom súkromnom i pracovnom živote. Vďaka tomu, že sa už nebudete musieť sústrediť na to, čo máte práve robiť, budete sa môcť o to viac venovať svojmu okoliu, čo vám pomôže byť vnímavejším spoločníkom, s ktorým ľudia radi trávia čas. Takto vám etiketa nepriamo pomôže aj vytvárať lepšie medziľudské vzťahy. 
 
-Želáme si, aby ste z kurzu získali čo najviac užitočných informácií a chceme vám vytvoriť dostatočný priestor na vaše otázky. Práve preto sme obmedzili maximálny počet účastníkov na 12.
+Želáme si, aby ste z kurzu získali čo najviac užitočných informácií a chceme vám vytvoriť dostatočný priestor na vaše otázky. Práve preto sme obmedzili maximálny počet účastníkov na 12.
 
-Prvý deň kurzu ukončíme asistovanou večerou, kde si v praxi precvičíme pravidlá etikety stolovania pri skvelom jedle a čaši vína.
-
-
+Prvý deň kurzu ukončíme asistovanou večerou, kde si v praxi precvičíme pravidlá etikety stolovania pri skvelom jedle a čaši vína.
 
 > Je to ako so šoférovaním. Ak si pravidlá osvojíte, budete ich považovať za súčasť svojho života. Vaše správanie bude prirodzené a pritom v súlade s pravidlami etikety.
 
@@ -46,6 +44,6 @@ Vďaka tomuto kurzu sa budete cítiť istejšie a sebavedomejšie na rôznych sp
 
 **Cena:** 890 € za osobu
 
-**V cene je zahrnuté:** študijné materiály, obed v prvý deň kurzu, malé občerstvenie počas oboch dní, jedna asistovaná večera v hoteli DoubleTree by Hilton.
+**V cene je zahrnuté:** študijné materiály, obed v prvý deň kurzu, malé občerstvenie počas oboch dní, jedna asistovaná večera v hoteli DoubleTree by Hilton, darček.
 
 ## **Absolvent získa certifikát o absolvovaní kurzu Umenie spoločenského vystupovania**
