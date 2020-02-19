@@ -25,7 +25,7 @@ Tento kurz je vhodný pre všetkých, ktorý sa zúčastňujú spoločenských a
 * pravidlá etikety pri stole
 * asistovaná večera 
 
-**Termín kurzu:** bude upresnené
+**Termín kurzu:** bude upresnené. Ak máte záujem o tento kurz, [napíšte nám ](https://www.mariagalikova.sk/kontakt/)a my vás budeme informovať o termíne.
 
 **Miesto kurzu:** DoubleTree by Hilton, Bratislava
 
