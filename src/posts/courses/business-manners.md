@@ -47,6 +47,6 @@ Kurz ukončíme asistovanou večerou, kde si v praxi precvičíme pravidlá etik
 
 **Cena:** 890 € za osobu
 
-**V cene je zahrnuté:** študijné materiály, obed v prvý deň kurzu, malé občerstvenie počas oboch dní kurzu, jedna asistovaná večera v hoteli DoubleTree by Hilton.
+**V cene je zahrnuté:** študijné materiály, obed v prvý deň kurzu, malé občerstvenie počas oboch dní kurzu, jedna asistovaná večera v hoteli DoubleTree by Hilton, darček.
 
 ## **Absolvent získa certifikát o absolvovaní kurzu Business Manners.**
