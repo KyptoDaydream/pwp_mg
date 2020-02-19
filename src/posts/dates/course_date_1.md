@@ -1,6 +1,6 @@
 ---
 layout: blog
 type: course_date
-title: >-
-  Business Manners: 18-19.4 2020
+title: 'Business Manners: 16-17.4 2020'
 ---
+
