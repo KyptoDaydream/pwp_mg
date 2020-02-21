@@ -5,6 +5,8 @@ import { Controller, Scene } from "react-scrollmagic";
 import foto_9 from "../assets/mg_foto_9.jpg";
 import bg_branch_2 from "../assets/bg_branch_2.svg";
 import bg_branch_3 from "../assets/bg_branch_3.svg";
+import bg_branch_4 from "../assets/bg_branch_4.svg";
+import bg_branch_5 from "../assets/bg_branch_5.svg";
 import olive_branch from "../assets/olive_branch.png";
 
 const ServicesWrapper = styled.div`
@@ -169,7 +171,7 @@ const ContentWrapper = styled.div`
   }
   .floating_branch_4 {
     position: absolute;
-    top: 3000px;
+    top: 3500px;
     right: -120px;
     height: 500px;
     width: 500px;
@@ -182,9 +184,39 @@ const ContentWrapper = styled.div`
     100% {transform: rotate(0deg);}
     }
   }
+  .floating_branch_5 {
+    position: absolute;
+    top: 2500px;
+    left: -230px;
+    height: 600px;
+    width: 600px;
+    animation: move_branch_1 15s infinite linear;
+    @keyframes move_branch_1 {
+    0% {transform: rotate(0deg);}
+    25% {transform: rotate(6deg);}
+    50% {transform: rotate(0deg);}
+    75% {transform: rotate(-6deg);}
+    100% {transform: rotate(0deg);}
+    }
+  }
+  .floating_branch_6 {
+    position: absolute;
+    top: 4500px;
+    left: -230px;
+    height: 600px;
+    width: 600px;
+    animation: move_branch_1 15s infinite linear;
+    @keyframes move_branch_1 {
+    0% {transform: rotate(0deg);}
+    25% {transform: rotate(6deg);}
+    50% {transform: rotate(0deg);}
+    75% {transform: rotate(-6deg);}
+    100% {transform: rotate(0deg);}
+    }
+  }
   .floating_branch_3 {
     position: absolute;
-    top: 1000px;
+    top: 1300px;
     right: 0px;
     height: 600px;
     width: 300px;
@@ -256,6 +288,12 @@ const ContentWrapper = styled.div`
     .floating_branch_4 {
       display: none;
     }
+    .floating_branch_5 {
+      display: none;
+    }
+    .floating_branch_6 {
+      display: none;
+    }
     .hide_mquery {
       display: none;
     }
@@ -293,6 +331,11 @@ const ContentWrapper = styled.div`
       display: none;
     }
   }
+`;
+const StrongTitle = styled.span`
+  display: block;
+  padding-top: 20px;
+  font-weight: 600;
 `;
 class Courses extends React.Component {
   render() {
@@ -362,6 +405,12 @@ class Courses extends React.Component {
           <div className="floating_branch_4">
             <img alt="branch_bg_2" src={bg_branch_3} />
           </div>
+          <div className="floating_branch_5">
+            <img alt="branch_bg_4" src={bg_branch_4} />
+          </div>
+          <div className="floating_branch_6">
+            <img alt="branch_bg_5" src={bg_branch_5} />
+          </div>
           <div className="home_content">
             <div className="content_left" id="trigger_foto1">
               <h2 className="title first_title">S etiketou na slovíčko</h2>
@@ -418,6 +467,7 @@ class Courses extends React.Component {
                 prirodzené a pritom v súlade s pravidlami etikety. Budete
                 príjemnými spoločníkmi, ktorí bez stresu komunikujú, a ľudia sa
                 s vami budú chcieť stretnúť aj nabudúce.
+                <StrongTitle>Vyberte si svoj kurz etikety:</StrongTitle>
               </p>
             </div>
             <div className="content_right"></div>

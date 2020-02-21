@@ -506,7 +506,6 @@ class Contact extends React.Component {
                     type="text"
                     id="phone"
                     name="Telefon"
-                    required
                   />
                 </div>
                 <div>
@@ -546,7 +545,7 @@ class Contact extends React.Component {
                 </div>
                 <div className="button">
                   <button type="submit">
-                    <span>Prihlásiť sa na kurz</span>
+                    <span>Odoslať</span>
                   </button>
                 </div>
               </form>

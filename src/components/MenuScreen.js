@@ -225,20 +225,20 @@ class MenuScreen extends React.Component {
                   Etiketa otvára dvere k akémukoľvek kontaktu.
                 </MenuLinkAlt>
                 <MenuSecondary>
-                  <Link
+                  <a
                     className="secondary_menu"
-                    to="/aktuality/"
+                    href="https://www.mariagalikova.sk/aktuality/"
                     onClick={this.props.handleClick}
                   >
                     aktuality
-                  </Link>
-                  <Link
+                  </a>
+                  <a
                     className="secondary_menu"
-                    to="/kontakt/"
+                    href="https://www.mariagalikova.sk/kontakt/"
                     onClick={this.props.handleClick}
                   >
                     kontakt
-                  </Link>
+                  </a>
                 </MenuSecondary>
               </div>
               <MenuBranch />

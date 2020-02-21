@@ -6,7 +6,8 @@ import Routes from "react-static-routes";
 import Logo from "components/Logo";
 import Linkedin from "components/Linkedin";
 import Cookies from "components/Cookies";
-import ReactGA from "react-ga";
+// import ReactGA from "react-ga";
+import TagManager from "react-gtm-module";
 import ContactButton from "./components/ContactButton";
 import HamburgerMenu from "./components/BurgerMenu";
 import title_bg from "./assets/title_bg.svg";
@@ -232,8 +233,14 @@ const loading_style = {
   zIndex: 100000000
 };
 
-ReactGA.initialize("UA-130310753-1");
-ReactGA.pageview("/homepage");
+const tagManagerArgs = {
+  gtmId: "GTM-TCQSNTX"
+};
+
+TagManager.initialize(tagManagerArgs);
+
+// ReactGA.initialize("UA-130310753-1");
+// ReactGA.pageview("/homepage");
 
 const App = () => (
   <Preloader className="preload" style={loading_style}>
