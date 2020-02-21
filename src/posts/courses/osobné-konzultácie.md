@@ -1,7 +1,7 @@
 ---
 layout: blog
 type: kurz
-title: Osobné konzultácie a kurzy na mieru
+title: Kurzy na mieru
 brief: >-
   Vyhovuje vám najviac individuálny prístup? Máte konkrétne otázky? Ste firma a
   chcete usporiadať kurz pre vašich zamestnancov? Rada vás prevediem celou
