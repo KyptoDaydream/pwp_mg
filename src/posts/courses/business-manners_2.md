@@ -9,7 +9,7 @@ brief: >-
   stolovaní , od rodinných osláv až po banket či ples, pripraví vás na pracovné
   stretnutia i spoločenské akcie. Nevynecháme ani etiketu všedných dní a
   dotkneme sa aj obliekania na rôzne pracovné a spoločenské udalosti.
-thumbnail: /uploads/umenie-spolocenskeho-vystupovania.jpg
+thumbnail: /uploads/davanie-darov.jpg
 book: áno
 ---
 # Dvojdňový intenzívny kurz etikety pre všetkých, ktorí chcú svoje vystupovanie posunúť na vyššiu úroveň a byť spoločníkom, ktorého si ľudia zapamätajú.
