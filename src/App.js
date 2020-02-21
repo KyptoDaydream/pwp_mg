@@ -237,7 +237,7 @@ const tagManagerArgs = {
   gtmId: "GTM-TCQSNTX"
 };
 
-if (document) {
+if (typeof document !== "undefined") {
   TagManager.initialize(tagManagerArgs);
 }
 
