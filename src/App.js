@@ -237,7 +237,9 @@ const tagManagerArgs = {
   gtmId: "GTM-TCQSNTX"
 };
 
-TagManager.initialize(tagManagerArgs);
+if (document) {
+  TagManager.initialize(tagManagerArgs);
+}
 
 // ReactGA.initialize("UA-130310753-1");
 // ReactGA.pageview("/homepage");
