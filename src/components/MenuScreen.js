@@ -197,7 +197,7 @@ class MenuScreen extends React.Component {
                 transform: `translateX(${style.x_content}px)`
               }}
             >
-              <div class="text_wrapper">
+              <div className="text_wrapper">
                 <WelcomeTitle>Vitajte</WelcomeTitle>
                 <Link to="/o_mne" onClick={this.props.handleClick}>
                   <MenuLink>
