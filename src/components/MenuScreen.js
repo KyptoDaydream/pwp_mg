@@ -1,6 +1,5 @@
 import * as React from "react";
 import { Motion, spring } from "react-motion";
-import { Link } from "react-static";
 import close from "../assets/close.png";
 import styled from "styled-components";
 import menu_bg from "../assets/menu_bg.svg";
@@ -199,28 +198,37 @@ class MenuScreen extends React.Component {
             >
               <div className="text_wrapper">
                 <WelcomeTitle>Vitajte</WelcomeTitle>
-                <Link to="/o_mne" onClick={this.props.handleClick}>
+                <a
+                  href="https://www.mariagalikova.sk/o_mne/"
+                  onClick={this.props.handleClick}
+                >
                   <MenuLink>
                     <span data-hover="o mne">o mne</span>
                   </MenuLink>
-                </Link>
+                </a>
                 <MenuLinkAlt className="blue">
                   Každá žena je iná. V živote som však zažívala strach tak ako
                   aj Vy.
                 </MenuLinkAlt>
-                <Link to="/sluzby" onClick={this.props.handleClick}>
+                <a
+                  href="https://www.mariagalikova.sk/sluzby/"
+                  onClick={this.props.handleClick}
+                >
                   <MenuLink>
                     <span data-hover="služby">služby</span>
                   </MenuLink>
-                </Link>
+                </a>
                 <MenuLinkAlt className="blue">
                   Želám si aby ľudia začali viac rozpoznávať skutočné hodnoty.
                 </MenuLinkAlt>
-                <Link to="/kurzy" onClick={this.props.handleClick}>
+                <a
+                  href="https://www.mariagalikova.sk/kurzy/"
+                  onClick={this.props.handleClick}
+                >
                   <MenuLink>
                     <span data-hover="kurzy">kurzy</span>
                   </MenuLink>
-                </Link>
+                </a>
                 <MenuLinkAlt className="blue">
                   Etiketa otvára dvere k akémukoľvek kontaktu.
                 </MenuLinkAlt>
