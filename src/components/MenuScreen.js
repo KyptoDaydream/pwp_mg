@@ -1,5 +1,6 @@
 import * as React from "react";
 import { Motion, spring } from "react-motion";
+import { Link } from "react-static";
 import close from "../assets/close.png";
 import styled from "styled-components";
 import menu_bg from "../assets/menu_bg.svg";
@@ -196,57 +197,49 @@ class MenuScreen extends React.Component {
                 transform: `translateX(${style.x_content}px)`
               }}
             >
-              <div className="text_wrapper">
+              <div class="text_wrapper">
                 <WelcomeTitle>Vitajte</WelcomeTitle>
-                <a
-                  href="https://www.mariagalikova.sk/o_mne/"
-                  onClick={this.props.handleClick}
-                >
+                <Link to="/o_mne" onClick={this.props.handleClick}>
                   <MenuLink>
                     <span data-hover="o mne">o mne</span>
                   </MenuLink>
-                </a>
+                </Link>
                 <MenuLinkAlt className="blue">
                   Každá žena je iná. V živote som však zažívala strach tak ako
                   aj Vy.
                 </MenuLinkAlt>
-                <a
-                  href="https://www.mariagalikova.sk/sluzby/"
-                  onClick={this.props.handleClick}
-                >
+                <Link to="/sluzby" onClick={this.props.handleClick}>
                   <MenuLink>
                     <span data-hover="služby">služby</span>
                   </MenuLink>
-                </a>
+                </Link>
                 <MenuLinkAlt className="blue">
                   Želám si aby ľudia začali viac rozpoznávať skutočné hodnoty.
                 </MenuLinkAlt>
-                <a
-                  href="https://www.mariagalikova.sk/kurzy/"
-                  onClick={this.props.handleClick}
-                >
+                <Link to="/kurzy" onClick={this.props.handleClick}>
                   <MenuLink>
                     <span data-hover="kurzy">kurzy</span>
                   </MenuLink>
-                </a>
+                </Link>
                 <MenuLinkAlt className="blue">
                   Etiketa otvára dvere k akémukoľvek kontaktu.
                 </MenuLinkAlt>
                 <MenuSecondary>
-                  <a
+                  <Link
                     className="secondary_menu"
-                    href="https://www.mariagalikova.sk/aktuality/"
+                    href="/aktuality"
                     onClick={this.props.handleClick}
                   >
                     aktuality
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     className="secondary_menu"
-                    href="https://www.mariagalikova.sk/kontakt/"
+                    to="/kontakt"
                     onClick={this.props.handleClick}
                   >
                     kontakt
-                  </a>
+                  </Link>
+                  <Link></Link>
                 </MenuSecondary>
               </div>
               <MenuBranch />
