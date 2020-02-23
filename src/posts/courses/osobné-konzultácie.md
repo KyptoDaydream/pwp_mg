@@ -12,7 +12,9 @@ book: áno
 ---
 **Máte konkrétne otázky z oblasti etikety **a chcete sa o nich porozprávať? Chystáte sa na významnú spoločenkú udalosť a chcete sa uistiť, že vás nič neprekvapí? Nemáte čas na intenzívny dvojdňový kurz etikety?
 
-Potom sú osobné konzultácie pre vás tou správnou voľbou. Rada si s vami dohodnem spoločný termín  a prejdeme si všetko, čo vás zaujíma. Na mieru vám môžem vystavať konzultácie podľa vašej potreby.
+Potom je kurz na mieru pre vás tou správnou voľbou. Rada si s vami dohodnem spoločný termín  a prejdeme si všetko, čo vás zaujíma. Na mieru vám pripravím obsah kurzu podľa vašej potreby, vo forme osobných konzultácií.
+
+![Kurzy etikety na mieru, maria galikova](/uploads/osobne-konzultacie.jpg)
 
 **Ste firma** a chcete vyškoliť vašich obchodníkov? Uvedomujete si, že vizitkou vašej firmy sú vaši zamestnanci a chcete, aby reprezetnovali firmu na úrovni, budovali korektné vzťahy s klientmi založené na dôvere? 
 
