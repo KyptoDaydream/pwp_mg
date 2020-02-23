@@ -1,5 +1,6 @@
 import React from "react";
 import { withRouteData } from "react-static";
+import { Head } from "react-static";
 import styled from "styled-components";
 import Markdown from "react-markdown";
 import menu_bg from "../assets/menu_bg.svg";
@@ -190,6 +191,10 @@ class Clanok extends React.Component {
       );
     return (
       <PostWrapper>
+        <Head>
+          <meta name="description" content={this.props.post.data.brief} />
+          <meta property="og:image" content={this.props.post.data.thumbnail} />
+        </Head>
         <div className="post_header">
           <ModalBranch />
           <h2 className="post_header_title">{this.props.post.data.title}</h2>
