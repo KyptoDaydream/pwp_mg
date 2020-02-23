@@ -16,6 +16,8 @@ book:
 ---
 # Dvojdňový intenzívny kurz etikety pre podnikateľov, manažérov a všetkých, ktorí sa pohybujú vo svete biznisu a spoločenských udalostí.
 
+![Kurz etikety, business manners, maria galikova](/uploads/business-manners.jpg)
+
 Vďaka kurzu Business Manners budete mať v malíčku dress code, správanie v rôznych situáciách pri pracovných stretnutiach aj v medzinárodnom kolektíve. Neprekvapí vás žiadna pracovná večera ani banket. Stanete sa dokonalými spoločníkmi, vďaka čomu budete ľahšie budovať dôveru u svojho obchodného partnera.
 
 Želáme si, aby ste z kurzu získali čo najviac užitočných informácií a chceme vám vytvoriť dostatočný priestor na vaše otázky. Práve preto sme obmedzili maximálny počet účastníkov na 12.
