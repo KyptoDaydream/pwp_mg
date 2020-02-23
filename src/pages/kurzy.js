@@ -339,7 +339,6 @@ const StrongTitle = styled.span`
 `;
 class Courses extends React.Component {
   render() {
-    console.log(this.props.posts_courses);
     const rendered_elements = [];
     let iterator = 0;
     let block_id = "";
