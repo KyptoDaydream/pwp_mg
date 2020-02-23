@@ -9,7 +9,7 @@ brief: >-
   stolovaní, od rodinných osláv až po banket či ples, pripraví vás na pracovné
   stretnutia i spoločenské akcie. Nevynecháme ani etiketu všedných dní a
   dotkneme sa aj obliekania na rôzne pracovné a spoločenské udalosti.
-thumbnail: /uploads/davanie-darov.jpg
+thumbnail: /uploads/depositphotos_139877486_xl-2015-resize.jpg
 book: áno
 ---
 # Dvojdňový intenzívny kurz etikety pre všetkých, ktorí chcú svoje vystupovanie posunúť na vyššiu úroveň a byť spoločníkom, ktorého si ľudia zapamätajú.
