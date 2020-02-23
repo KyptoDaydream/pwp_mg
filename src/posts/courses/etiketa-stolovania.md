@@ -11,7 +11,9 @@ brief: >-
 thumbnail: /uploads/etiketa-stolovania-1-.jpg
 book: áno
 ---
-Poldňový kurz, na ktorom sa dozviete všetko potrebné o stolovaní na rôznych spoločenských akciách. 
+# Poldňový kurz, na ktorom sa dozviete všetko potrebné o stolovaní na rôznych spoločenských akciách. 
+
+![Kurz etikety, Etiketa stolovania, Maria Galikova](/uploads/etiketa-stolovania-1-.jpg)
 
 Je skvelé, keď si môžete vychutnať naplno kulinársky zážitok, ktorý vám akcia, na ktorej sa nachádzate, ponúka. Bez rozpakov ako uchopiť pohár so sektom či vínom, akým spôsobom jesť krevety či iné netradičnejšie jedlá a čo robiť v prípade, že by vám nechutilo. S ľahkosťou si budete užívať večer v spoločnosti a keďže nebudete riešiť ktorý príbor použiť či ako správne použiť látkový obrúsok, budete pôsobiť sebavedomejšie a uvoľnenejšie. 
 
