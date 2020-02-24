@@ -217,7 +217,7 @@ class MenuScreen extends React.Component {
                   Želám si aby ľudia začali viac rozpoznávať skutočné hodnoty.
                 </MenuLinkAlt>
                 <a
-                  href="https://www.mariagalikova.sk/kurzy"
+                  href="https://www.mariagalikova.sk/kurzy_etikety"
                   onClick={this.props.handleClick}
                 >
                   <MenuLink>

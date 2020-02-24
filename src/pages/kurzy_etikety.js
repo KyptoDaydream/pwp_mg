@@ -360,7 +360,7 @@ class Courses extends React.Component {
             </p>
             <a
               className="button_text news_button"
-              href={`/kurzy/${post.data.slug}`}
+              href={`/kurzy_etikety/${post.data.slug}`}
             >
               viac info
             </a>
