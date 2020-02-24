@@ -86,6 +86,8 @@ collections:
       - { label: "Titulok", name: "title", widget: "string" }
       - { label: "Brief Text", name: "brief", widget: "string" }
       - { label: "Brief Obrázok", name: "thumbnail", widget: "image" }
+      - { label: "Keywords", name: "brief", widget: "string" }
+      - { label: "Odkaz-Obrázok", name: "featured", widget: "image" }
       - {
           label: "Odkaz Objednat",
           name: "book",

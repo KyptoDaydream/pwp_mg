@@ -37,8 +37,8 @@ const PostWrapper = styled.div`
       margin: 0 auto;
       img {
         width: 100%;
-        margin-bottom: 70px;
-        margin-top: 70px;
+        margin-bottom: 40px;
+        margin-top: 40px;
       }
       img.thumbnail_image {
         margin-top: 0px;
@@ -192,8 +192,12 @@ class Clanok extends React.Component {
     return (
       <PostWrapper>
         <Head>
+          <meta name="keywords" content={this.props.post.data.keywords} />
           <meta name="description" content={this.props.post.data.brief} />
-          <meta property="og:image" content={this.props.post.data.thumbnail} />
+          <meta
+            property="og:image"
+            content={this.props.post.data.featuredimg}
+          />
         </Head>
         <div className="post_header">
           <ModalBranch />

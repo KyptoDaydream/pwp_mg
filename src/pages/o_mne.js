@@ -8,6 +8,7 @@ import foto_4 from "../assets/mg_foto_3.jpg";
 import bg_branch_2 from "../assets/bg_branch_2.svg";
 import bg_branch_3 from "../assets/bg_branch_3.svg";
 import olive_branch from "../assets/olive_branch.png";
+import badge from "../assets/mbe_badge.png";
 
 const Services = styled.div`
   overflow: hidden;
@@ -226,6 +227,7 @@ const ContentWrapper = styled.div`
       width: 70%;
       padding: 0;
       margin-left: 15%;
+      min-height: 100px;
       &.padding_bottom_mquery {
         padding-bottom: 40px;
       }
@@ -293,6 +295,26 @@ const ContentWrapper = styled.div`
       }
       }
     } 
+  }
+`;
+const Badge = styled.div`
+  width: 140px;
+  height: 140px;
+  background: url(${badge}) center center no-repeat;
+  position: absolute;
+  top: 800px;
+  left: 200px;
+  background-size: cover;
+  transform: rotate(20deg);
+  border-radius: 50%;
+  transition: 0.3s;
+  &:hover {
+    background-color: var(--pink);
+  }
+  @media (max-width: 1175px) {
+    top: -50px;
+    left: auto;
+    right: -25px;
   }
 `;
 export default class AbouteMe extends React.Component {
@@ -435,7 +457,14 @@ export default class AbouteMe extends React.Component {
                 druhej strane oslobodenie a naplnenie vlastných ambícií.
               </p>
             </div>
-            <div className="content_right" />
+            <div className="content_right">
+              <a
+                href="https://www.mariagalikova.sk/Certifikat.pdf"
+                target="_blank"
+              >
+                <Badge />
+              </a>
+            </div>
             <div className="content_full_width">
               <h4 className="quote">Myslím,</h4>
               <div className="qoute_wrapper sub_qoute_wide">
