@@ -277,7 +277,7 @@ export default {
         })
       },
       {
-        path: "/kurzy",
+        path: "/kurzy_etikety",
         getData: () => ({
           posts_courses
         }),
