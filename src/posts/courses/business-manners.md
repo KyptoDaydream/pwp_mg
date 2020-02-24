@@ -10,7 +10,7 @@ brief: >-
   stretnutiach aj v medzinárodnom kolektíve. Neprekvapí vás žiadna pracovná
   večera ani banket. Stanete sa dokonalými spoločníkmi, vďaka čomu budete ľahšie
   budovať dôveru u svojho obchodného partnera.
-thumbnail: /uploads/business-manners.jpg
+thumbnail: /uploads/kosela-web.jpg
 book:
   - áno
 ---
