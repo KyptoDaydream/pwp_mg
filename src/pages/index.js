@@ -596,7 +596,10 @@ class Index extends React.Component {
                     spoločenských podujatiach. Čím pozitívnejšie a istejšie
                     vystupujete, tým vás lepšie okolie hodnotí a prijíma.
                   </p>
-                  <Link className="button_text no_bottom_margin" to="/kurzy">
+                  <Link
+                    className="button_text no_bottom_margin"
+                    to="/kurzy_etikety"
+                  >
                     viac o kurzoch
                   </Link>
                   <Link className="button_text hide_normal" to="/sluzby">
