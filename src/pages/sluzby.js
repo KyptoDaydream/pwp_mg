@@ -443,7 +443,7 @@ export default class Services extends React.Component {
                 Zbavíte sa pocitu menejcennosti v spoločnosti, lebo Vám nebudú
                 chýbať znalosti etikety.
               </p>
-              <a className="button_text news_link" href="/kurzy">
+              <a className="button_text news_link" href="/kurzy_etikety">
                 viac o kurze
               </a>
               <Controller>
