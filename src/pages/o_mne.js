@@ -302,7 +302,7 @@ const Badge = styled.div`
   height: 140px;
   background: url(${badge}) center center no-repeat;
   position: absolute;
-  top: 800px;
+  top: 200px;
   left: 200px;
   background-size: cover;
   transform: rotate(20deg);
@@ -457,14 +457,7 @@ export default class AbouteMe extends React.Component {
                 druhej strane oslobodenie a naplnenie vlastných ambícií.
               </p>
             </div>
-            <div className="content_right">
-              <a
-                href="https://www.mariagalikova.sk/Certifikat.pdf"
-                target="_blank"
-              >
-                <Badge />
-              </a>
-            </div>
+            <div className="content_right" />
             <div className="content_full_width">
               <h4 className="quote">Myslím,</h4>
               <div className="qoute_wrapper sub_qoute_wide">
@@ -480,7 +473,7 @@ export default class AbouteMe extends React.Component {
             <div className="content_left padded last_block">
               <p className="block_padded">
                 Vďaka obrovskej podpore môjho manžela som zobrala osud do
-                svojich rúk a založila vlastnú firmu MG Prime, s.r.o.Okrem
+                svojich rúk a založila vlastnú firmu MG Prime, s.r.o. Okrem
                 marketingu sa venujem aj ženám, ich premenám, spoločenskej
                 etikete, business etikete, etikete stolovania.
               </p>
@@ -501,6 +494,14 @@ export default class AbouteMe extends React.Component {
                 Slovenska, organizujem prestížne podujatie Beckovské slnko, na
                 ktorom oceňujem týchto výnimočných ľudí.
               </p>
+            </div>
+            <div className="content_right">
+              <a
+                href="https://www.mariagalikova.sk/Certifikat.pdf"
+                target="_blank"
+              >
+                <Badge />
+              </a>
             </div>
           </div>
         </ContentWrapper>
