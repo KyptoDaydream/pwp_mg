@@ -2,12 +2,9 @@
 layout: blog
 type: kurz
 title: Kurzy na mieru
-brief: >-
-  Vyhovuje vám najviac individuálny prístup? Máte konkrétne otázky? Ste firma a
-  chcete usporiadať kurz pre vašich zamestnancov? Rada vás prevediem celou
-  škálou spoločenskej aj biznis etikety a odpoviem na vaše otázky. Kontaktujte
-  ma a dohodnite si osobnú konzultáciu.
+brief: Kurzy na mieru
 thumbnail: /uploads/osobne-konzultacie.jpg
+featured: /uploads/osobne-konzultacie.jpg
 book: áno
 ---
 **Máte konkrétne otázky z oblasti etikety **a chcete sa o nich porozprávať? Chystáte sa na významnú spoločenkú udalosť a chcete sa uistiť, že vás nič neprekvapí? Nemáte čas na intenzívny dvojdňový kurz etikety?
