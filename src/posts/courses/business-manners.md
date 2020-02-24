@@ -2,9 +2,17 @@
 layout: blog
 type: kurz
 title: Business Manners
-brief: Business Manners
+brief: >-
+  Pravidlá etikety vládnu aj vo svete biznisu. Osvojte si ich a podporte svoj
+  sebavedomý postoj a vyrovnanosť v rôznych pracovných i spoločenských
+  situáciách. Vďaka intenzívnemu dvojdňovému kurzu Business Manners budete mať v
+  malíčku dress code, správanie sa v rôznych situáciách pri pracovných
+  stretnutiach aj v medzinárodnom kolektíve. Neprekvapí vás žiadna pracovná
+  večera ani banket. Stanete sa dokonalými spoločníkmi, vďaka čomu budete ľahšie
+  budovať dôveru u svojho obchodného partnera.
 thumbnail: /uploads/business-manners.jpg
-featured: /uploads/kosela-web.jpg
+keywords: Business Manners
+featuredimg: /uploads/kosela-web.jpg
 book:
   - áno
 ---

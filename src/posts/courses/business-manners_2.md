@@ -2,16 +2,23 @@
 layout: blog
 type: kurz
 title: Umenie spoločenského vystupovania
-brief: Umenie spoločenského vystupovania
+brief: >-
+  Prevedieme vás všetkými dôležitými pravidlami etikety tak, aby ste sa v práci,
+  pri spoločenských udalostiach aj v každodennom živote cítili komfortne a
+  sebavedome. Tento intenzívny dvojdňový kurz vás naučí všetko potrebné o
+  stolovaní, od rodinných osláv až po banket či ples, pripraví vás na pracovné
+  stretnutia i spoločenské akcie. Nevynecháme ani etiketu všedných dní a
+  dotkneme sa aj obliekania na rôzne pracovné a spoločenské udalosti. 
 thumbnail: /uploads/depositphotos_139877486_xl-2015-resize.jpg
-featured: /uploads/depositphotos_139877486_xl-2015-resize.jpg
+keywords: Umenie spoločenského vystupovania
+featuredimg: /uploads/depositphotos_139877486_xl-2015-resize.jpg
 book: áno
 ---
 # Dvojdňový intenzívny kurz etikety pre všetkých, ktorí chcú svoje vystupovanie posunúť na vyššiu úroveň a byť spoločníkom, ktorého si ľudia zapamätajú.
 
-![Kurz etikety, umenie spolocenskeho vystupovania, maria galikova](/uploads/depositphotos_139877486_xl-2015-resize.jpg)
-
 Vďaka tomuto kurzu sa budete cítiť istejšie a sebavedomejšie na rôznych spoločenských podujatiach, ale aj v situáciách, ktoré prináša bežný deň v práci, v rodine i s priateľmi. Umenie spoločenského vystupovania je komplexný prehľad všetkého potrebného z etikety, čo budete potrebovať vo svojom súkromnom i pracovnom živote. Vďaka tomu, že sa už nebudete musieť sústrediť na to, čo máte práve robiť, budete sa môcť o to viac venovať svojmu okoliu, čo vám pomôže byť vnímavejším spoločníkom, s ktorým ľudia radi trávia čas. Takto vám etiketa nepriamo pomôže aj vytvárať lepšie medziľudské vzťahy. 
+
+![Kurz etikety, umenie spolocenskeho vystupovania, maria galikova](/uploads/depositphotos_139877486_xl-2015-resize.jpg)
 
 Želáme si, aby ste z kurzu získali čo najviac užitočných informácií a chceme vám vytvoriť dostatočný priestor na vaše otázky. Práve preto sme obmedzili maximálny počet účastníkov na 12.
 
