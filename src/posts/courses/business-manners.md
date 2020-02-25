@@ -16,13 +16,15 @@ featuredimg: /uploads/kosela-web.jpg
 book:
   - áno
 ---
-# Dvojdňový intenzívny kurz etikety pre podnikateľov, manažérov a všetkých, ktorí sa pohybujú vo svete biznisu a spoločenských udalostí.
+# Intenzívny kurz etikety pre podnikateľov, manažérov a všetkých, ktorí sa pohybujú vo svete biznisu a spoločenských udalostí.
 
 Vďaka kurzu Business Manners budete mať v malíčku dress code, správanie v rôznych situáciách pri pracovných stretnutiach aj v medzinárodnom kolektíve. Neprekvapí vás žiadna pracovná večera ani banket. Stanete sa dokonalými spoločníkmi, vďaka čomu budete ľahšie budovať dôveru u svojho obchodného partnera.
 
-![](/uploads/business-manners.jpg)
+Ak ste obchodný tím, patríte k manažmentu alebo chcete, aby boli vaši zamestnanci tou najlepšou vizitkou spoločnosti, tento kurz je určený vám. 
 
-Želáme si, aby ste z kurzu získali čo najviac užitočných informácií a chceme vám vytvoriť dostatočný priestor na vaše otázky. Práve preto sme obmedzili maximálny počet účastníkov na 12.
+Kurz sme starostivo vyskladali z najčastejších potrieb ľudí pohybujúcich sa v biznis prostredí. Jeho obsah prispôsobíme vašim potrebám, aby vaša spoločnosť z neho získala presne to, čo práve potrebuje. A veríme, že aj niečo navyše.
+
+![null](/uploads/business-manners.jpg)
 
 Kurz ukončíme asistovanou večerou, kde si v praxi precvičíme pravidlá etikety stolovania pri skvelom jedle a čaši vína.
 
@@ -43,14 +45,8 @@ Kurz ukončíme asistovanou večerou, kde si v praxi precvičíme pravidlá etik
 * spoločenská komunikácia
 * etiketa všedného dňa
 
-**Termín kurzu:** 18. – 19. 4. 2020
+**Termín kurzu:** Stanovený po vzájomnej dohode
 
-**Miesto kurzu:** DoubleTree by Hilton, Bratislava
-
-**Počet účastníkov:** max. 12
-
-**Cena:** 890 € za osobu
-
-**V cene je zahrnuté:** študijné materiály, obed v prvý deň kurzu, malé občerstvenie počas oboch dní kurzu, jedna asistovaná večera v hoteli DoubleTree by Hilton, darček.
+**Miesto kurzu:** DoubleTree by Hilton, Bratislava, resp. iné miesto podľa dohody
 
 ## **Absolvent získa certifikát o absolvovaní kurzu Business Manners.**
