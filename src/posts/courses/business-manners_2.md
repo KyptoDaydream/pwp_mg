@@ -33,7 +33,7 @@ Prvý deň kurzu ukončíme asistovanou večerou, kde si v praxi precvičíme pr
 * etiketa cestovania
 * rodinné udalosti a stretnutia, prijímanie hostí
 * spoločenské podujatia: recepcia, bankety, buffet lunch, posedenie pri víne, vernisáž, ples
-* obliekanie: pánske a dámske oblečenie na všedný deň a na spoločenské udalosti rôzneho typu
+* obliekanie: pánske a dámske oblečenie na všedný deň a na spoločenské udalosti rôzneho typu. Touto témou nás prevedie módna návrhárka Janka Gavalcová
 * prvý kontakt: oslovenie, zoznámenie, nadviazanie rozhovoru
 * firemná kultúra: prijímací pohovor, komunikácia vnútri firmy
 * interkultúrna etiketa
