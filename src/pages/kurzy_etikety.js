@@ -466,8 +466,10 @@ class Courses extends React.Component {
                 prirodzené a pritom v súlade s pravidlami etikety. Budete
                 príjemnými spoločníkmi, ktorí bez stresu komunikujú, a ľudia sa
                 s vami budú chcieť stretnúť aj nabudúce.
-                <StrongTitle>Vyberte si svoj kurz etikety:</StrongTitle>
               </p>
+              <h2 className="title first_title">
+                Vyberte si svoj kurz etikety:
+              </h2>
             </div>
             <div className="content_right"></div>
 

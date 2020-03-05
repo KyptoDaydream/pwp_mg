@@ -163,6 +163,9 @@ const PostWrapper = styled.div`
       box-sizing: border-box;
     }
   }
+  .padded_button_right {
+    margin-right: 20px;
+  }
 `;
 const ModalBranch = styled.div`
   position: absolute;
@@ -183,7 +186,7 @@ class Clanok extends React.Component {
         ""
       ) : (
         <a
-          className="button_text news_link"
+          className="button_text news_link padded_button_right"
           href="https://www.mariagalikova.sk/kontakt"
         >
           objednať kurz
@@ -213,6 +216,12 @@ class Clanok extends React.Component {
           <div className="content_wrapper">
             <Markdown source={this.props.post.content} escapeHtml={false} />
             {button}
+            <a
+              className="button_text news_link"
+              href="https://www.mariagalikova.sk/kurzy_etikety"
+            >
+              všetky kurzy
+            </a>
           </div>
         </div>
       </PostWrapper>

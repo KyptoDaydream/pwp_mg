@@ -532,13 +532,13 @@ class Contact extends React.Component {
                     autoFocus
                   />
                   <label className="checkbox_label">
-                    Súhlasím s odoslaním údajov. (
+                    Súhlasím so spracovaním osobných údajov (
                     <a
                       className="poucenie"
                       target="_blank"
                       href="https://www.mariagalikova.sk/GDPR.pdf"
                     >
-                      poučenie
+                      viac informácií TU
                     </a>
                     )
                   </label>

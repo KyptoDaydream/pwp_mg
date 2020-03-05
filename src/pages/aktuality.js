@@ -157,7 +157,7 @@ class Ahoj extends React.Component {
                 rel="noopener noreferrer"
                 href="https://www.facebook.com/sEtiketouNaSlovicko/"
               >
-                viac info
+                viac aktualít
               </a>
               <News posts={this.props.posts} location="aktuality" />
             </div>

@@ -627,7 +627,7 @@ class Index extends React.Component {
                 <div className="content_full_width margin_top_mquery">
                   <News posts={this.props.posts} location="home" />
                   <Link className="button_text news_link" to="/aktuality">
-                    všetky posty
+                    všetky aktuality
                   </Link>
                 </div>
               </div>
