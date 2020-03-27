@@ -40,22 +40,12 @@ Prvý deň kurzu ukončíme asistovanou večerou, kde si v praxi precvičíme pr
 * stolovanie: zasadací poriadok, pravidlá etikety pri stole
 * spoločenská komunikácia
 
-**Termín kurzu:** 19. – 20. 3. 2020
+**Termín kurzu:** Bude upresnené
 
 **Miesto kurzu:** DoubleTree by Hilton, Bratislava
 
 **Počet účastníkov:** max. 12
 
-
-
-**Bežná cena:** 890 € za osobu
-
-**Špeciálna zľava k MDŽ -15%. Akciová cena kurzu: **756€ za osobu.
-
-Platí do stredy 11.3. do polnoci.
-
-
-
-**V cene je zahrnuté:** študijné materiály, obed v prvý deň kurzu, malé občerstvenie počas oboch dní, jedna asistovaná večera v hoteli DoubleTree by Hilton, darček.
+**Kurz zahŕňa aj:** študijné materiály, obed v prvý deň kurzu, malé občerstvenie počas oboch dní, jedna asistovaná večera v hoteli DoubleTree by Hilton, darček.
 
 ## **Absolvent získa certifikát o absolvovaní kurzu Umenie spoločenského vystupovania**
