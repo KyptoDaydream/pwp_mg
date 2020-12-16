@@ -22,18 +22,30 @@ Na tomto kurze vás prevedieme všetkými dôležitými pravidlami etikety tak, 
 Obsah kurzu:
 
 * prvý kontakt: oslovenie, zoznámenie, nadviazanie rozhovoru
-* zásady spoločenskej komunikácie
+* zásady 
+  spoločenskej komunikácie
 * etiketa všedného dňa
-* etiketa cestovania
-* rodinné udalosti a stretnutia, prijímanie hostí
-* spoločenské podujatia: recepcia, bankety, buffet lunch, posedenie pri víne, vernisáž, ples
-* obliekanie s Jankou Gavalcovou: pánske a dámske oblečenie na všedný deň a na spoločenské udalosti rôzneho typu
+* 
+
+etiketa cestovania
+
+* 
+
+rodinné udalosti a stretnutia, prijímanie hostí
+
+* 
+
+spoločenské podujatia: recepcia, bankety, buffet lunch, posedenie pri víne, vernisáž, ples
+
+* 
+
+obliekanie s Jankou Gavalcovou: pánske a dámske oblečenie na všedný deň a na spoločenské udalosti rôzneho typu
 
 Kurzy vediem ja, Mária Gáliková a týmto spôsobom sa chcem s vami ako Certified Master of Business Etiquette podeliť o svoje vedomosti, ale aj dlhoročné skúsenosti. Viac o mne sa dočítate [TU](https://www.mariagalikova.sk/o_mne).
 
 Želám si, aby ste z kurzu získali čo najviac užitočných informácií a chcem vám vytvoriť dostatočný priestor na vaše otázky. Práve preto sme obmedzili maximálny počet účastníkov na 4.
 
-**Termín kurzu: **14.1.2021, 23.1.2021, 28.1.2021. 
+**Termíny najbližších kurzov: **14.1.2021, 23.1.2021, 28.1.2021. 
 
 **Začiatok: **17:30. Kurz trvá 3,5 hod. 
 
