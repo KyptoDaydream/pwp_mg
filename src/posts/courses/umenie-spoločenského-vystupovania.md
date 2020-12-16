@@ -45,7 +45,7 @@ Kurzy vediem ja, Mária Gáliková a týmto spôsobom sa chcem s vami ako Certif
 
 **Darujte kurz ako darček, nechajte obdarovaného vybrať si svoj termín. Darčeková poukážka platí do 30.6.2021.**
 
-Kurz zahŕňa aj: študijné materiály, a malé občerstvenie 
+Kurz zahŕňa aj: študijné materiály a malé občerstvenie 
 
 ## Absolvent získa certifikát o absolvovaní kurzu Umenie spoločenského vystupovania
 
