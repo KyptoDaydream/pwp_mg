@@ -1,7 +1,7 @@
 ---
 layout: blog
 type: kurz
-title: Umenie spoločenského vystupovania
+title: Umenie spoločenského vystupovania - dvojdňový kurz
 brief: >-
   Prevedieme vás všetkými dôležitými pravidlami etikety tak, aby ste sa v práci,
   pri spoločenských udalostiach aj v každodennom živote cítili komfortne a
