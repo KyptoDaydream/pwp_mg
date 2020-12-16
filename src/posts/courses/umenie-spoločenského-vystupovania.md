@@ -11,7 +11,7 @@ brief: >-
   návrhárka Janka Gavalcová.
 thumbnail: /uploads/depositphotos_31761833_xl-2015-1-.jpg
 keywords: 'etiketa, spoločenská etiketa, etiketa všedného dňa'
-featuredimg: /uploads/depositphotos_31761833_xl-2015-1-.jpg
+featuredimg: /uploads/etiketa.png
 book:
   - áno
 ---
