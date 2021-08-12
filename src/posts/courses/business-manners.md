@@ -47,6 +47,6 @@ Kurz ukončíme asistovanou večerou, kde si v praxi precvičíme pravidlá etik
 
 **Termín kurzu:** Stanovený po vzájomnej dohode
 
-**Miesto kurzu:** DoubleTree by Hilton, Bratislava, resp. iné miesto podľa dohody
+**Miesto kurzu:** Zochova 10, Bratislava
 
 ## **Absolvent získa certifikát o absolvovaní kurzu Business Manners.**
