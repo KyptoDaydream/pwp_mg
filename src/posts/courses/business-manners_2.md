@@ -42,10 +42,10 @@ Prvý deň kurzu ukončíme asistovanou večerou, kde si v praxi precvičíme pr
 
 **Termín kurzu:** Bude upresnené
 
-**Miesto kurzu:** DoubleTree by Hilton, Bratislava
+**Miesto kurzu:** Zochova 10, Bratislava
 
-**Počet účastníkov:** max. 12
+**Počet účastníkov:** max. 6
 
-**Kurz zahŕňa aj:** študijné materiály, obed v prvý deň kurzu, malé občerstvenie počas oboch dní, jedna asistovaná večera v hoteli DoubleTree by Hilton, darček.
+**Kurz zahŕňa aj:** malé občerstvenie počas oboch dní, jedna asistovaná večera, darček.
 
 ## **Absolvent získa certifikát o absolvovaní kurzu Umenie spoločenského vystupovania**
