@@ -33,19 +33,19 @@ Kurzy vediem ja, Mária Gáliková a týmto spôsobom sa chcem s vami ako Certif
 
 Želám si, aby ste z kurzu získali čo najviac užitočných informácií a chcem vám vytvoriť dostatočný priestor na vaše otázky. Práve preto sme obmedzili maximálny počet účastníkov na 4.
 
-**Termíny najbližších kurzov: **14.1.2021, 23.1.2021, 28.1.2021. 
-
-**Začiatok: **17:30. Kurz trvá 3,5 hod. 
-
-Ďalšie termíny budu upresnené podľa aktuálnej pandemickej situácie
+**Termíny najbližších kurzov: september, október **(presný termín upresním do konca augusta)
 
 **Miesto:** Zochova 10, Bratislava
 
-## **Vianočná cena:** 189 € (pôvodne 250 €)
+**Tento kurz je vhodný aj ako darček pre maminu, dcéru, sestru, kamošku .....**
 
-**Darujte kurz ako darček, nechajte obdarovaného vybrať si svoj termín. Darčeková poukážka platí do 30.6.2021.**
+**.... alebo kamarátky, ktoré chcú spolu stráviť príjemné chvíle a tiež sa niečo naučiť:)**
 
-Kurz zahŕňa aj: študijné materiály a malé občerstvenie 
+**Nevylučujem ani mužov:), ktorí sa chcú správať ako gentlemani, sú vítaní :)**
+
+## 
+
+
 
 ## Absolvent získa certifikát o absolvovaní kurzu Umenie spoločenského vystupovania
 
