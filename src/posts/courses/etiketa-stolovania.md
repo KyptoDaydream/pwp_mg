@@ -13,9 +13,9 @@ keywords: Etiketa stolovania
 featuredimg: /uploads/etiketa-stolovania-1-.jpg
 book: áno
 ---
-# Poldňový kurz, na ktorom sa dozviete všetko potrebné o stolovaní na rôznych spoločenských akciách.
+# Kurz, na ktorom sa dozviete všetko potrebné o stolovaní na rôznych spoločenských akciách.
 
-Je skvelé, keď si môžete vychutnať naplno kulinársky zážitok, ktorý vám akcia, na ktorej sa nachádzate, ponúka. Bez rozpakov ako uchopiť pohár so sektom či vínom, akým spôsobom jesť krevety či iné netradičnejšie jedlá a čo robiť v prípade, že by vám nechutilo. S ľahkosťou si budete užívať večer v spoločnosti a keďže nebudete riešiť ktorý príbor použiť či ako správne použiť látkový obrúsok, budete pôsobiť sebavedomejšie a uvoľnenejšie. 
+Je skvelé, keď si môžete vychutnať naplno kulinársky zážitok, ktorý vám akcia, na ktorej sa nachádzate, ponúka. Bez rozpakov ako uchopiť pohár so sektom, či vínom, akým spôsobom jesť krevety, či iné netradičnejšie jedlá a čo robiť v prípade, že by vám nechutilo. S ľahkosťou si budete užívať večer v spoločnosti a keďže nebudete riešiť, ktorý príbor použiť či ako správne použiť látkový obrúsok, budete pôsobiť sebavedomejšie a uvoľnenejšie. 
 
 ![Kurz etikety, Etiketa stolovania, Maria Galikova](/uploads/etiketa-stolovania-1-.jpg)
 
@@ -31,12 +31,10 @@ Tento kurz je vhodný pre všetkých, ktorý sa zúčastňujú spoločenských a
 
 **Termín kurzu:** bude upresnené. Ak máte záujem o tento kurz, [napíšte nám ](https://www.mariagalikova.sk/kontakt/)a my vás budeme informovať o termíne.
 
-**Miesto kurzu:** DoubleTree by Hilton, Bratislava
+**Miesto kurzu:** Zochova 10, Bratislava
 
-**Počet účastníkov:** max. 12
+**Počet účastníkov:** max. 6
 
-**Cena:** 390 € za osobu
-
-**V cene je zahrnuté:** študijné materiály, malé občerstvenie počas kurzu, jedna asistovaná večera v hoteli DoubleTree by Hilton.
+**V cene je zahrnuté:** malé občerstvenie počas kurzu,  asistovaná večera  v prestížnej reštaurácii
 
 ## **Absolvent získa certifikát o absolvovaní kurzu Etiketa stolovania.**
