@@ -19,9 +19,9 @@ Je skvelé, keď si môžete vychutnať naplno kulinársky zážitok, ktorý vá
 
 ![Kurz etikety, Etiketa stolovania, Maria Galikova](/uploads/etiketa-stolovania-1-.jpg)
 
-Osvojte si všetky dôležité pravidlá etikety stolovania na kurze Etiketa stolovania
+**Osvojte si všetky dôležité pravidlá etikety stolovania na kurze Etiketa stolovania**
 
-3-hodinový program spojený s 5-chodovou večerou
+**3-hodinový program spojený s 5-chodovou večerou**
 
 Tento kurz je vhodný pre všetkých, ktorý sa zúčastňujú spoločenských akcií či už súkromne alebo v rámci pracovných aktivít.
 
@@ -29,17 +29,18 @@ Všetky teoretické poznatky si hneď vyskúšate v praxi.
 
 ## Obsah kurzu:
 
-* pozvánka na spoločenské podujatie - čo všetko obsahuje a čo jednotlivé položky znamenajú
-* typy podujatí spojené so stolovaním
-* zasadací poriadok
-* pravidlá etikety pri stole
-* asistovaná večera 
+* prestieranie stola a zasadací poriadok
+* správne držanie pohárov, používanie obrúskov, držanie príboru 
+* konverzačné témy na pracovnej večeri a iných formálnych udalostiach 
+* a ďalšie dôležité pravidlá spojené so spoločenským stolovaním
 
-**Termín kurzu:** bude upresnené. Ak máte záujem o tento kurz, [napíšte nám ](https://www.mariagalikova.sk/kontakt/)a my vás budeme informovať o termíne.
+**Termín kurzu:** 9. 11. 2022 a 16. 11. 2022 o 18:00 hod. 
 
 **Miesto kurzu:** Beigli hotel&garden, Baštova 4, Bratislava
 
 **Počet účastníkov:** max. 15
+
+**Cena kurzu:** 189 €
 
 **V cene je zahrnuté:** 5-chodová degustačná večera
 
